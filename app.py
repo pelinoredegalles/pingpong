@@ -981,12 +981,26 @@ elif vista == "Calendario de partidos":
             st.info("Ninguno de los equipos ha alineado dobles recientemente.")
 
         st.subheader("👥 Jugadores habituales")
-        
+
+        reg_home = get_team_regular_players(home).index.tolist()
+        reg_away = get_team_regular_players(away).index.tolist()
+
+        df_home_players = elo_df[elo_df["player"].isin(reg_home)]
+        df_away_players = elo_df[elo_df["player"].isin(reg_away)]
+
+        tabla_home = build_team_comparison_table(df_home_players)
+        tabla_away = build_team_comparison_table(df_away_players)
+
         col1, col2 = st.columns(2)
+
         with col1:
-            st.write(get_team_regular_players(home).head(5))
+            st.markdown(f"### {home}")
+            st.dataframe(tabla_home, use_container_width=True)
+
         with col2:
-            st.write(get_team_regular_players(away).head(5))
+            st.markdown(f"### {away}")
+            st.dataframe(tabla_away, use_container_width=True)
+
 
 
         diff_home = get_team_sets_average_diff(df_all, home)
