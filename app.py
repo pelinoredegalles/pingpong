@@ -766,7 +766,7 @@ elif vista == "Resumen por jugador":
     st.subheader("📊 Historial de partidos")
 
     historial = []
-    for match in partidos_filtrados:
+    for match in matches:
         for g in match.get("games", []):
             match_data = extract_player_match_data(g, match, jugador)
             if match_data:
