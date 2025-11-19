@@ -1,0 +1,103 @@
+{
+  "Grupo 6": [
+    {
+      "position": 1,
+      "team": "CTM ESTEPONA “B” DHA",
+      "matches": 6,
+      "wins": 6,
+      "losses": 0,
+      "points_for": 34,
+      "points_against": 2,
+      "points_diff": 32,
+      "points": 17
+    },
+    {
+      "position": 2,
+      "team": "FUENGIROLA INTERNACIONAL DHA",
+      "matches": 4,
+      "wins": 3,
+      "losses": 1,
+      "points_for": 17,
+      "points_against": 7,
+      "points_diff": 10,
+      "points": 9
+    },
+    {
+      "position": 3,
+      "team": "CRISTALERIA DUARTE MARBELLA DHA",
+      "matches": 4,
+      "wins": 4,
+      "losses": 0,
+      "points_for": 17,
+      "points_against": 9,
+      "points_diff": 8,
+      "points": 9
+    },
+    {
+      "position": 4,
+      "team": "CP MIJAS DHA",
+      "matches": 5,
+      "wins": 2,
+      "losses": 3,
+      "points_for": 13,
+      "points_against": 17,
+      "points_diff": -4,
+      "points": 7
+    },
+    {
+      "position": 5,
+      "team": "CTM PINTURAS MONTO MARBELLA DHA",
+      "matches": 4,
+      "wins": 1,
+      "losses": 3,
+      "points_for": 9,
+      "points_against": 16,
+      "points_diff": -7,
+      "points": 4
+    },
+    {
+      "position": 6,
+      "team": "IES ALBAYTAR DHA",
+      "matches": 4,
+      "wins": 1,
+      "losses": 3,
+      "points_for": 7,
+      "points_against": 19,
+      "points_diff": -12,
+      "points": 3
+    },
+    {
+      "position": 7,
+      "team": "CTM ESTEPONA “A” DHA",
+      "matches": 3,
+      "wins": 0,
+      "losses": 3,
+      "points_for": 3,
+      "points_against": 15,
+      "points_diff": -12,
+      "points": 1
+    },
+    {
+      "position": 8,
+      "team": "CTM SALDUBA JOVENES DHA",
+      "matches": 4,
+      "wins": 0,
+      "losses": 4,
+      "points_for": 5,
+      "points_against": 20,
+      "points_diff": -15,
+      "points": 1
+    },
+    {
+      "position": 9,
+      "team": "CTM SALDUBA DHA - RETIRADO",
+      "matches": 0,
+      "wins": 0,
+      "losses": 0,
+      "points_for": 0,
+      "points_against": 0,
+      "points_diff": 0,
+      "points": 0
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "player": "JOHN ALBERT ULLGER",
+    "elo": 1673,
+    "club": "CTM ESTEPONA “B” DHA",
+    "matches": 12,
+    "wins": 12,
+    "win_rate": 100.0
+  },
+  {
+    "player": "ANGEL AMIGO GONZALEZ",
+    "elo": 1610,
+    "club": "CTM ESTEPONA “B” DHA",
+    "matches": 10,
+    "wins": 10,
+    "win_rate": 100.0
+  },
+  {
+    "player": "DARIEL LOPEZ LOPEZ",
+    "elo": 1556,
+    "club": "FUENGIROLA INTERNACIONAL DHA",
+    "matches": 8,
+    "wins": 7,
+    "win_rate": 87.5
+  },
+  {
+    "player": "FRANCISCO SANCHEZ CERVAN",
+    "elo": 1529,
+    "club": "CTM ESTEPONA “B” DHA",
+    "matches": 6,
+    "wins": 6,
+    "win_rate": 100.0
+  },
+  {
+    "player": "DIMITRI TROSKOVS",
+    "elo": 1514,
+    "club": "CTM ESTEPONA “B” DHA",
+    "matches": 8,
+    "wins": 6,
+    "win_rate": 75.0
+  },
+  {
+    "player": "SERGIO ANTONIO CAVAGNARO",
+    "elo": 1501,
+    "club": "CP MIJAS DHA",
+    "matches": 4,
+    "wins": 3,
+    "win_rate": 75.0
+  },
+  {
+    "player": "RICHARD MCCARTHY",
+    "elo": 1500,
+    "club": "FUENGIROLA INTERNACIONAL DHA",
+    "matches": 8,
+    "wins": 5,
+    "win_rate": 62.5
+  },
+  {
+    "player": "PURE-EL TOM MAOR",
+    "elo": 1473,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 4,
+    "wins": 4,
+    "win_rate": 100.0
+  },
+  {
+    "player": "ADRIÁN ORDÓÑEZ MENA",
+    "elo": 1469,
+    "club": "CTM ESTEPONA “A” DHA",
+    "matches": 4,
+    "wins": 2,
+    "win_rate": 50.0
+  },
+  {
+    "player": "JAVIER SÁNCHEZ MARTÍN",
+    "elo": 1461,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 2,
+    "wins": 2,
+    "win_rate": 100.0
+  },
+  {
+    "player": "ADRIAN CABALLO",
+    "elo": 1457,
+    "club": "IES ALBAYTAR DHA",
+    "matches": 6,
+    "wins": 3,
+    "win_rate": 50.0
+  },
+  {
+    "player": "VICTOR ZAVALA BERDAGUER",
+    "elo": 1449,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 2,
+    "wins": 2,
+    "win_rate": 100.0
+  },
+  {
+    "player": "BRICE LOUIS GEORG MARTINEAU",
+    "elo": 1436,
+    "club": "FUENGIROLA INTERNACIONAL DHA",
+    "matches": 8,
+    "wins": 5,
+    "win_rate": 62.5
+  },
+  {
+    "player": "SAMUEL  LEGRAND",
+    "elo": 1419,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "ANAS CHAMMAH TOLEDANO",
+    "elo": 1419,
+    "club": "IES ALBAYTAR DHA",
+    "matches": 6,
+    "wins": 1,
+    "win_rate": 16.7
+  },
+  {
+    "player": "HUGO RIVAS SALIDO",
+    "elo": 1404,
+    "club": "CTM SALDUBA JOVENES DHA",
+    "matches": 4,
+    "wins": 3,
+    "win_rate": 75.0
+  },
+  {
+    "player": "ÁNGEL ROMÁN DEL POZO",
+    "elo": 1403,
+    "club": "CP MIJAS DHA",
+    "matches": 2,
+    "wins": 1,
+    "win_rate": 50.0
+  },
+  {
+    "player": "SAÚL MANGA MARISCAL",
+    "elo": 1400,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 8,
+    "wins": 5,
+    "win_rate": 62.5
+  },
+  {
+    "player": "HARIJS VEVERIS",
+    "elo": 1399,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 4,
+    "wins": 2,
+    "win_rate": 50.0
+  },
+  {
+    "player": "ANDREAS  WIESBROCK",
+    "elo": 1399,
+    "club": "IES ALBAYTAR DHA",
+    "matches": 6,
+    "wins": 2,
+    "win_rate": 33.3
+  },
+  {
+    "player": "JOSE IGNACIO RODRIGUEZ CODEJON",
+    "elo": 1384,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 2,
+    "wins": 1,
+    "win_rate": 50.0
+  },
+  {
+    "player": "JOSÉ LUIS TROYA DÍAZ",
+    "elo": 1381,
+    "club": "CP MIJAS DHA",
+    "matches": 4,
+    "wins": 1,
+    "win_rate": 25.0
+  },
+  {
+    "player": "FRANCISCO PUERTA VIDES",
+    "elo": 1379,
+    "club": "CTM SALDUBA JOVENES DHA",
+    "matches": 2,
+    "wins": 1,
+    "win_rate": 50.0
+  },
+  {
+    "player": "LEONID LEYNONEN",
+    "elo": 1375,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 4,
+    "wins": 1,
+    "win_rate": 25.0
+  },
+  {
+    "player": "EMILIO GONZÁLEZ ZARCO",
+    "elo": 1368,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 6,
+    "wins": 3,
+    "win_rate": 50.0
+  },
+  {
+    "player": "MARK SUCHKOV KALMYKOV",
+    "elo": 1366,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 6,
+    "wins": 2,
+    "win_rate": 33.3
+  },
+  {
+    "player": "JARNO MARTEN KLOPSTRA",
+    "elo": 1364,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 2,
+    "wins": 1,
+    "win_rate": 50.0
+  },
+  {
+    "player": "JOSE CRESPO SANCHEZ",
+    "elo": 1364,
+    "club": "CTM ESTEPONA “A” DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "ROBERTO DEL OLMO POSTIGO",
+    "elo": 1361,
+    "club": "CP MIJAS DHA",
+    "matches": 6,
+    "wins": 2,
+    "win_rate": 33.3
+  },
+  {
+    "player": "AINARA SANCHEZ ALBA",
+    "elo": 1359,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 2,
+    "wins": 1,
+    "win_rate": 50.0
+  },
+  {
+    "player": "PABLO DEL RIO ANTON",
+    "elo": 1351,
+    "club": "CTM ESTEPONA “A” DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "FRANCISCO JOSE MORENO",
+    "elo": 1348,
+    "club": "CTM SALDUBA JOVENES DHA",
+    "matches": 4,
+    "wins": 1,
+    "win_rate": 25.0
+  },
+  {
+    "player": "ROSS LITTLE",
+    "elo": 1340,
+    "club": "CTM ESTEPONA “A” DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "STEPHANE JEAN ROGER PAUPARDIN",
+    "elo": 1340,
+    "club": "IES ALBAYTAR DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "ISABEL GONZALEZ HERRERA",
+    "elo": 1337,
+    "club": "IES ALBAYTAR DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "SEBASTIAN DAVILA AMAYA",
+    "elo": 1337,
+    "club": "CTM SALDUBA JOVENES DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "MIGUEL ANGEL MELERO MARTINEZ",
+    "elo": 1325,
+    "club": "IES ALBAYTAR DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "DIEGO ADRIAN ORDOÑEZ MARTIN",
+    "elo": 1322,
+    "club": "CTM ESTEPONA “A” DHA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "JUAN IGNACIO CAVAGNARO GARCÍA",
+    "elo": 1297,
+    "club": "CP MIJAS DHA",
+    "matches": 8,
+    "wins": 1,
+    "win_rate": 12.5
+  },
+  {
+    "player": "JESÚS GARCÍA VALDEZ",
+    "elo": 1289,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 4,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "JOSE CAÑADAS PACHECO",
+    "elo": 1254,
+    "club": "CTM SALDUBA JOVENES DHA",
+    "matches": 6,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "PENGYU QIAN",
+    "elo": 1218,
+    "club": "CTM SALDUBA JOVENES DHA",
+    "matches": 6,
+    "wins": 0,
+    "win_rate": 0.0
+  }
+]

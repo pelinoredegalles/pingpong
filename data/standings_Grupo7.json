@@ -1,0 +1,136 @@
+{
+  "Grupo 7": [
+    {
+      "position": 1,
+      "team": "CP MIJAS SDA",
+      "matches": 7,
+      "wins": 7,
+      "losses": 0,
+      "points_for": 34,
+      "points_against": 8,
+      "points_diff": 26,
+      "points": 18
+    },
+    {
+      "position": 2,
+      "team": "CTM PRODITEM SDA",
+      "matches": 7,
+      "wins": 4,
+      "losses": 3,
+      "points_for": 28,
+      "points_against": 15,
+      "points_diff": 13,
+      "points": 14
+    },
+    {
+      "position": 3,
+      "team": "CTM ESTEPONA SDA",
+      "matches": 7,
+      "wins": 6,
+      "losses": 1,
+      "points_for": 27,
+      "points_against": 16,
+      "points_diff": 11,
+      "points": 14
+    },
+    {
+      "position": 4,
+      "team": "CTM SALDUBA SDA",
+      "matches": 7,
+      "wins": 3,
+      "losses": 4,
+      "points_for": 24,
+      "points_against": 19,
+      "points_diff": 5,
+      "points": 12
+    },
+    {
+      "position": 5,
+      "team": "CD NOVACARTAMA TM SDA",
+      "matches": 7,
+      "wins": 3,
+      "losses": 4,
+      "points_for": 23,
+      "points_against": 21,
+      "points_diff": 2,
+      "points": 12
+    },
+    {
+      "position": 6,
+      "team": "TEAM SOTOGRANDE SDA",
+      "matches": 7,
+      "wins": 3,
+      "losses": 4,
+      "points_for": 22,
+      "points_against": 20,
+      "points_diff": 2,
+      "points": 10
+    },
+    {
+      "position": 7,
+      "team": "INSTASOL-NAVASOL SDA",
+      "matches": 7,
+      "wins": 4,
+      "losses": 3,
+      "points_for": 17,
+      "points_against": 26,
+      "points_diff": -9,
+      "points": 9
+    },
+    {
+      "position": 8,
+      "team": "FUENGIROLA MATT SDA",
+      "matches": 7,
+      "wins": 3,
+      "losses": 4,
+      "points_for": 20,
+      "points_against": 23,
+      "points_diff": -3,
+      "points": 9
+    },
+    {
+      "position": 9,
+      "team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+      "matches": 7,
+      "wins": 3,
+      "losses": 4,
+      "points_for": 19,
+      "points_against": 23,
+      "points_diff": -4,
+      "points": 9
+    },
+    {
+      "position": 10,
+      "team": "CHEMA TM SDA",
+      "matches": 7,
+      "wins": 2,
+      "losses": 5,
+      "points_for": 16,
+      "points_against": 26,
+      "points_diff": -10,
+      "points": 7
+    },
+    {
+      "position": 11,
+      "team": "CTM EL PALO SDA",
+      "matches": 7,
+      "wins": 2,
+      "losses": 5,
+      "points_for": 14,
+      "points_against": 29,
+      "points_diff": -15,
+      "points": 7
+    },
+    {
+      "position": 12,
+      "team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+      "matches": 7,
+      "wins": 2,
+      "losses": 5,
+      "points_for": 12,
+      "points_against": 30,
+      "points_diff": -18,
+      "points": 5
+    }
+  ]
+}
