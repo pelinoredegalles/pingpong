@@ -236,7 +236,25 @@ def plot_elo(player: str) -> List[int]:
                 is_home = g["home_player"] == player
                 score = g["home_score"] if is_home else g["away_score"]
                 opp_score = g["away_score"] if is_home else g["home_score"]
-                result = score / (score + opp_score) if (score + opp_score) > 0 else 0.5
+                
+                h_sets = g.get("home_sets", [])
+                a_sets = g.get("away_sets", [])
+                
+                if is_home:
+                    player_sets = h_sets
+                    opp_sets = a_sets
+                else:
+                    player_sets = a_sets
+                    opp_sets = h_sets
+                
+                player_points = sum(s for s in player_sets if s > 0)
+                opp_points = sum(s for s in opp_sets if s > 0)
+                
+                sets_result = score / (score + opp_score) if (score + opp_score) > 0 else 0.5
+                points_result = player_points / (player_points + opp_points) if (player_points + opp_points) > 0 else 0.5
+                
+                result = 0.7 * sets_result + 0.3 * points_result
+                
                 elo += K_FACTOR * (result - 0.5)
                 history.append(round(elo))
     return history
@@ -474,7 +492,7 @@ def get_best_player(df: pd.DataFrame, equipo: str) -> Tuple[Optional[str], float
         for g in row.get("games", []):
             if row["home_team"] == equipo and g.get("home_player"):
                 jugadores.append(g["home_player"])
-            if row["away_team"] == equipo and g.get("away_player"):
+            elif row["away_team"] == equipo and g.get("away_player"):
                 jugadores.append(g["away_player"])
     
     if not jugadores:
@@ -1114,14 +1132,20 @@ elif vista == "Calendario de partidos":
 
         st.subheader("🌟 Jugadores destacados")
 
-        bh, elo_h = get_best_player(df_all, home)
-        ba, elo_a = get_best_player(df_all, away)
+        reg_home = get_team_regular_players(home)
+        reg_away = get_team_regular_players(away)
 
-        if bh:
-            st.write(f"⭐ Mejor jugador de **{home}**: {bh} (Elo {elo_h})")
+        if not reg_home.empty:
+            home_players_elo = elo_df[elo_df["player"].isin(reg_home.index)]
+            if not home_players_elo.empty:
+                best_home = home_players_elo.sort_values("elo", ascending=False).iloc[0]
+                st.write(f"⭐ Mejor jugador de **{home}**: {best_home['player']} (Elo {best_home['elo']})")
 
-        if ba:
-            st.write(f"⭐ Mejor jugador de **{away}**: {ba} (Elo {elo_a})")
+        if not reg_away.empty:
+            away_players_elo = elo_df[elo_df["player"].isin(reg_away.index)]
+            if not away_players_elo.empty:
+                best_away = away_players_elo.sort_values("elo", ascending=False).iloc[0]
+                st.write(f"⭐ Mejor jugador de **{away}**: {best_away['player']} (Elo {best_away['elo']})")
         
         st.divider()
         
