@@ -28,6 +28,14 @@ def load_matches_data() -> pd.DataFrame:
     
     return pd.concat([df_g6, df_g7], ignore_index=True)
 
+def load_matches_by_group(grupo: str) -> pd.DataFrame:
+    try:
+        grupo_id = grupo.replace(" ", "")
+        df = pd.read_json(f"data/matches_{grupo_id}_enriched.json")
+        return df
+    except (FileNotFoundError, json.JSONDecodeError):
+        return pd.DataFrame()
+
 df_all = load_matches_data()
 
 EXPECTED_COLS = ["match_id", "date", "home_team", "away_team", "games", "score_home", "score_away"]
@@ -191,9 +199,6 @@ def load_standings(grupo_id: str) -> pd.DataFrame:
     except (FileNotFoundError, json.JSONDecodeError, KeyError) as e:
         st.error(f"Error loading standings: {e}")
         return pd.DataFrame()
-
-elo_df = load_elo_data(ELO_FILE)
-matches = load_matches(MATCHES_FILE)
 
 @st.cache_data
 def get_duels(player: str) -> List[Dict[str, str]]:
@@ -458,7 +463,7 @@ def get_team_recent_form(df: pd.DataFrame, equipo: str) -> str:
     filas = df[(df["home_team"] == equipo) | (df["away_team"] == equipo)].tail(5)
     r = []
     for _, p in filas.iterrows():
-        sh, sa = p["score_home"], p["score_away"]
+        sh, sa = p.get("score_home"), p.get("score_away")
         if sh is None or sa is None:
             continue
         if (p["home_team"] == equipo and sh > sa) or (p["away_team"] == equipo and sa > sh):
@@ -638,6 +643,185 @@ def get_team_vs_team_record(df: pd.DataFrame, team1: str, team2: str) -> Dict[st
     
     return {"team1_wins": team1_wins, "team2_wins": team2_wins, "total": len(matches)}
 
+def get_player_momentum(player: str, last_n: int = 5) -> Dict[str, Any]:
+    duels = get_duels(player)
+    recent_duels = duels[-last_n:]
+    
+    if not recent_duels:
+        return {"wins": 0, "losses": 0, "momentum": 0.0, "streak": "N/A"}
+    
+    wins = sum(1 for d in recent_duels if d["resultado"] == RESULT_WIN)
+    losses = len(recent_duels) - wins
+    momentum = round(wins / len(recent_duels) * 100, 1)
+    
+    streak = ""
+    for d in recent_duels:
+        streak += "🟩" if d["resultado"] == RESULT_WIN else "🟥"
+    
+    return {
+        "wins": wins,
+        "losses": losses,
+        "momentum": momentum,
+        "streak": streak,
+        "total": len(recent_duels)
+    }
+
+def get_team_momentum(df: pd.DataFrame, equipo: str, last_n: int = 5) -> Dict[str, Any]:
+    filas = df[(df["home_team"] == equipo) | (df["away_team"] == equipo)].tail(last_n)
+    trend = []
+    
+    for _, p in filas.iterrows():
+        sh, sa = p.get("score_home"), p.get("score_away")
+        if sh is None or sa is None:
+            continue
+        if (p["home_team"] == equipo and sh > sa) or (p["away_team"] == equipo and sa > sh):
+            trend.append(1)
+        else:
+            trend.append(0)
+    
+    if not trend:
+        return {"wins": 0, "losses": 0, "momentum": 0.0, "streak": "N/A"}
+    
+    wins = sum(trend)
+    losses = len(trend) - wins
+    momentum = round(wins / len(trend) * 100, 1)
+    streak = "".join(["🟩" if w else "🟥" for w in trend])
+    
+    return {
+        "wins": wins,
+        "losses": losses,
+        "momentum": momentum,
+        "streak": streak,
+        "total": len(trend)
+    }
+
+def get_player_sets_stats(player: str) -> Dict[str, float]:
+    sets_won = 0
+    sets_lost = 0
+    matches_count = 0
+    
+    for match in matches:
+        for g in match.get("games", []):
+            if g.get("home_player") == player or g.get("away_player") == player:
+                is_home = g["home_player"] == player
+                h_sets = g.get("home_sets", [])
+                a_sets = g.get("away_sets", [])
+                
+                if is_home:
+                    sets_won += sum(1 for s in h_sets if s > 0)
+                    sets_lost += sum(1 for s in a_sets if s > 0)
+                else:
+                    sets_won += sum(1 for s in a_sets if s > 0)
+                    sets_lost += sum(1 for s in h_sets if s > 0)
+                matches_count += 1
+    
+    avg_sets_won = round(sets_won / matches_count, 2) if matches_count > 0 else 0.0
+    avg_sets_lost = round(sets_lost / matches_count, 2) if matches_count > 0 else 0.0
+    
+    return {
+        "total_sets_won": sets_won,
+        "total_sets_lost": sets_lost,
+        "avg_sets_won": avg_sets_won,
+        "avg_sets_lost": avg_sets_lost,
+        "matches": matches_count
+    }
+
+def get_team_sets_stats(df: pd.DataFrame, equipo: str) -> Dict[str, float]:
+    sets_won = 0
+    sets_lost = 0
+    matches_count = 0
+    
+    for _, row in df.iterrows():
+        is_home = row["home_team"] == equipo
+        is_away = row["away_team"] == equipo
+        
+        if not (is_home or is_away):
+            continue
+        
+        for g in row.get("games", []):
+            h_sets = g.get("home_sets", [])
+            a_sets = g.get("away_sets", [])
+            
+            if is_home:
+                sets_won += sum(1 for s in h_sets if s > 0)
+                sets_lost += sum(1 for s in a_sets if s > 0)
+            else:
+                sets_won += sum(1 for s in a_sets if s > 0)
+                sets_lost += sum(1 for s in h_sets if s > 0)
+            matches_count += 1
+    
+    avg_sets_won = round(sets_won / matches_count, 2) if matches_count > 0 else 0.0
+    avg_sets_lost = round(sets_lost / matches_count, 2) if matches_count > 0 else 0.0
+    
+    return {
+        "total_sets_won": sets_won,
+        "total_sets_lost": sets_lost,
+        "avg_sets_won": avg_sets_won,
+        "avg_sets_lost": avg_sets_lost,
+        "matches": matches_count
+    }
+
+def get_player_recent_matches(player: str, last_n: int = 5) -> pd.DataFrame:
+    duels = get_duels(player)
+    recent_duels = duels[-last_n:]
+    
+    if not recent_duels:
+        return pd.DataFrame(columns=["Casa/Away", "Rival", "Marcador", "Resultado"])
+    
+    results = []
+    for d in recent_duels:
+        results.append({
+            "Casa/Away": d.get("casa_away", ""),
+            "Rival": d["rival"],
+            "Marcador": d["marcador"],
+            "Resultado": d["resultado"]
+        })
+    
+    return pd.DataFrame(results)
+
+def get_team_recent_matches(df: pd.DataFrame, equipo: str, last_n: int = 5) -> pd.DataFrame:
+    todas_filas = df[(df["home_team"] == equipo) | (df["away_team"] == equipo)]
+    
+    finalizadas = []
+    for _, p in todas_filas.iterrows():
+        games = p.get("games", None)
+        if isinstance(games, list) and len(games) > 0:
+            finalizadas.append(p)
+    
+    filas = finalizadas[-last_n:]
+    
+    results = []
+    for p in filas:
+        sh, sa = p.get("score_home"), p.get("score_away")
+        if sh is None or sa is None:
+            continue
+        
+        is_home = p["home_team"] == equipo
+        opponent = p["away_team"] if is_home else p["home_team"]
+        casa_away = "Casa" if is_home else "Away"
+        
+        team_score = sh if is_home else sa
+        opponent_score = sa if is_home else sh
+        won = team_score > opponent_score
+        
+        resultado = "Victoria" if won else "Derrota"
+        results.append({
+            "Casa/Away": casa_away,
+            "Rival": opponent,
+            "Marcador": f"{sh} - {sa}",
+            "Resultado": resultado
+        })
+    
+    return pd.DataFrame(results)
+
+
+elo_df = load_elo_data(ELO_FILE)
+matches = load_matches(MATCHES_FILE)
+df_grupo = load_matches_by_group(grupo)
+
+for col in EXPECTED_COLS:
+    if col not in df_grupo.columns:
+        df_grupo[col] = None
 
 vista = st.session_state.nav_vista
 page_title = get_page_title()
@@ -667,11 +851,17 @@ if vista == "Comparar jugadores":
     def mostrar_ficha(jugador, col_key):
         info = elo_df[elo_df["player"] == jugador].iloc[0]
         wins, losses = get_stats(jugador)
+        momentum = get_player_momentum(jugador, 5)
+        sets_stats = get_player_sets_stats(jugador)
         st.markdown(f"### {jugador}")
         st.write(f"**Equipo** : {info['club']}")
         st.write(f"**Elo** : {info['elo']}")
-        st.write(f"**Victorias** : {wins}")
-        st.write(f"**Derrotas** : {losses}")
+        st.write(f"**Victorias** : {wins} | **Derrotas** : {losses}")
+        recent_matches_df = get_player_recent_matches(jugador, 5)
+        if not recent_matches_df.empty:
+            st.subheader("📅 Últimos 5 partidos")
+            st.dataframe(recent_matches_df, use_container_width=True, hide_index=True)
+        st.write(f"**Sets**: Ø {sets_stats['avg_sets_won']} ganados / {sets_stats['avg_sets_lost']} perdidos")
         col_btn1, col_btn2 = st.columns(2)
         with col_btn1:
             if st.button(f"📋 Perfil", key=f"profile_{col_key}"):
@@ -732,19 +922,44 @@ elif vista == "Comparar equipos":
     df1 = elo_df[elo_df["club"] == equipo1]
     df2 = elo_df[elo_df["club"] == equipo2]
 
+    momentum1 = get_team_momentum(df_grupo, equipo1, 5)
+    momentum2 = get_team_momentum(df_grupo, equipo2, 5)
+    sets1 = get_team_sets_stats(df_grupo, equipo1)
+    sets2 = get_team_sets_stats(df_grupo, equipo2)
+
     col1, col2 = st.columns(2)
     with col1:
         st.markdown(f"### {equipo1}")
         table1 = build_team_comparison_table(df1)
         st.dataframe(table1, use_container_width=True)
-        st.metric("Elo medio", round(df1["elo"].mean(), 1))
+        col_a, col_b, col_c = st.columns(3)
+        with col_a:
+            st.metric("Elo medio", round(df1["elo"].mean(), 1))
+        with col_b:
+            st.metric("Momentum", f"{momentum1['momentum']}%")
+        with col_c:
+            st.metric("Ø Sets", f"{sets1['avg_sets_won']}/{sets1['avg_sets_lost']}")
+        recent1_df = get_team_recent_matches(df_grupo, equipo1, 5)
+        if not recent1_df.empty:
+            st.subheader("📅 Últimos 5 partidos")
+            st.dataframe(recent1_df, use_container_width=True, hide_index=True)
         if st.button(f"📊 Dashboard {equipo1}", key="dash_equipo1"):
             navigate_to_team(equipo1)
     with col2:
         st.markdown(f"### {equipo2}")
         table2 = build_team_comparison_table(df2)
         st.dataframe(table2, use_container_width=True)
-        st.metric("Elo medio", round(df2["elo"].mean(), 1))
+        col_a, col_b, col_c = st.columns(3)
+        with col_a:
+            st.metric("Elo medio", round(df2["elo"].mean(), 1))
+        with col_b:
+            st.metric("Momentum", f"{momentum2['momentum']}%")
+        with col_c:
+            st.metric("Ø Sets", f"{sets2['avg_sets_won']}/{sets2['avg_sets_lost']}")
+        recent2_df = get_team_recent_matches(df_grupo, equipo2, 5)
+        if not recent2_df.empty:
+            st.subheader("📅 Últimos 5 partidos")
+            st.dataframe(recent2_df, use_container_width=True, hide_index=True)
         if st.button(f"📊 Dashboard {equipo2}", key="dash_equipo2"):
             navigate_to_team(equipo2)
 elif vista == "Resumen por jugador":
@@ -761,6 +976,8 @@ elif vista == "Resumen por jugador":
 
     info = elo_df[elo_df["player"] == jugador].iloc[0]
     wins, losses = get_stats(jugador)
+    momentum = get_player_momentum(jugador, 5)
+    sets_stats = get_player_sets_stats(jugador)
 
     st.markdown(f"### {jugador}")
     col1, col2 = st.columns([3, 1])
@@ -772,6 +989,21 @@ elif vista == "Resumen por jugador":
     with col2:
         if st.button(f"📊 Ver equipo", key="team_button"):
             navigate_to_team(info['club'])
+    
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.metric("Momentum (últimos 5)", f"{momentum['momentum']}%")
+    with col2:
+        st.metric("Partidos", len(get_duels(jugador)))
+    with col3:
+        st.metric("Ø Sets Ganados", sets_stats['avg_sets_won'])
+    with col4:
+        st.metric("Ø Sets Perdidos", sets_stats['avg_sets_lost'])
+    
+    recent_df = get_player_recent_matches(jugador, 5)
+    if not recent_df.empty:
+        st.subheader("📅 Últimos 5 partidos")
+        st.dataframe(recent_df, use_container_width=True, hide_index=True)
 
     st.subheader("📈 Evolución Elo")
     fig, ax = plt.subplots()
@@ -911,7 +1143,7 @@ elif vista == "Ranking y H2H":
 elif vista == "Calendario de partidos":
     st.header("📅 Calendario de partidos")
 
-    if df_all.empty:
+    if df_grupo.empty:
         st.warning("No hay datos disponibles.")
         st.stop()
 
@@ -921,8 +1153,7 @@ elif vista == "Calendario de partidos":
         key="filtro_equipo"
     )
 
-    # Créer liste compacte
-    partidos = df_all.copy()
+    partidos = df_grupo.copy()
 
 # --- Filtre par equipo ---
     if equipo_filtro != "Todos":
@@ -942,7 +1173,7 @@ elif vista == "Calendario de partidos":
     selected_label = st.selectbox("Selecciona un partido", partidos["label"].tolist())
     selected_match_id = partidos[partidos["label"] == selected_label].iloc[0]["match_id"]
 
-    selected_match = df_all[df_all["match_id"] == selected_match_id].iloc[0]
+    selected_match = df_grupo[df_grupo["match_id"] == selected_match_id].iloc[0]
 
     st.subheader("📌 Detalles del partido")
 
@@ -1021,8 +1252,8 @@ elif vista == "Calendario de partidos":
 
 
 
-        diff_home = get_team_sets_average_diff(df_all, home)
-        diff_away = get_team_sets_average_diff(df_all, away)
+        diff_home = get_team_sets_average_diff(df_grupo, home)
+        diff_away = get_team_sets_average_diff(df_grupo, away)
 
         st.subheader("➗ Diferencia promedio de sets")
         col1, col2 = st.columns(2)
@@ -1031,10 +1262,26 @@ elif vista == "Calendario de partidos":
 
 
         st.subheader("📈 Forma reciente (últimos 5)")
-        st.write(f"{home}: {get_team_recent_form(df_all, home)}")
-        st.write(f"{away}: {get_team_recent_form(df_all, away)}")
+        col1, col2 = st.columns(2)
+        
+        home_recent_df = get_team_recent_matches(df_grupo, home, 5)
+        away_recent_df = get_team_recent_matches(df_grupo, away, 5)
+        
+        with col1:
+            st.markdown(f"**{home}**")
+            if not home_recent_df.empty:
+                st.dataframe(home_recent_df, use_container_width=True, hide_index=True)
+            else:
+                st.info("Sin partidos finalizados")
+        
+        with col2:
+            st.markdown(f"**{away}**")
+            if not away_recent_df.empty:
+                st.dataframe(away_recent_df, use_container_width=True, hide_index=True)
+            else:
+                st.info("Sin partidos finalizados")
 
-        comunes = get_team_opponents(df_all, home).intersection(get_team_opponents(df_all, away))
+        comunes = get_team_opponents(df_grupo, home).intersection(get_team_opponents(df_grupo, away))
 
         st.subheader("🤝 Rivales comunes")
         if comunes:
@@ -1044,14 +1291,14 @@ elif vista == "Calendario de partidos":
 
         st.subheader("📂 Partidos finalizados contra rivales comunes")
 
-        df_home_f = df_all[
-            ((df_all["home_team"] == home) | (df_all["away_team"] == home)) &
-            (df_all["status"] == "Finalizado")
+        df_home_f = df_grupo[
+            ((df_grupo["home_team"] == home) | (df_grupo["away_team"] == home)) &
+            (df_grupo["status"] == "Finalizado")
         ]
 
-        df_away_f = df_all[
-            ((df_all["home_team"] == away) | (df_all["away_team"] == away)) &
-            (df_all["status"] == "Finalizado")
+        df_away_f = df_grupo[
+            ((df_grupo["home_team"] == away) | (df_grupo["away_team"] == away)) &
+            (df_grupo["status"] == "Finalizado")
         ]
 
         def adversarios(df: pd.DataFrame, equipo: str) -> Set[str]:
@@ -1109,7 +1356,7 @@ elif vista == "Calendario de partidos":
 
         for j1 in jugadores_H:
             for j2 in jugadores_A:
-                duelos = get_h2h_matches(df_all, j1, j2)
+                duelos = get_h2h_matches(df_grupo, j1, j2)
                 if duelos:
                     st.markdown(f"**{j1} vs {j2}**")
                     for d in duelos:
@@ -1118,8 +1365,8 @@ elif vista == "Calendario de partidos":
 
         st.subheader("🔮 Predicción (basada en Elo promedio)")
 
-        elo_home = get_team_elo_average(df_all, home)
-        elo_away = get_team_elo_average(df_all, away)
+        elo_home = get_team_elo_average(df_grupo, home)
+        elo_away = get_team_elo_average(df_grupo, away)
         if elo_home == 0 or elo_away == 0:
             st.info("No hay datos suficientes de Elo para calcular una predicción.")
         else:
@@ -1172,6 +1419,8 @@ elif vista == "Dashboard Equipo":
     equipo = st.selectbox("Selecciona un equipo", equipos_list, index=default_equipo_idx)
     
     team_players = elo_df[elo_df["club"] == equipo]
+    momentum = get_team_momentum(df_grupo, equipo, 5)
+    sets_stats = get_team_sets_stats(df_grupo, equipo)
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -1179,10 +1428,22 @@ elif vista == "Dashboard Equipo":
     with col2:
         st.metric("Elo Promedio", round(team_players["elo"].mean(), 1))
     with col3:
-        st.metric("Elo Máximo", int(team_players["elo"].max()))
+        st.metric("Momentum", f"{momentum['momentum']}%")
     with col4:
-        recent, pct = get_best_worst_streaks(df_all, equipo, 5)
-        st.metric("Forma Reciente", recent)
+        st.metric("Ø Sets", f"{sets_stats['avg_sets_won']}/{sets_stats['avg_sets_lost']}")
+    
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Elo Máximo", int(team_players["elo"].max()))
+    with col2:
+        pass
+    with col3:
+        pass
+    
+    recent_df = get_team_recent_matches(df_grupo, equipo, 5)
+    if not recent_df.empty:
+        st.subheader("📅 Últimos 5 partidos")
+        st.dataframe(recent_df, use_container_width=True, hide_index=True)
     
     st.subheader("👥 Jugadores del Equipo")
     st.write("*Haz clic en un jugador para ver su perfil detallado*")
@@ -1237,6 +1498,8 @@ elif vista == "Análisis Jugador Avanzado":
         wins, losses = get_stats(jugador)
         total = wins + losses
         win_rate = round(wins / total * 100, 1) if total > 0 else 0
+        momentum = get_player_momentum(jugador, 5)
+        sets_stats = get_player_sets_stats(jugador)
         
         st.subheader(f"📋 {jugador}")
         col1, col2, col3, col4, col5 = st.columns(5)
@@ -1250,6 +1513,21 @@ elif vista == "Análisis Jugador Avanzado":
             st.metric("Derrotas", losses)
         with col5:
             st.metric("% Victoria", f"{win_rate}%")
+        
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            st.metric("📈 Momentum (últimos 5)", f"{momentum['momentum']}%")
+        with col2:
+            st.metric("Partidos", len(get_duels(jugador)))
+        with col3:
+            st.metric("Ø Sets Ganados", sets_stats['avg_sets_won'])
+        with col4:
+            st.metric("Ø Sets Perdidos", sets_stats['avg_sets_lost'])
+        
+        recent_df = get_player_recent_matches(jugador, 5)
+        if not recent_df.empty:
+            st.subheader("📅 Últimos 5 partidos")
+            st.dataframe(recent_df, use_container_width=True, hide_index=True)
         
         st.subheader("📈 Evolución Elo")
         fig, ax = plt.subplots(figsize=(12, 5))
