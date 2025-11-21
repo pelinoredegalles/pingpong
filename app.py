@@ -211,10 +211,12 @@ def get_duels(player: str) -> List[Dict[str, str]]:
                 opp_score = g["away_score"] if is_home else g["home_score"]
                 opponent = g["away_player"] if is_home else g["home_player"]
                 result = RESULT_WIN if score > opp_score else RESULT_LOSS
+                casa_away = "Casa" if is_home else "Away"
                 duels.append({
                     "rival": opponent,
                     "marcador": f"{score} - {opp_score}",
-                    "resultado": result
+                    "resultado": result,
+                    "casa_away": casa_away
                 })
     return duels
 
@@ -1138,6 +1140,24 @@ elif vista == "Ranking y H2H":
     
     st.write("*Haz clic en un jugador para ver su perfil detallado*")
     
+    col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 3, 2, 1, 1, 1, 2])
+    with col1:
+        st.write("**#**")
+    with col2:
+        st.write("**Jugador**")
+    with col3:
+        st.write("**Equipo**")
+    with col4:
+        st.write("**Elo**")
+    with col5:
+        st.write("**V**")
+    with col6:
+        st.write("**D**")
+    with col7:
+        st.write("**% Victoria**")
+    
+    st.divider()
+    
     for idx, row in leaderboard.iterrows():
         col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 3, 2, 1, 1, 1, 2])
         with col1:
@@ -1162,6 +1182,25 @@ elif vista == "Ranking y H2H":
     if equipo_filter != "Todos":
         filtered_lb = leaderboard[leaderboard["Equipo"] == equipo_filter]
         st.write(f"**Jugadores de {equipo_filter}:**")
+        
+        col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 3, 2, 1, 1, 1, 2])
+        with col1:
+            st.write("**#**")
+        with col2:
+            st.write("**Jugador**")
+        with col3:
+            st.write("**Equipo**")
+        with col4:
+            st.write("**Elo**")
+        with col5:
+            st.write("**V**")
+        with col6:
+            st.write("**D**")
+        with col7:
+            st.write("**% Victoria**")
+        
+        st.divider()
+        
         for idx, row in filtered_lb.iterrows():
             col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 3, 2, 1, 1, 1, 2])
             with col1:
