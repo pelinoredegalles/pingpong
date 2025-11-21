@@ -814,6 +814,98 @@ def get_team_recent_matches(df: pd.DataFrame, equipo: str, last_n: int = 5) -> p
     
     return pd.DataFrame(results)
 
+def get_team_matches_vs_opponent(df: pd.DataFrame, equipo: str, opponent: str) -> pd.DataFrame:
+    matches = df[
+        ((df["home_team"] == equipo) | (df["away_team"] == equipo)) &
+        ((df["home_team"] == opponent) | (df["away_team"] == opponent)) &
+        (df["status"] == "Finalizado")
+    ]
+    
+    results = []
+    for _, p in matches.iterrows():
+        sh, sa = p.get("score_home"), p.get("score_away")
+        if sh is None or sa is None:
+            continue
+        
+        is_home = p["home_team"] == equipo
+        casa_away = "Casa" if is_home else "Away"
+        
+        team_score = sh if is_home else sa
+        opponent_score = sa if is_home else sh
+        won = team_score > opponent_score
+        
+        resultado = "Victoria" if won else "Derrota"
+        results.append({
+            "Fecha": p.get("date", ""),
+            "Casa/Away": casa_away,
+            "Marcador": f"{sh} - {sa}",
+            "Resultado": resultado
+        })
+    
+    return pd.DataFrame(results)
+
+def style_match_results(df: pd.DataFrame):
+    def color_resultado(val):
+        if val == "Victoria":
+            return "background-color: #90EE90; color: black"
+        elif val == "Derrota":
+            return "background-color: #FF6B6B; color: white"
+        return ""
+    
+    return df.style.map(color_resultado, subset=['Resultado'])
+
+def display_match_duels_acta(games: list, home_team: str, away_team: str):
+    regular_duels = [g for g in games if g.get('home_code') != "ABC" and g.get('away_code') != "XYZ"]
+    
+    if not regular_duels:
+        st.info("No hay duelos para mostrar")
+        return
+    
+    home_wins = sum(1 for g in regular_duels if g.get('home_sets', 0) > g.get('away_sets', 0))
+    away_wins = sum(1 for g in regular_duels if g.get('away_sets', 0) > g.get('home_sets', 0))
+    
+    col1, col2, col3 = st.columns([2, 1, 2])
+    with col1:
+        st.markdown(f"### {home_team}")
+    with col2:
+        st.markdown(f"<div style='text-align: center;'><h3>{home_wins} - {away_wins}</h3></div>", unsafe_allow_html=True)
+    with col3:
+        st.markdown(f"<div style='text-align: right;'><h3>{away_team}</h3></div>", unsafe_allow_html=True)
+    
+    st.divider()
+    
+    for idx, duel in enumerate(regular_duels, 1):
+        home_player = duel['home_player']
+        away_player = duel['away_player']
+        home_code = duel['home_code']
+        away_code = duel['away_code']
+        home_sets = duel.get('home_sets', [])
+        away_sets = duel.get('away_sets', [])
+        
+        with st.container():
+            col1, col2, col3 = st.columns([2, 1, 2])
+            
+            with col1:
+                st.markdown(f"**{home_player}** ({home_code})")
+            with col2:
+                st.markdown(f"<div style='text-align: center; font-weight: bold;'>{idx}</div>", unsafe_allow_html=True)
+            with col3:
+                st.markdown(f"<div style='text-align: right;'>**{away_player}** ({away_code})</div>", unsafe_allow_html=True)
+            
+            sets_display = []
+            for i, (h, a) in enumerate(zip(home_sets, away_sets), 1):
+                if h == 0 and a == 0:
+                    continue
+                h_style = "color: green; font-weight: bold;" if h > a else "color: gray;"
+                a_style = "color: green; font-weight: bold;" if a > h else "color: gray;"
+                sets_display.append(f"<span style='{h_style}'>{h}</span> - <span style='{a_style}'>{a}</span>")
+            
+            if sets_display:
+                sets_str = " | ".join(sets_display)
+                st.markdown(f"<div style='text-align: center; margin-top: 5px;'>{sets_str}</div>", unsafe_allow_html=True)
+            
+            st.divider()
+
 
 elo_df = load_elo_data(ELO_FILE)
 matches = load_matches(MATCHES_FILE)
@@ -860,7 +952,7 @@ if vista == "Comparar jugadores":
         recent_matches_df = get_player_recent_matches(jugador, 5)
         if not recent_matches_df.empty:
             st.subheader("📅 Últimos 5 partidos")
-            st.dataframe(recent_matches_df, use_container_width=True, hide_index=True)
+            st.dataframe(style_match_results(recent_matches_df), use_container_width=True, hide_index=True)
         st.write(f"**Sets**: Ø {sets_stats['avg_sets_won']} ganados / {sets_stats['avg_sets_lost']} perdidos")
         col_btn1, col_btn2 = st.columns(2)
         with col_btn1:
@@ -942,7 +1034,7 @@ elif vista == "Comparar equipos":
         recent1_df = get_team_recent_matches(df_grupo, equipo1, 5)
         if not recent1_df.empty:
             st.subheader("📅 Últimos 5 partidos")
-            st.dataframe(recent1_df, use_container_width=True, hide_index=True)
+            st.dataframe(style_match_results(recent1_df), use_container_width=True, hide_index=True)
         if st.button(f"📊 Dashboard {equipo1}", key="dash_equipo1"):
             navigate_to_team(equipo1)
     with col2:
@@ -959,7 +1051,7 @@ elif vista == "Comparar equipos":
         recent2_df = get_team_recent_matches(df_grupo, equipo2, 5)
         if not recent2_df.empty:
             st.subheader("📅 Últimos 5 partidos")
-            st.dataframe(recent2_df, use_container_width=True, hide_index=True)
+            st.dataframe(style_match_results(recent2_df), use_container_width=True, hide_index=True)
         if st.button(f"📊 Dashboard {equipo2}", key="dash_equipo2"):
             navigate_to_team(equipo2)
 elif vista == "Resumen por jugador":
@@ -1003,7 +1095,7 @@ elif vista == "Resumen por jugador":
     recent_df = get_player_recent_matches(jugador, 5)
     if not recent_df.empty:
         st.subheader("📅 Últimos 5 partidos")
-        st.dataframe(recent_df, use_container_width=True, hide_index=True)
+        st.dataframe(style_match_results(recent_df), use_container_width=True, hide_index=True)
 
     st.subheader("📈 Evolución Elo")
     fig, ax = plt.subplots()
@@ -1186,23 +1278,17 @@ elif vista == "Calendario de partidos":
     if isinstance(games, list) and len(games) > 0:
         st.success(f"Acta disponible ({len(games)} duelos)")
 
-        for duel in games:
-            st.write(f"🎾 **{duel['home_player']} ({duel['home_code']})** "
-                     f"vs **{duel['away_player']} ({duel['away_code']})**")
-            st.write(f"Sets: {duel['home_sets']} – {duel['away_sets']}")
-            st.write("---")
+        display_match_duels_acta(games, selected_match["home_team"], selected_match["away_team"])
         
-        st.subheader("⚠️ Dobles en este partido")
-
-        if any(g["home_code"] == "ABC" for g in games):
-            st.warning(f"{selected_match['home_team']} jugó doble (ABC).")
-
-        if any(g["away_code"] == "XYZ" for g in games):
-            st.warning(f"{selected_match['away_team']} jugó doble (XYZ).")
-
-        if not any(g["home_code"] == "ABC" for g in games) and \
-           not any(g["away_code"] == "XYZ" for g in games):
-            st.info("No hubo dobles en este partido.")
+        has_doble_home = any(g["home_code"] == "ABC" for g in games)
+        has_doble_away = any(g["away_code"] == "XYZ" for g in games)
+        
+        if has_doble_home or has_doble_away:
+            st.subheader("⚠️ Dobles en este partido")
+            if has_doble_home:
+                st.warning(f"{selected_match['home_team']} jugó doble (ABC).")
+            if has_doble_away:
+                st.warning(f"{selected_match['away_team']} jugó doble (XYZ).")
 
     else:
         st.header("🔮 Análisis de Partido Futuro")
@@ -1212,8 +1298,6 @@ elif vista == "Calendario de partidos":
 
         st.subheader("🔍 Análisis completo del partido")
 
-        st.subheader("⚠️ Presencia de dobles")
-
         doble_home = any(
             g.get("home_code") in {"ABC"} for g in selected_match.get("games", [])
         )
@@ -1221,13 +1305,12 @@ elif vista == "Calendario de partidos":
             g.get("away_code") in {"XYZ"} for g in selected_match.get("games", [])
         )
 
-        if doble_home:
-            st.warning(f"{home} ha alineado doble en partidos anteriores.")
-        if doble_away:
-            st.warning(f"{away} ha alineado doble en partidos anteriores.")
-
-        if not doble_home and not doble_away:
-            st.info("Ninguno de los equipos ha alineado dobles recientemente.")
+        if doble_home or doble_away:
+            st.subheader("⚠️ Presencia de dobles")
+            if doble_home:
+                st.warning(f"{home} ha alineado doble en partidos anteriores.")
+            if doble_away:
+                st.warning(f"{away} ha alineado doble en partidos anteriores.")
 
         st.subheader("👥 Jugadores habituales")
 
@@ -1270,14 +1353,14 @@ elif vista == "Calendario de partidos":
         with col1:
             st.markdown(f"**{home}**")
             if not home_recent_df.empty:
-                st.dataframe(home_recent_df, use_container_width=True, hide_index=True)
+                st.dataframe(style_match_results(home_recent_df), use_container_width=True, hide_index=True)
             else:
                 st.info("Sin partidos finalizados")
         
         with col2:
             st.markdown(f"**{away}**")
             if not away_recent_df.empty:
-                st.dataframe(away_recent_df, use_container_width=True, hide_index=True)
+                st.dataframe(style_match_results(away_recent_df), use_container_width=True, hide_index=True)
             else:
                 st.info("Sin partidos finalizados")
 
@@ -1318,34 +1401,27 @@ elif vista == "Calendario de partidos":
         if not comunes:
             st.write("No hay rivales comunes.")
         else:
-            for rival in comunes:
+            for rival in sorted(comunes):
                 st.markdown(f"### 🤝 Rival común: **{rival}**")
 
-                mH = df_home_f[
-                    (df_home_f["home_team"] == home) & (df_home_f["away_team"] == rival)
-                    | (df_home_f["away_team"] == home) & (df_home_f["home_team"] == rival)
-                ]
+                col1, col2 = st.columns(2)
+                
+                home_matches_df = get_team_matches_vs_opponent(df_grupo, home, rival)
+                away_matches_df = get_team_matches_vs_opponent(df_grupo, away, rival)
 
-                mA = df_away_f[
-                    (df_away_f["home_team"] == away) & (df_away_f["away_team"] == rival)
-                    | (df_away_f["away_team"] == away) & (df_away_f["home_team"] == rival)
-                ]
+                with col1:
+                    st.markdown(f"**{home}** vs {rival}")
+                    if not home_matches_df.empty:
+                        st.dataframe(style_match_results(home_matches_df), use_container_width=True, hide_index=True)
+                    else:
+                        st.info("Sin partidos")
 
-                if not mH.empty:
-                    for _, p in mH.iterrows():
-                        st.write(
-                            f"{home} **{p['score_home']}–{p['score_away']}** {rival}"
-                            if p['home_team'] == home
-                            else f"{home} **{p['score_away']}–{p['score_home']}** {rival}"
-                        )
-
-                if not mA.empty:
-                    for _, p in mA.iterrows():
-                        st.write(
-                            f"{away} **{p['score_home']}–{p['score_away']}** {rival}"
-                            if p['home_team'] == away
-                            else f"{away} **{p['score_away']}–{p['score_home']}** {rival}"
-                        )
+                with col2:
+                    st.markdown(f"**{away}** vs {rival}")
+                    if not away_matches_df.empty:
+                        st.dataframe(style_match_results(away_matches_df), use_container_width=True, hide_index=True)
+                    else:
+                        st.info("Sin partidos")
 
                 st.markdown("---")
 
@@ -1443,7 +1519,7 @@ elif vista == "Dashboard Equipo":
     recent_df = get_team_recent_matches(df_grupo, equipo, 5)
     if not recent_df.empty:
         st.subheader("📅 Últimos 5 partidos")
-        st.dataframe(recent_df, use_container_width=True, hide_index=True)
+        st.dataframe(style_match_results(recent_df), use_container_width=True, hide_index=True)
     
     st.subheader("👥 Jugadores del Equipo")
     st.write("*Haz clic en un jugador para ver su perfil detallado*")
@@ -1527,7 +1603,7 @@ elif vista == "Análisis Jugador Avanzado":
         recent_df = get_player_recent_matches(jugador, 5)
         if not recent_df.empty:
             st.subheader("📅 Últimos 5 partidos")
-            st.dataframe(recent_df, use_container_width=True, hide_index=True)
+            st.dataframe(style_match_results(recent_df), use_container_width=True, hide_index=True)
         
         st.subheader("📈 Evolución Elo")
         fig, ax = plt.subplots(figsize=(12, 5))
