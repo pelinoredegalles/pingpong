@@ -1525,6 +1525,24 @@ elif vista == "Dashboard Equipo":
     st.write("*Haz clic en un jugador para ver su perfil detallado*")
     team_table = build_team_comparison_table(team_players)
     
+    col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 3, 1, 1, 1, 1, 2])
+    with col1:
+        st.write("**#**")
+    with col2:
+        st.write("**Jugador**")
+    with col3:
+        st.write("**Elo**")
+    with col4:
+        st.write("**V**")
+    with col5:
+        st.write("**D**")
+    with col6:
+        st.write("**Total**")
+    with col7:
+        st.write("**Tasa**")
+    
+    st.divider()
+    
     for idx, row in team_table.iterrows():
         col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 3, 1, 1, 1, 1, 2])
         with col1:
