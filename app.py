@@ -47,7 +47,7 @@ data_dir = os.path.join(os.path.dirname(__file__), "data")
 st.set_page_config(page_title="Comparador Elo", layout="wide")
 
 if "nav_vista" not in st.session_state:
-    st.session_state.nav_vista = "Comparar jugadores"
+    st.session_state.nav_vista = "Calendario de partidos"
 if "nav_equipo1" not in st.session_state:
     st.session_state.nav_equipo1 = None
 if "nav_equipo2" not in st.session_state:
