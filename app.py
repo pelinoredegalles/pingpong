@@ -561,17 +561,90 @@ def get_global_leaderboard() -> pd.DataFrame:
     return result_df[["Ranking", "Jugador", "Equipo", "Elo", "V", "D", "Total", "% Victoria"]]
 
 def get_team_recent_form_trend(df: pd.DataFrame, equipo: str, last_n: int = 10) -> List[int]:
-    filas = df[(df["home_team"] == equipo) | (df["away_team"] == equipo)].tail(last_n)
+    filas = df[(df["home_team"] == equipo) | (df["away_team"] == equipo)]
     trend = []
+    
     for _, p in filas.iterrows():
-        sh, sa = p["score_home"], p["score_away"]
-        if sh is None or sa is None:
+        try:
+            games = p["games"]
+            if not isinstance(games, list) or len(games) == 0:
+                continue
+            sh = p["score_home"]
+            sa = p["score_away"]
+            if sh is None or sa is None or (sh == 0 and sa == 0):
+                continue
+            if (p["home_team"] == equipo and sh > sa) or (p["away_team"] == equipo and sa > sh):
+                trend.append(1)
+            else:
+                trend.append(0)
+        except (KeyError, TypeError):
             continue
-        if (p["home_team"] == equipo and sh > sa) or (p["away_team"] == equipo and sa > sh):
-            trend.append(1)
-        else:
-            trend.append(0)
-    return trend
+    
+    return trend[-last_n:] if trend else []
+
+def get_team_win_rate(df: pd.DataFrame, equipo: str, last_n: int = 10) -> float:
+    trend = get_team_recent_form_trend(df, equipo, last_n)
+    if not trend:
+        return 0.0
+    return round(sum(trend) / len(trend) * 100, 1)
+
+def get_team_strengths_weaknesses(df: pd.DataFrame, team1: str, team2: str) -> Dict[str, List[str]]:
+    team1_stats = get_team_sets_stats(df, team1)
+    team2_stats = get_team_sets_stats(df, team2)
+    
+    team1_elo_avg = get_team_elo_average(df, team1)
+    team2_elo_avg = get_team_elo_average(df, team2)
+    
+    team1_trend = get_team_recent_form_trend(df, team1, 10)
+    team2_trend = get_team_recent_form_trend(df, team2, 10)
+    
+    team1_win_rate = round(sum(team1_trend) / len(team1_trend) * 100, 1) if team1_trend else 0.0
+    team2_win_rate = round(sum(team2_trend) / len(team2_trend) * 100, 1) if team2_trend else 0.0
+    
+    team1_form = get_team_recent_form_trend(df, team1, 5)
+    team2_form = get_team_recent_form_trend(df, team2, 5)
+    
+    strengths_1 = []
+    weaknesses_1 = []
+    strengths_2 = []
+    weaknesses_2 = []
+    
+    if team1_elo_avg > team2_elo_avg:
+        strengths_1.append(f"Plantilla más fuerte (Elo: {team1_elo_avg:.0f} vs {team2_elo_avg:.0f})")
+    else:
+        weaknesses_1.append(f"Plantilla más débil (Elo: {team1_elo_avg:.0f} vs {team2_elo_avg:.0f})")
+    
+    if team1_stats['avg_sets_won'] > team2_stats['avg_sets_won']:
+        strengths_1.append(f"Mayor promedio de sets ganados ({team1_stats['avg_sets_won']:.2f} vs {team2_stats['avg_sets_won']:.2f})")
+    else:
+        weaknesses_1.append(f"Menor promedio de sets ganados ({team1_stats['avg_sets_won']:.2f} vs {team2_stats['avg_sets_won']:.2f})")
+    
+    if team1_win_rate > team2_win_rate:
+        strengths_1.append(f"Mejor forma reciente ({team1_win_rate}% vs {team2_win_rate}%)")
+    else:
+        weaknesses_1.append(f"Peor forma reciente ({team1_win_rate}% vs {team2_win_rate}%)")
+    
+    if team2_elo_avg > team1_elo_avg:
+        strengths_2.append(f"Plantilla más fuerte (Elo: {team2_elo_avg:.0f} vs {team1_elo_avg:.0f})")
+    else:
+        weaknesses_2.append(f"Plantilla más débil (Elo: {team2_elo_avg:.0f} vs {team1_elo_avg:.0f})")
+    
+    if team2_stats['avg_sets_won'] > team1_stats['avg_sets_won']:
+        strengths_2.append(f"Mayor promedio de sets ganados ({team2_stats['avg_sets_won']:.2f} vs {team1_stats['avg_sets_won']:.2f})")
+    else:
+        weaknesses_2.append(f"Menor promedio de sets ganados ({team2_stats['avg_sets_won']:.2f} vs {team1_stats['avg_sets_won']:.2f})")
+    
+    if team2_win_rate > team1_win_rate:
+        strengths_2.append(f"Mejor forma reciente ({team2_win_rate}% vs {team1_win_rate}%)")
+    else:
+        weaknesses_2.append(f"Peor forma reciente ({team2_win_rate}% vs {team1_win_rate}%)")
+    
+    return {
+        f"{team1}_strengths": strengths_1,
+        f"{team1}_weaknesses": weaknesses_1,
+        f"{team2}_strengths": strengths_2,
+        f"{team2}_weaknesses": weaknesses_2
+    }
 
 def get_player_vs_opponent_stats(player: str, opponent: str) -> Dict[str, Any]:
     duels = get_duels(player)
@@ -745,11 +818,19 @@ def get_team_sets_stats(df: pd.DataFrame, equipo: str) -> Dict[str, float]:
             a_sets = g.get("away_sets", [])
             
             if is_home:
-                sets_won += sum(1 for s in h_sets if s > 0)
-                sets_lost += sum(1 for s in a_sets if s > 0)
+                for h, a in zip(h_sets, a_sets):
+                    if h > 0 or a > 0:
+                        if h > a:
+                            sets_won += 1
+                        else:
+                            sets_lost += 1
             else:
-                sets_won += sum(1 for s in a_sets if s > 0)
-                sets_lost += sum(1 for s in h_sets if s > 0)
+                for h, a in zip(h_sets, a_sets):
+                    if h > 0 or a > 0:
+                        if a > h:
+                            sets_won += 1
+                        else:
+                            sets_lost += 1
             matches_count += 1
     
     avg_sets_won = round(sets_won / matches_count, 2) if matches_count > 0 else 0.0
@@ -1377,10 +1458,27 @@ elif vista == "Calendario de partidos":
         diff_home = get_team_sets_average_diff(df_grupo, home)
         diff_away = get_team_sets_average_diff(df_grupo, away)
 
-        st.subheader("➗ Diferencia promedio de sets")
+        st.subheader("📊 Estadísticas de Sets")
         col1, col2 = st.columns(2)
-        col1.metric(home, diff_home)
-        col2.metric(away, diff_away)
+
+        home_sets_stats = get_team_sets_stats(df_grupo, home)
+        away_sets_stats = get_team_sets_stats(df_grupo, away)
+
+        with col1:
+            st.markdown(f"### {home}")
+            st.metric("Matchs jugados", home_sets_stats['matches'])
+            st.metric("Sets ganados (promedio)", f"{home_sets_stats['avg_sets_won']:.2f}", 
+                      delta=f"{home_sets_stats['total_sets_won']} sobre {home_sets_stats['total_sets_won'] + home_sets_stats['total_sets_lost']}")
+            st.metric("Sets perdidos (promedio)", f"{home_sets_stats['avg_sets_lost']:.2f}",
+                      delta=f"{home_sets_stats['total_sets_lost']} sobre {home_sets_stats['total_sets_won'] + home_sets_stats['total_sets_lost']}")
+
+        with col2:
+            st.markdown(f"### {away}")
+            st.metric("Matchs jugados", away_sets_stats['matches'])
+            st.metric("Sets ganados (promedio)", f"{away_sets_stats['avg_sets_won']:.2f}",
+                      delta=f"{away_sets_stats['total_sets_won']} sobre {away_sets_stats['total_sets_won'] + away_sets_stats['total_sets_lost']}")
+            st.metric("Sets perdidos (promedio)", f"{away_sets_stats['avg_sets_lost']:.2f}",
+                      delta=f"{away_sets_stats['total_sets_lost']} sobre {away_sets_stats['total_sets_won'] + away_sets_stats['total_sets_lost']}")
 
 
         st.subheader("📈 Forma reciente (últimos 5)")
@@ -1402,6 +1500,60 @@ elif vista == "Calendario de partidos":
                 st.dataframe(style_match_results(away_recent_df), use_container_width=True, hide_index=True)
             else:
                 st.info("Sin partidos finalizados")
+
+        st.subheader("📋 Tabla Comparativa")
+        home_elo_avg = get_team_elo_average(df_grupo, home)
+        away_elo_avg = get_team_elo_average(df_grupo, away)
+        
+        home_trend = get_team_recent_form_trend(df_grupo, home, 10)
+        away_trend = get_team_recent_form_trend(df_grupo, away, 10)
+        
+        home_win_rate = round(sum(home_trend) / len(home_trend) * 100, 1) if home_trend else 0.0
+        away_win_rate = round(sum(away_trend) / len(away_trend) * 100, 1) if away_trend else 0.0
+
+        comparison_data = {
+            "Métrica": ["Elo promedio", "Sets ganados (prom)", "Sets perdidos (prom)", "Win Rate (últimos 10)", "Matchs jugados"],
+            home: [
+                f"{home_elo_avg:.0f}",
+                f"{home_sets_stats['avg_sets_won']:.2f}",
+                f"{home_sets_stats['avg_sets_lost']:.2f}",
+                f"{home_win_rate}%",
+                home_sets_stats['matches']
+            ],
+            away: [
+                f"{away_elo_avg:.0f}",
+                f"{away_sets_stats['avg_sets_won']:.2f}",
+                f"{away_sets_stats['avg_sets_lost']:.2f}",
+                f"{away_win_rate}%",
+                away_sets_stats['matches']
+            ]
+        }
+
+        comparison_df = pd.DataFrame(comparison_data)
+        st.dataframe(comparison_df, use_container_width=True, hide_index=True)
+
+        st.subheader("💡 Análisis de Fuerzas y Debilidades")
+        analysis = get_team_strengths_weaknesses(df_grupo, home, away)
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown(f"### 💪 {home}")
+            st.markdown("**Fortalezas:**")
+            for strength in analysis[f"{home}_strengths"]:
+                st.markdown(f"- {strength}")
+            st.markdown("**Debilidades:**")
+            for weakness in analysis[f"{home}_weaknesses"]:
+                st.markdown(f"- {weakness}")
+
+        with col2:
+            st.markdown(f"### 💪 {away}")
+            st.markdown("**Fortalezas:**")
+            for strength in analysis[f"{away}_strengths"]:
+                st.markdown(f"- {strength}")
+            st.markdown("**Debilidades:**")
+            for weakness in analysis[f"{away}_weaknesses"]:
+                st.markdown(f"- {weakness}")
 
         comunes = get_team_opponents(df_grupo, home).intersection(get_team_opponents(df_grupo, away))
 
