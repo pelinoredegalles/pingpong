@@ -944,8 +944,8 @@ def display_match_duels_acta(games: list, home_team: str, away_team: str):
         st.info("No hay duelos para mostrar")
         return
     
-    home_wins = sum(1 for g in regular_duels if g.get('home_sets', 0) > g.get('away_sets', 0))
-    away_wins = sum(1 for g in regular_duels if g.get('away_sets', 0) > g.get('home_sets', 0))
+    home_wins = sum(1 for g in regular_duels if g.get('home_score', 0) > g.get('away_score', 0))
+    away_wins = sum(1 for g in regular_duels if g.get('away_score', 0) > g.get('home_score', 0))
     
     col1, col2, col3 = st.columns([2, 1, 2])
     with col1:
