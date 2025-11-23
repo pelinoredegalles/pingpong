@@ -974,11 +974,11 @@ def display_match_duels_acta(games: list, home_team: str, away_team: str):
             col1, col2, col3 = st.columns([2, 1, 2])
             
             with col1:
-                st.markdown(f"<span style='color: {home_color};'>**{home_player}**</span> ({home_code})", unsafe_allow_html=True)
+                st.markdown(f"<span style='color: {home_color};'>{home_player}</span> ({home_code})", unsafe_allow_html=True)
             with col2:
                 st.markdown(f"<div style='text-align: center; font-weight: bold;'>{idx}</div>", unsafe_allow_html=True)
             with col3:
-                st.markdown(f"<div style='text-align: right;'><span style='color: {away_color};'>**{away_player}**</span> ({away_code})</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='text-align: right;'><span style='color: {away_color};'>{away_player}</span> ({away_code})</div>", unsafe_allow_html=True)
             
             sets_display = []
             for i, (h, a) in enumerate(zip(home_sets, away_sets), 1):
