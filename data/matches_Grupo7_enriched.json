@@ -7784,11 +7784,166 @@
     "venue": "IES EL PALO Málaga",
     "home_team": "CTM EL PALO SDA",
     "away_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 5,
+    "score_away": 1,
+    "result": "5 - 1",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "MATEO GALIANO DURAN",
+        "home_sets": [
+          7,
+          13,
+          8,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "MARIO AGUILAR RUIZ",
+        "away_sets": [
+          11,
+          15,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ALBERTO GONZALEZ SANCHEZ",
+        "home_sets": [
+          3,
+          7,
+          2,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "PABLO RÍOS VALCARCE",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+        "home_sets": [
+          11,
+          4,
+          4,
+          7,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "ANTONIO ALES DIAZ",
+        "away_sets": [
+          9,
+          11,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "MATEO GALIANO DURAN",
+        "home_sets": [
+          11,
+          11,
+          9,
+          12,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "PABLO RÍOS VALCARCE",
+        "away_sets": [
+          8,
+          7,
+          11,
+          10,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "C",
+        "home_player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+        "home_sets": [
+          9,
+          9,
+          11,
+          9,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Y",
+        "away_player": "MARIO AGUILAR RUIZ",
+        "away_sets": [
+          11,
+          11,
+          5,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ALBERTO GONZALEZ SANCHEZ",
+        "home_sets": [
+          4,
+          5,
+          11,
+          5,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "ANTONIO ALES DIAZ",
+        "away_sets": [
+          11,
+          11,
+          9,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CTM EL PALO SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576749",
@@ -7966,7 +8121,7 @@
     "group": "Grupo 7",
     "date": "29 Nov 2025",
     "time": "10:00",
-    "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
+    "venue": "IES JUAN DE LA CIERVA Velez Málaga - Mesa 01",
     "home_team": "CP MIJAS SDA",
     "away_team": "INSTASOL-NAVASOL SDA",
     "score_home": 0,
@@ -8951,21 +9106,6 @@
     "games": []
   },
   {
-    "match_id": "576821",
-    "competition": 14109,
-    "group": "Grupo 7",
-    "date": "25 Abr 2026",
-    "time": "17:00",
-    "venue": "IES JUAN DE LA CIERVA Velez Málaga",
-    "home_team": "INSTASOL-NAVASOL SDA",
-    "away_team": "CP MIJAS SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
-  },
-  {
     "match_id": "576823",
     "competition": 14109,
     "group": "Grupo 7",
@@ -8989,6 +9129,21 @@
     "venue": "POLIDEPORTIVO ELOLA Fuengirola",
     "home_team": "FUENGIROLA MATT SDA",
     "away_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "score_home": 0,
+    "score_away": 0,
+    "result": "0 - 0",
+    "status": "Por Disputar",
+    "games": []
+  },
+  {
+    "match_id": "576821",
+    "competition": 14109,
+    "group": "Grupo 7",
+    "date": "25 Abr 2026",
+    "time": "17:00",
+    "venue": "POLIDEPORTIVO LA CAÑADA Mijas - Mesa 01",
+    "home_team": "INSTASOL-NAVASOL SDA",
+    "away_team": "CP MIJAS SDA",
     "score_home": 0,
     "score_away": 0,
     "result": "0 - 0",

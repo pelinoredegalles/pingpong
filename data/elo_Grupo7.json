@@ -96,20 +96,20 @@
     "win_rate": 100.0
   },
   {
+    "player": "MARIO AGUILAR RUIZ",
+    "elo": 1518,
+    "club": "CTM EL PALO SDA",
+    "matches": 10,
+    "wins": 8,
+    "win_rate": 80.0
+  },
+  {
     "player": "DANIEL JESUS GOMEZ MALDONADO",
     "elo": 1518,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
     "matches": 6,
     "wins": 5,
     "win_rate": 83.3
-  },
-  {
-    "player": "MARIO AGUILAR RUIZ",
-    "elo": 1497,
-    "club": "CTM EL PALO SDA",
-    "matches": 8,
-    "wins": 6,
-    "win_rate": 75.0
   },
   {
     "player": "ANTONIO DIAZ DELFIN",
@@ -201,10 +201,10 @@
   },
   {
     "player": "ANTONIO ALES DIAZ",
-    "elo": 1469,
+    "elo": 1467,
     "club": "CTM EL PALO SDA",
-    "matches": 2,
-    "wins": 2,
+    "matches": 4,
+    "wins": 4,
     "win_rate": 100.0
   },
   {
@@ -361,11 +361,11 @@
   },
   {
     "player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
-    "elo": 1392,
+    "elo": 1382,
     "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 12,
+    "matches": 14,
     "wins": 6,
-    "win_rate": 50.0
+    "win_rate": 42.9
   },
   {
     "player": "FLORENTIN CATALIN CAZUCA",
@@ -416,14 +416,6 @@
     "win_rate": 40.0
   },
   {
-    "player": "MATEO GALIANO DURAN",
-    "elo": 1357,
-    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 2,
-    "wins": 0,
-    "win_rate": 0.0
-  },
-  {
     "player": "ALEJANDRO PEREZ GONZALEZ",
     "elo": 1356,
     "club": "INSTASOL-NAVASOL SDA",
@@ -446,6 +438,14 @@
     "matches": 8,
     "wins": 4,
     "win_rate": 50.0
+  },
+  {
+    "player": "MATEO GALIANO DURAN",
+    "elo": 1352,
+    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+    "matches": 4,
+    "wins": 1,
+    "win_rate": 25.0
   },
   {
     "player": "IGNACIO HERRAN VILLODRES",
@@ -536,6 +536,14 @@
     "win_rate": 25.0
   },
   {
+    "player": "PABLO RÍOS VALCARCE",
+    "elo": 1317,
+    "club": "CTM EL PALO SDA",
+    "matches": 10,
+    "wins": 2,
+    "win_rate": 20.0
+  },
+  {
     "player": "JULIO RODRIGUEZ CID",
     "elo": 1308,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
@@ -568,14 +576,6 @@
     "win_rate": 0.0
   },
   {
-    "player": "ALBERTO GONZALEZ SANCHEZ",
-    "elo": 1302,
-    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 7,
-    "wins": 1,
-    "win_rate": 14.3
-  },
-  {
     "player": "DIEGO CABELLO PEDROSA",
     "elo": 1301,
     "club": "INSTASOL-NAVASOL SDA",
@@ -598,14 +598,6 @@
     "matches": 10,
     "wins": 1,
     "win_rate": 10.0
-  },
-  {
-    "player": "PABLO RÍOS VALCARCE",
-    "elo": 1286,
-    "club": "CTM EL PALO SDA",
-    "matches": 8,
-    "wins": 1,
-    "win_rate": 12.5
   },
   {
     "player": "MANUEL ESPINOSA MARTIN",
@@ -654,6 +646,14 @@
     "matches": 4,
     "wins": 0,
     "win_rate": 0.0
+  },
+  {
+    "player": "ALBERTO GONZALEZ SANCHEZ",
+    "elo": 1252,
+    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+    "matches": 9,
+    "wins": 1,
+    "win_rate": 11.1
   },
   {
     "player": "SAVELIY KHARIUK",
