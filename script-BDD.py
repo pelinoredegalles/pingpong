@@ -418,6 +418,20 @@ def compute_result(home_score: int, away_score: int, home_sets: List[int] = None
             points_result = home_points / total_points
         else:
             points_result = 0.5
+        
+        average_point_diff = 0.0
+        valid_sets = 0
+        for h, a in zip(home_sets, away_sets):
+            if h > 0 or a > 0:
+                average_point_diff += abs(h - a)
+                valid_sets += 1
+        
+        if valid_sets > 0:
+            average_point_diff /= valid_sets
+            tightness_factor = 1.0 - (average_point_diff / 20.0)
+            tightness_factor = max(0.0, min(1.0, tightness_factor))
+            points_result = 0.5 + (points_result - 0.5) * tightness_factor
+        
         result = 0.7 * sets_result + 0.3 * points_result
     else:
         result = sets_result
