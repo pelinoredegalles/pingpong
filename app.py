@@ -36,6 +36,59 @@ def load_matches_by_group(grupo: str) -> pd.DataFrame:
     except (FileNotFoundError, json.JSONDecodeError):
         return pd.DataFrame()
 
+def load_historical_matches() -> List[Dict[str, Any]]:
+    all_matches = []
+    seen_match_combinations = set()
+    
+    for filename in ["historique_grupo6_complete.json", "historique_grupo7_complete.json"]:
+        try:
+            with open(filename, "r", encoding="utf-8") as f:
+                matches = json.load(f)
+                for match in matches:
+                    match_id = match.get("match_id")
+                    result = match.get("result")
+                    combination = (match_id, result)
+                    
+                    if combination not in seen_match_combinations:
+                        all_matches.append(match)
+                        seen_match_combinations.add(combination)
+        except (FileNotFoundError, json.JSONDecodeError):
+            continue
+    
+    return all_matches
+
+def get_historical_matches_by_player(player: str, historical_matches: List[Dict[str, Any]]) -> pd.DataFrame:
+    matches_data = []
+    for match in historical_matches:
+        if match.get("player_name") == player:
+            matches_data.append({
+                "Fecha": match.get("date", ""),
+                "Rival": match.get("home_player") if match.get("away_player") == player else match.get("away_player"),
+                "Marcador": f"{match.get('home_score', 0)} - {match.get('away_score', 0)}" if match.get("home_player") == player else f"{match.get('away_score', 0)} - {match.get('home_score', 0)}",
+                "Resultado": match.get("result", "").capitalize(),
+                "Liga": match.get("league", "")
+            })
+    return pd.DataFrame(matches_data) if matches_data else pd.DataFrame()
+
+def get_historical_h2h(player1: str, player2: str, historical_matches: List[Dict[str, Any]]) -> List[Dict[str, str]]:
+    h2h_matches = []
+    for match in historical_matches:
+        if match.get("player_name") == player1:
+            opponent = match.get("home_player") if match.get("away_player") == player1 else match.get("away_player")
+            if opponent == player2:
+                is_home = match.get("home_player") == player1
+                score1 = match.get("home_score", 0) if is_home else match.get("away_score", 0)
+                score2 = match.get("away_score", 0) if is_home else match.get("home_score", 0)
+                h2h_matches.append({
+                    "date": match.get("date", ""),
+                    "player1": player1,
+                    "score1": score1,
+                    "score2": score2,
+                    "player2": player2,
+                    "league": match.get("league", "")
+                })
+    return h2h_matches
+
 df_all = load_matches_data()
 
 EXPECTED_COLS = ["match_id", "date", "home_team", "away_team", "games", "score_home", "score_away"]
@@ -998,6 +1051,7 @@ def display_match_duels_acta(games: list, home_team: str, away_team: str):
 elo_df = load_elo_data(ELO_FILE)
 matches = load_matches(MATCHES_FILE)
 df_grupo = load_matches_by_group(grupo)
+historical_matches = load_historical_matches()
 
 for col in EXPECTED_COLS:
     if col not in df_grupo.columns:
@@ -1076,6 +1130,15 @@ if vista == "Comparar jugadores":
             st.write(f"• {jugador2} : {d2['marcador']} ({d2['resultado']})")
     else:
         st.info("No hay oponentes comunes.")
+    
+    st.subheader("⚔️ Confrontaciones de años anteriores")
+    h2h_historical = get_historical_h2h(jugador1, jugador2, historical_matches)
+    if h2h_historical:
+        st.write(f"**Confrontaciones entre {jugador1} y {jugador2}:**")
+        for match in h2h_historical:
+            st.write(f"• {match['date']}: {match['player1']} {match['score1']} - {match['score2']} {match['player2']} ({match['league']})")
+    else:
+        st.info("No hay confrontaciones previas en el histórico")
 
 # 👥 Comparar equipos
 elif vista == "Comparar equipos":
@@ -1209,6 +1272,13 @@ elif vista == "Resumen por jugador":
     df_historial.index += 1
     st.write("📊 verde = ganado, rojo = perdido")
     st.write(df_historial.to_html(escape=False, index=True), unsafe_allow_html=True)
+    
+    st.subheader("📅 Histórico de años anteriores")
+    df_historical = get_historical_matches_by_player(jugador, historical_matches)
+    if not df_historical.empty:
+        st.dataframe(df_historical, use_container_width=True, hide_index=True)
+    else:
+        st.info("No hay datos históricos disponibles para este jugador")
 elif vista == "Ranking y H2H":
     st.header("🏆 Ranking Global del Grupo")
     

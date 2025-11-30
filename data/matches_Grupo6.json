@@ -233,10 +233,10 @@
     "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS Marbella",
     "home_team": "CTM SALDUBA JOVENES DHA",
     "away_team": "CTM ESTEPONA “A” DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -278,10 +278,10 @@
     "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS Marbella",
     "home_team": "CTM SALDUBA JOVENES DHA",
     "away_team": "CTM PINTURAS MONTO MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -293,10 +293,10 @@
     "venue": "IES PABLO DEL SAZ Marbella",
     "home_team": "CRISTALERIA DUARTE MARBELLA DHA",
     "away_team": "FUENGIROLA INTERNACIONAL DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -308,10 +308,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “A” DHA",
     "away_team": "IES ALBAYTAR DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 5,
+    "score_away": 1,
+    "result": "5 - 1",
+    "status": "Finalizado",
     "games": []
   },
   {

@@ -1,10 +1,10 @@
 [
   {
     "player": "VICTOR MORENO BAZUELO",
-    "elo": 1668,
+    "elo": 1660,
     "club": "CP MIJAS SDA",
-    "matches": 16,
-    "wins": 16,
+    "matches": 18,
+    "wins": 18,
     "win_rate": 100.0
   },
   {
@@ -16,12 +16,20 @@
     "win_rate": 100.0
   },
   {
-    "player": "FIODOR VERESCIAKA",
-    "elo": 1574,
-    "club": "TEAM SOTOGRANDE SDA",
-    "matches": 14,
+    "player": "ANTONIO RUIZ SÁNCHEZ",
+    "elo": 1586,
+    "club": "CTM ESTEPONA SDA",
+    "matches": 10,
     "wins": 10,
-    "win_rate": 71.4
+    "win_rate": 100.0
+  },
+  {
+    "player": "AGUSTIN PEREZ OCAÑA",
+    "elo": 1579,
+    "club": "CTM ESTEPONA SDA",
+    "matches": 14,
+    "wins": 12,
+    "win_rate": 85.7
   },
   {
     "player": "JOSE TORRES ESCOLANO",
@@ -40,12 +48,12 @@
     "win_rate": 75.0
   },
   {
-    "player": "AGUSTIN PEREZ OCAÑA",
-    "elo": 1560,
-    "club": "CTM ESTEPONA SDA",
-    "matches": 12,
-    "wins": 10,
-    "win_rate": 83.3
+    "player": "FIODOR VERESCIAKA",
+    "elo": 1563,
+    "club": "TEAM SOTOGRANDE SDA",
+    "matches": 16,
+    "wins": 11,
+    "win_rate": 68.8
   },
   {
     "player": "JUAN JOSE ROSA URBANO",
@@ -61,14 +69,6 @@
     "club": "CTM SALDUBA SDA",
     "matches": 4,
     "wins": 4,
-    "win_rate": 100.0
-  },
-  {
-    "player": "ANTONIO RUIZ SÁNCHEZ",
-    "elo": 1535,
-    "club": "CTM ESTEPONA SDA",
-    "matches": 8,
-    "wins": 8,
     "win_rate": 100.0
   },
   {
@@ -112,6 +112,30 @@
     "win_rate": 83.3
   },
   {
+    "player": "DANIEL ROMERO JIMENEZ",
+    "elo": 1504,
+    "club": "CP MIJAS SDA",
+    "matches": 16,
+    "wins": 13,
+    "win_rate": 81.2
+  },
+  {
+    "player": "DIEGO EZEQUIEL BARO LOSILLA",
+    "elo": 1499,
+    "club": "CHEMA TM SDA",
+    "matches": 6,
+    "wins": 5,
+    "win_rate": 83.3
+  },
+  {
+    "player": "FRANCISCO JOSE GARCIA GARCIA",
+    "elo": 1490,
+    "club": "CHEMA TM SDA",
+    "matches": 18,
+    "wins": 10,
+    "win_rate": 55.6
+  },
+  {
     "player": "ANTONIO DIAZ DELFIN",
     "elo": 1487,
     "club": "CTM PRODITEM SDA",
@@ -126,22 +150,6 @@
     "matches": 4,
     "wins": 3,
     "win_rate": 75.0
-  },
-  {
-    "player": "DANIEL ROMERO JIMENEZ",
-    "elo": 1484,
-    "club": "CP MIJAS SDA",
-    "matches": 14,
-    "wins": 11,
-    "win_rate": 78.6
-  },
-  {
-    "player": "PAUL CAMILLERI",
-    "elo": 1483,
-    "club": "TEAM SOTOGRANDE SDA",
-    "matches": 10,
-    "wins": 5,
-    "win_rate": 50.0
   },
   {
     "player": "ANDREAS FRENZEN",
@@ -224,6 +232,14 @@
     "win_rate": 83.3
   },
   {
+    "player": "GERMAN TERRÓN OSÉS",
+    "elo": 1454,
+    "club": "CP MIJAS SDA",
+    "matches": 6,
+    "wins": 4,
+    "win_rate": 66.7
+  },
+  {
     "player": "JUAN CARLOS BEDMAR VALLESCA",
     "elo": 1446,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
@@ -256,6 +272,14 @@
     "win_rate": 50.0
   },
   {
+    "player": "PAUL CAMILLERI",
+    "elo": 1431,
+    "club": "TEAM SOTOGRANDE SDA",
+    "matches": 12,
+    "wins": 6,
+    "win_rate": 50.0
+  },
+  {
     "player": "JOSE MIGUEL GALINDO DOBLAS",
     "elo": 1429,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
@@ -264,12 +288,12 @@
     "win_rate": 50.0
   },
   {
-    "player": "GERMAN TERRÓN OSÉS",
-    "elo": 1427,
-    "club": "CP MIJAS SDA",
-    "matches": 4,
-    "wins": 2,
-    "win_rate": 50.0
+    "player": "MIGUEL PENDON PASTOR",
+    "elo": 1425,
+    "club": "INSTASOL-NAVASOL SDA",
+    "matches": 16,
+    "wins": 6,
+    "win_rate": 37.5
   },
   {
     "player": "BRIAN GARRAWAY",
@@ -312,22 +336,6 @@
     "win_rate": 37.5
   },
   {
-    "player": "MIGUEL PENDON PASTOR",
-    "elo": 1403,
-    "club": "INSTASOL-NAVASOL SDA",
-    "matches": 14,
-    "wins": 6,
-    "win_rate": 42.9
-  },
-  {
-    "player": "DIEGO EZEQUIEL BARO LOSILLA",
-    "elo": 1402,
-    "club": "CHEMA TM SDA",
-    "matches": 4,
-    "wins": 3,
-    "win_rate": 75.0
-  },
-  {
     "player": "EMILIO PARDO POLO",
     "elo": 1401,
     "club": "CTM PRODITEM SDA",
@@ -341,14 +349,6 @@
     "club": "TEAM SOTOGRANDE SDA",
     "matches": 8,
     "wins": 4,
-    "win_rate": 50.0
-  },
-  {
-    "player": "FRANCISCO JOSE GARCIA GARCIA",
-    "elo": 1397,
-    "club": "CHEMA TM SDA",
-    "matches": 16,
-    "wins": 8,
     "win_rate": 50.0
   },
   {
@@ -384,27 +384,19 @@
     "win_rate": 33.3
   },
   {
-    "player": "JOSE LUIS MORENO MARFIL",
-    "elo": 1365,
-    "club": "INSTASOL-NAVASOL SDA",
-    "matches": 14,
-    "wins": 6,
-    "win_rate": 42.9
-  },
-  {
-    "player": "JASON FLOYD",
-    "elo": 1365,
-    "club": "TEAM SOTOGRANDE SDA",
-    "matches": 16,
-    "wins": 7,
-    "win_rate": 43.8
-  },
-  {
     "player": "ANGEL AMIGO GONZALEZ",
     "elo": 1365,
     "club": "CTM ESTEPONA SDA",
     "matches": 2,
     "wins": 1,
+    "win_rate": 50.0
+  },
+  {
+    "player": "BERNABE GOMEZ GONZALEZ",
+    "elo": 1363,
+    "club": "CTM ESTEPONA SDA",
+    "matches": 4,
+    "wins": 2,
     "win_rate": 50.0
   },
   {
@@ -472,20 +464,20 @@
     "win_rate": 41.7
   },
   {
+    "player": "JOSE LUIS MORENO MARFIL",
+    "elo": 1346,
+    "club": "INSTASOL-NAVASOL SDA",
+    "matches": 16,
+    "wins": 6,
+    "win_rate": 37.5
+  },
+  {
     "player": "VOLODYMIR POPYALKOUSKYY",
     "elo": 1345,
     "club": "CTM SALDUBA SDA",
     "matches": 12,
     "wins": 3,
     "win_rate": 25.0
-  },
-  {
-    "player": "ALEXIS CABALLO GONZALEZ",
-    "elo": 1344,
-    "club": "CHEMA TM SDA",
-    "matches": 6,
-    "wins": 2,
-    "win_rate": 33.3
   },
   {
     "player": "GABRIEL JOSE MARFIL MORALES",
@@ -520,6 +512,14 @@
     "win_rate": 25.0
   },
   {
+    "player": "FRANCISCO JAVIER GARCIA BOJ",
+    "elo": 1324,
+    "club": "INSTASOL-NAVASOL SDA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
     "player": "VOLODYMYR KOROTENKO",
     "elo": 1322,
     "club": "CTM ESTEPONA SDA",
@@ -534,14 +534,6 @@
     "matches": 4,
     "wins": 1,
     "win_rate": 25.0
-  },
-  {
-    "player": "PABLO RÍOS VALCARCE",
-    "elo": 1317,
-    "club": "CTM EL PALO SDA",
-    "matches": 10,
-    "wins": 2,
-    "win_rate": 20.0
   },
   {
     "player": "JULIO RODRIGUEZ CID",
@@ -560,12 +552,28 @@
     "win_rate": 25.0
   },
   {
+    "player": "JASON FLOYD",
+    "elo": 1306,
+    "club": "TEAM SOTOGRANDE SDA",
+    "matches": 18,
+    "wins": 7,
+    "win_rate": 38.9
+  },
+  {
     "player": "SERGIO RODRIGUEZ QUINTERO",
     "elo": 1306,
     "club": "CHEMA TM SDA",
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
+  },
+  {
+    "player": "ALEXIS CABALLO GONZALEZ",
+    "elo": 1305,
+    "club": "CHEMA TM SDA",
+    "matches": 8,
+    "wins": 2,
+    "win_rate": 25.0
   },
   {
     "player": "ARTEM TEREBOV",
@@ -592,6 +600,14 @@
     "win_rate": 0.0
   },
   {
+    "player": "TIAGO OTIÑANO",
+    "elo": 1295,
+    "club": "CTM EL PALO SDA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
     "player": "MANUEL MARTIN DEVESA",
     "elo": 1293,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
@@ -600,20 +616,20 @@
     "win_rate": 10.0
   },
   {
+    "player": "PABLO RÍOS VALCARCE",
+    "elo": 1291,
+    "club": "CTM EL PALO SDA",
+    "matches": 12,
+    "wins": 2,
+    "win_rate": 16.7
+  },
+  {
     "player": "MANUEL ESPINOSA MARTIN",
     "elo": 1286,
     "club": "CHEMA TM SDA",
     "matches": 3,
     "wins": 1,
     "win_rate": 33.3
-  },
-  {
-    "player": "BERNABE GOMEZ GONZALEZ",
-    "elo": 1284,
-    "club": "CTM ESTEPONA SDA",
-    "matches": 2,
-    "wins": 0,
-    "win_rate": 0.0
   },
   {
     "player": "JOSE LUIS DIAZ RECIO",
@@ -672,18 +688,18 @@
     "win_rate": 0.0
   },
   {
-    "player": "ALFONSO FRANCISCO JIMENEZ CLAVIJO",
-    "elo": 1172,
-    "club": "CTM SALDUBA SDA",
-    "matches": 6,
+    "player": "JAVIER SANTACRUZ GUTIERREZ",
+    "elo": 1176,
+    "club": "CTM EL PALO SDA",
+    "matches": 12,
     "wins": 0,
     "win_rate": 0.0
   },
   {
-    "player": "JAVIER SANTACRUZ GUTIERREZ",
-    "elo": 1170,
-    "club": "CTM EL PALO SDA",
-    "matches": 10,
+    "player": "ALFONSO FRANCISCO JIMENEZ CLAVIJO",
+    "elo": 1172,
+    "club": "CTM SALDUBA SDA",
+    "matches": 6,
     "wins": 0,
     "win_rate": 0.0
   }

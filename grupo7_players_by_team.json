@@ -1,0 +1,466 @@
+{
+  "61364": {
+    "team_name": "CP MIJAS SDA",
+    "players": [
+      {
+        "id": "126164",
+        "name": "ALEXANDER JEVIC"
+      },
+      {
+        "id": "127944",
+        "name": "0. ALEXANDER MARTÍN"
+      },
+      {
+        "id": "129326",
+        "name": "0. DANIEL JIMÉNEZ CORPAS"
+      },
+      {
+        "id": "124681",
+        "name": "0. DANIEL ROMERO JIMENEZ"
+      },
+      {
+        "id": "126902",
+        "name": "0. GERMAN TERRÓN OSÉS"
+      },
+      {
+        "id": "124680",
+        "name": "VICTOR MORENO BAZUELO"
+      }
+    ],
+    "count": 6
+  },
+  "61363": {
+    "team_name": "CTM ESTEPONA SDA",
+    "players": [
+      {
+        "id": "126110",
+        "name": "AGUSTIN PEREZ OCAÑA"
+      },
+      {
+        "id": "127695",
+        "name": "0. ANGEL AMIGO GONZALEZ"
+      },
+      {
+        "id": "125005",
+        "name": "ANTONIO RUIZ SÁNCHEZDelegado Club"
+      },
+      {
+        "id": "130544",
+        "name": "0. BERNABE GÓMEZ GONZALEZ"
+      },
+      {
+        "id": "126112",
+        "name": "0. FLORENTIN CATALIN CAZUCA"
+      },
+      {
+        "id": "124480",
+        "name": "0. FRANCISCO JAVIER GUTIERREZ QUESADA"
+      },
+      {
+        "id": "128647",
+        "name": "0. HENRIKUS GERARDUS MARIA VAN VEEN"
+      },
+      {
+        "id": "125445",
+        "name": "0. TOMAS ORAVEC"
+      },
+      {
+        "id": "127060",
+        "name": "0. VOLODYMYR KOROTENKO"
+      }
+    ],
+    "count": 9
+  },
+  "61368": {
+    "team_name": "CTM PRODITEM SDA",
+    "players": [
+      {
+        "id": "124658",
+        "name": "0. ANTONIO DIAZ DELFIN"
+      },
+      {
+        "id": "126619",
+        "name": "EMILIO PARDO POLO"
+      },
+      {
+        "id": "129521",
+        "name": "0. FRANCISCO JAVIER AMADOR FERRETE"
+      },
+      {
+        "id": "124908",
+        "name": "IVAN PEREZ MARTIN"
+      },
+      {
+        "id": "124225",
+        "name": "JORGE VICENTE LUCENA NUÑEZ"
+      },
+      {
+        "id": "124720",
+        "name": "0. JOSE ANTONIO HEREDIA FERNANDEZ"
+      },
+      {
+        "id": "125403",
+        "name": "0. JOSE MARIA CALVO SANCHEZ"
+      },
+      {
+        "id": "124619",
+        "name": "MIGUEL RODRIGUEZ MORENO"
+      },
+      {
+        "id": "128600",
+        "name": "0. ROBERTO REYES GONZÁLEZ"
+      }
+    ],
+    "count": 9
+  },
+  "61361": {
+    "team_name": "CD NOVACARTAMA TM SDA",
+    "players": [
+      {
+        "id": "130512",
+        "name": "0. ANDRES QUINTANA"
+      },
+      {
+        "id": "128846",
+        "name": "CARLOS RUEDA PEREZ"
+      },
+      {
+        "id": "129701",
+        "name": "0. EDUARDO GARCIA RAMIREZ"
+      },
+      {
+        "id": "124966",
+        "name": "MICHAEL LENKE"
+      },
+      {
+        "id": "124406",
+        "name": "0. VERONICA PABLOS ROMAN"
+      }
+    ],
+    "count": 5
+  },
+  "61362": {
+    "team_name": "TEAM SOTOGRANDE SDA",
+    "players": [
+      {
+        "id": "126503",
+        "name": "0. ANTHONY GEDGE"
+      },
+      {
+        "id": "126502",
+        "name": "0. FIODOR VERESCIAKA"
+      },
+      {
+        "id": "126031",
+        "name": "JASON FLOYD"
+      },
+      {
+        "id": "127637",
+        "name": "0. PAUL CAMILLERI"
+      }
+    ],
+    "count": 4
+  },
+  "61367": {
+    "team_name": "CTM SALDUBA SDA",
+    "players": [
+      {
+        "id": "130095",
+        "name": "0. ALFONSO FRANCISCO JIMENEZ CLAVIJO"
+      },
+      {
+        "id": "130467",
+        "name": "0. AMANDA CHENOLL GONZALEZ"
+      },
+      {
+        "id": "129590",
+        "name": "0. ANDREAS FRENZEN"
+      },
+      {
+        "id": "125429",
+        "name": "0. JUAN JOSE ROSA URBANO"
+      },
+      {
+        "id": "124808",
+        "name": "0. MANUEL MORENO CARRERA"
+      },
+      {
+        "id": "127995",
+        "name": "0. SANTIAGO VASQUEZ MOSCOSO"
+      },
+      {
+        "id": "126126",
+        "name": "0. VOLODYMIR POPYALKOUSKYY"
+      }
+    ],
+    "count": 7
+  },
+  "61370": {
+    "team_name": "INSTASOL-NAVASOL SDA",
+    "players": [
+      {
+        "id": "127948",
+        "name": "0. ALEJANDRO PEREZ GONZALEZ"
+      },
+      {
+        "id": "128742",
+        "name": "0. DANIEL ADELBERT M. DEVOS"
+      },
+      {
+        "id": "124284",
+        "name": "DIEGO CABELLO PEDROSA"
+      },
+      {
+        "id": "125323",
+        "name": "0. FRANCISCO JAVIER GARCIA BOJ"
+      },
+      {
+        "id": "128743",
+        "name": "0. GABRIEL JOSE MARFIL MORALES"
+      },
+      {
+        "id": "130455",
+        "name": "JOSE LUIS DIAZ RECIO"
+      },
+      {
+        "id": "124426",
+        "name": "0. JOSE LUIS MORENO MARFIL"
+      },
+      {
+        "id": "124919",
+        "name": "0. MIGUEL PENDON PASTOR"
+      },
+      {
+        "id": "127292",
+        "name": "0. PEDRO TOSTON ABOLAFIO"
+      }
+    ],
+    "count": 9
+  },
+  "61366": {
+    "team_name": "FUENGIROLA MATT SDA",
+    "players": [
+      {
+        "id": "124835",
+        "name": "ANTONIO FALDER ANGUITA"
+      },
+      {
+        "id": "125958",
+        "name": "BRIAN GARRAWAY"
+      },
+      {
+        "id": "128011",
+        "name": "0. CONG XISHENG"
+      },
+      {
+        "id": "127763",
+        "name": "0. DAVID AHONEN"
+      },
+      {
+        "id": "124740",
+        "name": "0. DIEGO GUILLEN RODRIGUEZ"
+      },
+      {
+        "id": "124745",
+        "name": "JORGE IPIÑA RASERO"
+      },
+      {
+        "id": "124741",
+        "name": "JUAN ANTONIO CONDE LOPEZ"
+      },
+      {
+        "id": "124746",
+        "name": "0. JUKKA OLAVI ERKKO"
+      }
+    ],
+    "count": 8
+  },
+  "61369": {
+    "team_name": "CHEMA TM SDA",
+    "players": [
+      {
+        "id": "126812",
+        "name": "ALEXIS CABALLO GONZALEZ"
+      },
+      {
+        "id": "124792",
+        "name": "0. DIEGO EZEQUIEL BARO LOSILLA"
+      },
+      {
+        "id": "124773",
+        "name": "0. FERNANDO VAZQUEZ HIDALGO"
+      },
+      {
+        "id": "124834",
+        "name": "FRANCISCO JOSE GARCIA GARCIA"
+      },
+      {
+        "id": "125432",
+        "name": "JANE SUURSAAR MAASIKASDelegado Club"
+      },
+      {
+        "id": "125075",
+        "name": "MANUEL ESPINOSA MARTIN"
+      },
+      {
+        "id": "126014",
+        "name": "0. MIGUEL ÁNGEL TORTOSA MURCIANO"
+      },
+      {
+        "id": "127439",
+        "name": "0. RICARDO FRENICHE JURADO"
+      },
+      {
+        "id": "125272",
+        "name": "0. SERGIO RODRIGUEZ QUINTERO"
+      },
+      {
+        "id": "125844",
+        "name": "0. VICTOR MARTIN MORALES"
+      }
+    ],
+    "count": 10
+  },
+  "61365": {
+    "team_name": "CTM EL PALO SDA",
+    "players": [
+      {
+        "id": "125271",
+        "name": "0. ANTONIO ALES DIAZ"
+      },
+      {
+        "id": "127798",
+        "name": "0. JAVIER SANTACRUZ GUTIERREZ"
+      },
+      {
+        "id": "124660",
+        "name": "0. JORGE ALBARRACIN CAPARROS"
+      },
+      {
+        "id": "126161",
+        "name": "0. MARIO AGUILAR RUIZ"
+      },
+      {
+        "id": "127246",
+        "name": "MICHEL PABLO SARAFIAN"
+      },
+      {
+        "id": "124866",
+        "name": "0. OSCAR LUIS PEREZ OCAÑA"
+      },
+      {
+        "id": "126319",
+        "name": "PABLO RÍOS VALCARCE"
+      },
+      {
+        "id": "130143",
+        "name": "0. TIAGO OTIÑANO"
+      },
+      {
+        "id": "124844",
+        "name": "0. VERONICA PICATOSTE LIZARRAGA"
+      }
+    ],
+    "count": 9
+  },
+  "61359": {
+    "team_name": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "players": [
+      {
+        "id": "127535",
+        "name": "ANGIE VIVIANA VILLAMIL MARTINEZ"
+      },
+      {
+        "id": "124421",
+        "name": "DANIEL JESUS GOMEZ MALDONADO"
+      },
+      {
+        "id": "129713",
+        "name": "FRANCISCO GUTIÉRREZ CRUZ"
+      },
+      {
+        "id": "129910",
+        "name": "0. IGNACIO HERRAN VILLODRES"
+      },
+      {
+        "id": "124940",
+        "name": "0. JOSE TORRES ESCOLANO"
+      },
+      {
+        "id": "125332",
+        "name": "0. JOSE LUIS MEJIAS AMBROSIO"
+      },
+      {
+        "id": "124314",
+        "name": "0. JOSE MIGUEL GALINDO DOBLAS"
+      },
+      {
+        "id": "125289",
+        "name": "JUAN CARLOS BEDMAR VALLESCA"
+      },
+      {
+        "id": "125327",
+        "name": "0. JULIO RODRIGUEZ CID"
+      },
+      {
+        "id": "125988",
+        "name": "0. PAVEL RUDZENIA,"
+      },
+      {
+        "id": "124820",
+        "name": "0. MANUEL MARTIN DEVESA"
+      }
+    ],
+    "count": 11
+  },
+  "61360": {
+    "team_name": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+    "players": [
+      {
+        "id": "125308",
+        "name": "0. ALBERTO GONZALEZ SANCHEZ"
+      },
+      {
+        "id": "129818",
+        "name": "ALEX GIRAULT"
+      },
+      {
+        "id": "128765",
+        "name": "ARTEM TEREBOV"
+      },
+      {
+        "id": "124873",
+        "name": "0. FRANCISCO TORRES BUENO"
+      },
+      {
+        "id": "127573",
+        "name": "JOSE MARÍA GÓMEZ ORDOÑEZDelegado Club"
+      },
+      {
+        "id": "124445",
+        "name": "JUAN ALFONSO URBANO PEREZDelegado Club"
+      },
+      {
+        "id": "127804",
+        "name": "0. KYRYL SIEVONKAIEV"
+      },
+      {
+        "id": "129913",
+        "name": "0. MARIA ROOS FIGUEREDO"
+      },
+      {
+        "id": "127049",
+        "name": "0. MATEO GALIANO DURAN"
+      },
+      {
+        "id": "124719",
+        "name": "RAMON RUIZ RUIZ"
+      },
+      {
+        "id": "127896",
+        "name": "0. SAVELIY KHARIUK"
+      }
+    ],
+    "count": 11
+  }
+}

@@ -728,10 +728,10 @@
     "venue": "IES JUAN DE LA CIERVA Velez Málaga - Mesa 01",
     "home_team": "CP MIJAS SDA",
     "away_team": "INSTASOL-NAVASOL SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -743,10 +743,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA SDA",
     "away_team": "CTM EL PALO SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -773,10 +773,10 @@
     "venue": "SOTOGRANDE SCHOOL INTERNACIONAL San Roque",
     "home_team": "TEAM SOTOGRANDE SDA",
     "away_team": "CHEMA TM SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
