@@ -835,12 +835,19 @@ def get_player_sets_stats(player: str) -> Dict[str, float]:
                 h_sets = g.get("home_sets", [])
                 a_sets = g.get("away_sets", [])
                 
-                if is_home:
-                    sets_won += sum(1 for s in h_sets if s > 0)
-                    sets_lost += sum(1 for s in a_sets if s > 0)
-                else:
-                    sets_won += sum(1 for s in a_sets if s > 0)
-                    sets_lost += sum(1 for s in h_sets if s > 0)
+                for h, a in zip(h_sets, a_sets):
+                    if h > 0 or a > 0:
+                        if is_home:
+                            if h > a:
+                                sets_won += 1
+                            else:
+                                sets_lost += 1
+                        else:
+                            if a > h:
+                                sets_won += 1
+                            else:
+                                sets_lost += 1
+                
                 matches_count += 1
     
     avg_sets_won = round(sets_won / matches_count, 2) if matches_count > 0 else 0.0
