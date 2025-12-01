@@ -759,9 +759,9 @@
     "home_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
     "away_team": "FUENGIROLA MATT SDA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -788,10 +788,10 @@
     "venue": "IES JOSE MARIA TORRIJOS Malaga",
     "home_team": "CTM PRODITEM SDA",
     "away_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 5,
+    "score_away": 1,
+    "result": "5 - 1",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -803,10 +803,10 @@
     "venue": "SALA TENIS DE MESA CARTAMA",
     "home_team": "CD NOVACARTAMA TM SDA",
     "away_team": "CTM SALDUBA SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {

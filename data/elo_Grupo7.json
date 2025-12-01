@@ -40,28 +40,20 @@
     "win_rate": 100.0
   },
   {
-    "player": "FRANCISCO JAVIER AMADOR FERRETE",
-    "elo": 1559,
-    "club": "CTM PRODITEM SDA",
-    "matches": 12,
-    "wins": 9,
-    "win_rate": 75.0
-  },
-  {
-    "player": "JUAN JOSE ROSA URBANO",
-    "elo": 1555,
-    "club": "CTM SALDUBA SDA",
-    "matches": 16,
-    "wins": 13,
-    "win_rate": 81.2
-  },
-  {
     "player": "FIODOR VERESCIAKA",
     "elo": 1546,
     "club": "TEAM SOTOGRANDE SDA",
     "matches": 16,
     "wins": 11,
     "win_rate": 68.8
+  },
+  {
+    "player": "JUAN JOSE ROSA URBANO",
+    "elo": 1544,
+    "club": "CTM SALDUBA SDA",
+    "matches": 18,
+    "wins": 15,
+    "win_rate": 83.3
   },
   {
     "player": "MANUEL MORENO CARRERA",
@@ -104,6 +96,14 @@
     "win_rate": 75.0
   },
   {
+    "player": "ROBERTO REYES GONZÁLEZ",
+    "elo": 1510,
+    "club": "CTM PRODITEM SDA",
+    "matches": 6,
+    "wins": 4,
+    "win_rate": 66.7
+  },
+  {
     "player": "ALEX GIRAULT",
     "elo": 1505,
     "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
@@ -134,6 +134,14 @@
     "matches": 18,
     "wins": 10,
     "win_rate": 55.6
+  },
+  {
+    "player": "FRANCISCO JAVIER AMADOR FERRETE",
+    "elo": 1489,
+    "club": "CTM PRODITEM SDA",
+    "matches": 14,
+    "wins": 10,
+    "win_rate": 71.4
   },
   {
     "player": "ANTONIO DIAZ DELFIN",
@@ -240,20 +248,20 @@
     "win_rate": 66.7
   },
   {
-    "player": "JUAN CARLOS BEDMAR VALLESCA",
-    "elo": 1441,
-    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 4,
-    "wins": 3,
-    "win_rate": 75.0
+    "player": "JUKKA OLAVI ERKKO",
+    "elo": 1444,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 16,
+    "wins": 9,
+    "win_rate": 56.2
   },
   {
-    "player": "ROBERTO REYES GONZÁLEZ",
-    "elo": 1436,
+    "player": "EMILIO PARDO POLO",
+    "elo": 1439,
     "club": "CTM PRODITEM SDA",
-    "matches": 4,
-    "wins": 2,
-    "win_rate": 50.0
+    "matches": 8,
+    "wins": 6,
+    "win_rate": 75.0
   },
   {
     "player": "RAMON RUIZ RUIZ",
@@ -288,6 +296,14 @@
     "win_rate": 50.0
   },
   {
+    "player": "JORGE IPIÑA RASERO",
+    "elo": 1422,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 10,
+    "wins": 4,
+    "win_rate": 40.0
+  },
+  {
     "player": "MIGUEL PENDON PASTOR",
     "elo": 1421,
     "club": "INSTASOL-NAVASOL SDA",
@@ -304,19 +320,19 @@
     "win_rate": 100.0
   },
   {
+    "player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+    "elo": 1419,
+    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+    "matches": 16,
+    "wins": 7,
+    "win_rate": 43.8
+  },
+  {
     "player": "DAVID AHONEN",
     "elo": 1414,
     "club": "FUENGIROLA MATT SDA",
     "matches": 2,
     "wins": 1,
-    "win_rate": 50.0
-  },
-  {
-    "player": "JUKKA OLAVI ERKKO",
-    "elo": 1411,
-    "club": "FUENGIROLA MATT SDA",
-    "matches": 14,
-    "wins": 7,
     "win_rate": 50.0
   },
   {
@@ -328,20 +344,12 @@
     "win_rate": 100.0
   },
   {
-    "player": "ANGIE VIVIANA VILLAMIL MARTINEZ",
-    "elo": 1404,
-    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 8,
-    "wins": 3,
-    "win_rate": 37.5
-  },
-  {
-    "player": "EMILIO PARDO POLO",
-    "elo": 1401,
-    "club": "CTM PRODITEM SDA",
-    "matches": 6,
-    "wins": 4,
-    "win_rate": 66.7
+    "player": "ANDRES QUINTANA",
+    "elo": 1406,
+    "club": "CD NOVACARTAMA TM SDA",
+    "matches": 2,
+    "wins": 2,
+    "win_rate": 100.0
   },
   {
     "player": "JOSE MARIA CALVO SANCHEZ",
@@ -360,12 +368,36 @@
     "win_rate": 50.0
   },
   {
-    "player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
-    "elo": 1382,
-    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 14,
+    "player": "VERONICA PABLOS ROMAN",
+    "elo": 1392,
+    "club": "CD NOVACARTAMA TM SDA",
+    "matches": 10,
+    "wins": 5,
+    "win_rate": 50.0
+  },
+  {
+    "player": "CARLOS RUEDA PEREZ",
+    "elo": 1389,
+    "club": "CD NOVACARTAMA TM SDA",
+    "matches": 16,
+    "wins": 7,
+    "win_rate": 43.8
+  },
+  {
+    "player": "DIEGO GUILLEN RODRIGUEZ",
+    "elo": 1387,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 12,
     "wins": 6,
-    "win_rate": 42.9
+    "win_rate": 50.0
+  },
+  {
+    "player": "ANGIE VIVIANA VILLAMIL MARTINEZ",
+    "elo": 1376,
+    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "matches": 10,
+    "wins": 3,
+    "win_rate": 30.0
   },
   {
     "player": "FLORENTIN CATALIN CAZUCA",
@@ -408,44 +440,12 @@
     "win_rate": 50.0
   },
   {
-    "player": "DIEGO GUILLEN RODRIGUEZ",
-    "elo": 1363,
-    "club": "FUENGIROLA MATT SDA",
-    "matches": 10,
-    "wins": 4,
-    "win_rate": 40.0
-  },
-  {
     "player": "ALEJANDRO PEREZ GONZALEZ",
     "elo": 1356,
     "club": "INSTASOL-NAVASOL SDA",
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
-  },
-  {
-    "player": "VOLODYMIR POPYALKOUSKYY",
-    "elo": 1353,
-    "club": "CTM SALDUBA SDA",
-    "matches": 12,
-    "wins": 3,
-    "win_rate": 25.0
-  },
-  {
-    "player": "MATEO GALIANO DURAN",
-    "elo": 1352,
-    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 4,
-    "wins": 1,
-    "win_rate": 25.0
-  },
-  {
-    "player": "VERONICA PABLOS ROMAN",
-    "elo": 1350,
-    "club": "CD NOVACARTAMA TM SDA",
-    "matches": 8,
-    "wins": 4,
-    "win_rate": 50.0
   },
   {
     "player": "TOMAS ORAVEC",
@@ -464,14 +464,6 @@
     "win_rate": 0.0
   },
   {
-    "player": "CARLOS RUEDA PEREZ",
-    "elo": 1347,
-    "club": "CD NOVACARTAMA TM SDA",
-    "matches": 14,
-    "wins": 6,
-    "win_rate": 42.9
-  },
-  {
     "player": "GABRIEL JOSE MARFIL MORALES",
     "elo": 1346,
     "club": "INSTASOL-NAVASOL SDA",
@@ -486,6 +478,14 @@
     "matches": 16,
     "wins": 6,
     "win_rate": 37.5
+  },
+  {
+    "player": "JUAN CARLOS BEDMAR VALLESCA",
+    "elo": 1336,
+    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "matches": 6,
+    "wins": 3,
+    "win_rate": 50.0
   },
   {
     "player": "MIGUEL RODRIGUEZ MORENO",
@@ -504,20 +504,20 @@
     "win_rate": 33.3
   },
   {
-    "player": "AMANDA CHENOLL GONZALEZ",
-    "elo": 1333,
-    "club": "CTM SALDUBA SDA",
-    "matches": 4,
-    "wins": 1,
-    "win_rate": 25.0
-  },
-  {
     "player": "OSCAR LUIS PEREZ OCAÑA",
     "elo": 1329,
     "club": "CTM EL PALO SDA",
     "matches": 4,
     "wins": 1,
     "win_rate": 25.0
+  },
+  {
+    "player": "MATEO GALIANO DURAN",
+    "elo": 1329,
+    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+    "matches": 6,
+    "wins": 1,
+    "win_rate": 16.7
   },
   {
     "player": "ALEXIS CABALLO GONZALEZ",
@@ -576,28 +576,20 @@
     "win_rate": 0.0
   },
   {
-    "player": "JORGE IPIÑA RASERO",
-    "elo": 1307,
-    "club": "FUENGIROLA MATT SDA",
-    "matches": 8,
-    "wins": 2,
-    "win_rate": 25.0
-  },
-  {
-    "player": "KYRYL SIEVONKAIEV",
-    "elo": 1305,
-    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 2,
-    "wins": 0,
-    "win_rate": 0.0
-  },
-  {
     "player": "DIEGO CABELLO PEDROSA",
     "elo": 1303,
     "club": "INSTASOL-NAVASOL SDA",
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
+  },
+  {
+    "player": "VOLODYMIR POPYALKOUSKYY",
+    "elo": 1299,
+    "club": "CTM SALDUBA SDA",
+    "matches": 14,
+    "wins": 3,
+    "win_rate": 21.4
   },
   {
     "player": "TIAGO OTIÑANO",
@@ -611,9 +603,9 @@
     "player": "MANUEL MARTIN DEVESA",
     "elo": 1294,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 10,
+    "matches": 12,
     "wins": 1,
-    "win_rate": 10.0
+    "win_rate": 8.3
   },
   {
     "player": "PABLO RÍOS VALCARCE",
@@ -638,6 +630,14 @@
     "matches": 4,
     "wins": 1,
     "win_rate": 25.0
+  },
+  {
+    "player": "AMANDA CHENOLL GONZALEZ",
+    "elo": 1278,
+    "club": "CTM SALDUBA SDA",
+    "matches": 6,
+    "wins": 1,
+    "win_rate": 16.7
   },
   {
     "player": "MICHAEL LENKE",
@@ -670,6 +670,14 @@
     "matches": 9,
     "wins": 1,
     "win_rate": 11.1
+  },
+  {
+    "player": "KYRYL SIEVONKAIEV",
+    "elo": 1238,
+    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+    "matches": 4,
+    "wins": 0,
+    "win_rate": 0.0
   },
   {
     "player": "SAVELIY KHARIUK",
