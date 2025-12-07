@@ -3,7 +3,7 @@ python script-BDD.py
 
 echo.
 echo Ajout des fichiers du dossier data...
-git add data/
+git add .
 
 echo.
 echo Commit...

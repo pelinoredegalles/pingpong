@@ -1974,9 +1974,9 @@ elif vista == "Clasificación":
         st.subheader("📊 Diferencia de Puntos por Equipo")
         fig, ax = plt.subplots(figsize=(12, 6))
         teams = standings_df["team"].tolist()
-        diffs = standings_df["points_diff"].tolist()
+        diffs = standings_df["points"].tolist()
         colors = ["green" if d >= 0 else "red" for d in diffs]
         ax.barh(teams, diffs, color=colors)
-        ax.set_xlabel("Diferencia de Puntos (PF - PC)")
-        ax.set_title(f"Diferencia de Puntos - {grupo}")
+        ax.set_xlabel("Puntos")
+        ax.set_title(f"Puntos por Equipo - {grupo}")
         st.pyplot(fig)
