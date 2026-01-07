@@ -1,13 +1,5 @@
 [
   {
-    "player": "JOHN ALBERT ULLGER",
-    "elo": 1666,
-    "club": "CTM ESTEPONA “B” DHA",
-    "matches": 12,
-    "wins": 12,
-    "win_rate": 100.0
-  },
-  {
     "player": "DARIEL LOPEZ LOPEZ",
     "elo": 1635,
     "club": "FUENGIROLA INTERNACIONAL DHA",
@@ -16,11 +8,27 @@
     "win_rate": 91.7
   },
   {
-    "player": "ANGEL AMIGO GONZALEZ",
-    "elo": 1617,
+    "player": "JOHN ALBERT ULLGER",
+    "elo": 1621,
+    "club": "CTM ESTEPONA “B” DHA",
+    "matches": 14,
+    "wins": 13,
+    "win_rate": 92.9
+  },
+  {
+    "player": "DIMITRI TROSKOVS",
+    "elo": 1590,
     "club": "CTM ESTEPONA “B” DHA",
     "matches": 10,
-    "wins": 10,
+    "wins": 8,
+    "win_rate": 80.0
+  },
+  {
+    "player": "JAVIER SÁNCHEZ MARTÍN",
+    "elo": 1576,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 4,
+    "wins": 4,
     "win_rate": 100.0
   },
   {
@@ -38,14 +46,6 @@
     "matches": 6,
     "wins": 5,
     "win_rate": 83.3
-  },
-  {
-    "player": "DIMITRI TROSKOVS",
-    "elo": 1534,
-    "club": "CTM ESTEPONA “B” DHA",
-    "matches": 8,
-    "wins": 6,
-    "win_rate": 75.0
   },
   {
     "player": "RICHARD MCCARTHY",
@@ -72,6 +72,14 @@
     "win_rate": 60.0
   },
   {
+    "player": "ANGEL AMIGO GONZALEZ",
+    "elo": 1502,
+    "club": "CTM ESTEPONA “B” DHA",
+    "matches": 12,
+    "wins": 10,
+    "win_rate": 83.3
+  },
+  {
     "player": "SAMUEL  LEGRAND",
     "elo": 1499,
     "club": "CTM PINTURAS MONTO MARBELLA DHA",
@@ -85,14 +93,6 @@
     "club": "CRISTALERIA DUARTE MARBELLA DHA",
     "matches": 4,
     "wins": 4,
-    "win_rate": 100.0
-  },
-  {
-    "player": "JAVIER SÁNCHEZ MARTÍN",
-    "elo": 1471,
-    "club": "CRISTALERIA DUARTE MARBELLA DHA",
-    "matches": 2,
-    "wins": 2,
     "win_rate": 100.0
   },
   {
@@ -126,6 +126,14 @@
     "matches": 8,
     "wins": 3,
     "win_rate": 37.5
+  },
+  {
+    "player": "ROBERT  MARIAN OPREA",
+    "elo": 1429,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 2,
+    "wins": 1,
+    "win_rate": 50.0
   },
   {
     "player": "BRICE LOUIS GEORG MARTINEAU",
@@ -216,14 +224,6 @@
     "win_rate": 50.0
   },
   {
-    "player": "EMILIO GONZÁLEZ ZARCO",
-    "elo": 1381,
-    "club": "CRISTALERIA DUARTE MARBELLA DHA",
-    "matches": 6,
-    "wins": 3,
-    "win_rate": 50.0
-  },
-  {
     "player": "JOSÉ LUIS TROYA DÍAZ",
     "elo": 1381,
     "club": "CP MIJAS DHA",
@@ -246,6 +246,14 @@
     "matches": 2,
     "wins": 1,
     "win_rate": 50.0
+  },
+  {
+    "player": "EMILIO GONZÁLEZ ZARCO",
+    "elo": 1354,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 8,
+    "wins": 3,
+    "win_rate": 37.5
   },
   {
     "player": "PABLO DEL RIO ANTON",
