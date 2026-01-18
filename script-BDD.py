@@ -217,10 +217,6 @@ async def limited_fetch(playwright: Any, match_id: str, competition_id: int) -> 
 
 async def fetch_standings_html(playwright: Any, competition_id: int) -> Optional[str]:
     html_path = os.path.join(STANDINGS_DIR, f"standings_{competition_id}.html")
-    if os.path.exists(html_path):
-        logger.info(f"⏩ Standings HTML already present for competition {competition_id}, skipping download.")
-        with open(html_path, "r", encoding="utf-8") as f:
-            return f.read()
 
     try:
         browser = await playwright.chromium.launch(headless=True)
