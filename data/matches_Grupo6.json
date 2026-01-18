@@ -383,10 +383,10 @@
     "venue": "IES PABLO DEL SAZ Marbella",
     "home_team": "CTM PINTURAS MONTO MARBELLA DHA",
     "away_team": "FUENGIROLA INTERNACIONAL DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -398,10 +398,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “A” DHA",
     "away_team": "CRISTALERIA DUARTE MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -413,10 +413,10 @@
     "venue": "IES IBN AL-BAYTAR Benalmadena",
     "home_team": "IES ALBAYTAR DHA",
     "away_team": "CP MIJAS DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -443,10 +443,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “A” DHA",
     "away_team": "CTM ESTEPONA “B” DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 1,
+    "score_away": 5,
+    "result": "1 - 5",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -458,10 +458,10 @@
     "venue": "POLIDEPORTIVO ELOLA Fuengirola",
     "home_team": "FUENGIROLA INTERNACIONAL DHA",
     "away_team": "CP MIJAS DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 5,
+    "score_away": 1,
+    "result": "5 - 1",
+    "status": "Finalizado",
     "games": []
   },
   {
