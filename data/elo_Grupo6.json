@@ -16,6 +16,14 @@
     "win_rate": 92.9
   },
   {
+    "player": "MARTIN SVENSSON",
+    "elo": 1602,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 4,
+    "wins": 4,
+    "win_rate": 100.0
+  },
+  {
     "player": "DIMITRI TROSKOVS",
     "elo": 1590,
     "club": "CTM ESTEPONA “B” DHA",
@@ -40,11 +48,11 @@
     "win_rate": 66.7
   },
   {
-    "player": "MARTIN SVENSSON",
-    "elo": 1559,
-    "club": "CTM PINTURAS MONTO MARBELLA DHA",
-    "matches": 2,
-    "wins": 2,
+    "player": "PURE-EL TOM MAOR",
+    "elo": 1552,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 8,
+    "wins": 8,
     "win_rate": 100.0
   },
   {
@@ -62,14 +70,6 @@
     "matches": 12,
     "wins": 8,
     "win_rate": 66.7
-  },
-  {
-    "player": "PURE-EL TOM MAOR",
-    "elo": 1528,
-    "club": "CRISTALERIA DUARTE MARBELLA DHA",
-    "matches": 6,
-    "wins": 6,
-    "win_rate": 100.0
   },
   {
     "player": "SERGIO ANTONIO CAVAGNARO",
@@ -128,14 +128,6 @@
     "win_rate": 33.3
   },
   {
-    "player": "SAÚL MANGA MARISCAL",
-    "elo": 1445,
-    "club": "CTM PINTURAS MONTO MARBELLA DHA",
-    "matches": 12,
-    "wins": 8,
-    "win_rate": 66.7
-  },
-  {
     "player": "JOSE ANTONIO SÁNCHEZ MESCUA (CHARLI)",
     "elo": 1440,
     "club": "CTM ESTEPONA “A” DHA",
@@ -166,6 +158,14 @@
     "matches": 10,
     "wins": 3,
     "win_rate": 30.0
+  },
+  {
+    "player": "SAÚL MANGA MARISCAL",
+    "elo": 1413,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 14,
+    "wins": 8,
+    "win_rate": 57.1
   },
   {
     "player": "ÁNGEL ROMÁN DEL POZO",
@@ -256,6 +256,14 @@
     "win_rate": 50.0
   },
   {
+    "player": "EMILIO GONZÁLEZ ZARCO",
+    "elo": 1370,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 10,
+    "wins": 4,
+    "win_rate": 40.0
+  },
+  {
     "player": "JUAN IGNACIO CAVAGNARO GARCÍA",
     "elo": 1365,
     "club": "CP MIJAS DHA",
@@ -272,33 +280,9 @@
     "win_rate": 25.0
   },
   {
-    "player": "EMILIO GONZÁLEZ ZARCO",
-    "elo": 1354,
-    "club": "CRISTALERIA DUARTE MARBELLA DHA",
-    "matches": 8,
-    "wins": 3,
-    "win_rate": 37.5
-  },
-  {
-    "player": "MARK SUCHKOV KALMYKOV",
-    "elo": 1351,
-    "club": "CTM PINTURAS MONTO MARBELLA DHA",
-    "matches": 10,
-    "wins": 3,
-    "win_rate": 30.0
-  },
-  {
     "player": "PABLO DEL RIO ANTON",
     "elo": 1351,
     "club": "CTM ESTEPONA “A” DHA",
-    "matches": 4,
-    "wins": 1,
-    "win_rate": 25.0
-  },
-  {
-    "player": "JARNO MARTEN KLOPSTRA",
-    "elo": 1341,
-    "club": "CRISTALERIA DUARTE MARBELLA DHA",
     "matches": 4,
     "wins": 1,
     "win_rate": 25.0
@@ -320,6 +304,14 @@
     "win_rate": 25.0
   },
   {
+    "player": "JARNO MARTEN KLOPSTRA",
+    "elo": 1331,
+    "club": "CRISTALERIA DUARTE MARBELLA DHA",
+    "matches": 6,
+    "wins": 2,
+    "win_rate": 33.3
+  },
+  {
     "player": "ISABEL GONZALEZ HERRERA",
     "elo": 1330,
     "club": "IES ALBAYTAR DHA",
@@ -334,6 +326,14 @@
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
+  },
+  {
+    "player": "MARK SUCHKOV KALMYKOV",
+    "elo": 1322,
+    "club": "CTM PINTURAS MONTO MARBELLA DHA",
+    "matches": 12,
+    "wins": 3,
+    "win_rate": 25.0
   },
   {
     "player": "ANTONIO FERNANDEZ ROMACHO",

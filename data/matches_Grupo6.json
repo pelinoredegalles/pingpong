@@ -428,10 +428,10 @@
     "venue": "IES PABLO DEL SAZ Marbella",
     "home_team": "CRISTALERIA DUARTE MARBELLA DHA",
     "away_team": "CTM PINTURAS MONTO MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {

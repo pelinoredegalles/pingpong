@@ -25,13 +25,13 @@
     {
       "position": 3,
       "team": "CRISTALERIA DUARTE MARBELLA DHA",
-      "matches": 7,
-      "wins": 5,
+      "matches": 8,
+      "wins": 6,
       "losses": 2,
-      "points_for": 26,
-      "points_against": 19,
-      "points_diff": 7,
-      "points": 13
+      "points_for": 30,
+      "points_against": 21,
+      "points_diff": 9,
+      "points": 15
     },
     {
       "position": 4,
@@ -47,13 +47,13 @@
     {
       "position": 5,
       "team": "CTM PINTURAS MONTO MARBELLA DHA",
-      "matches": 7,
+      "matches": 8,
       "wins": 2,
-      "losses": 5,
-      "points_for": 17,
-      "points_against": 26,
-      "points_diff": -9,
-      "points": 8
+      "losses": 6,
+      "points_for": 19,
+      "points_against": 30,
+      "points_diff": -11,
+      "points": 9
     },
     {
       "position": 6,

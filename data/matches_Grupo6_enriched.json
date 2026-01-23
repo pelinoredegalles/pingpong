@@ -4768,11 +4768,166 @@
     "venue": "IES PABLO DEL SAZ Marbella",
     "home_team": "CRISTALERIA DUARTE MARBELLA DHA",
     "away_team": "CTM PINTURAS MONTO MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "PURE-EL TOM MAOR",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "MARK SUCHKOV KALMYKOV",
+        "away_sets": [
+          6,
+          7,
+          6,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "B",
+        "home_player": "EMILIO GONZÁLEZ ZARCO",
+        "home_sets": [
+          10,
+          11,
+          12,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "SAÚL MANGA MARISCAL",
+        "away_sets": [
+          12,
+          7,
+          10,
+          4,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "C",
+        "home_player": "JARNO MARTEN KLOPSTRA",
+        "home_sets": [
+          4,
+          10,
+          9,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "MARTIN SVENSSON",
+        "away_sets": [
+          11,
+          12,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "PURE-EL TOM MAOR",
+        "home_sets": [
+          14,
+          11,
+          11,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "SAÚL MANGA MARISCAL",
+        "away_sets": [
+          12,
+          13,
+          9,
+          5,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "C",
+        "home_player": "JARNO MARTEN KLOPSTRA",
+        "home_sets": [
+          11,
+          12,
+          10,
+          4,
+          11
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "MARK SUCHKOV KALMYKOV",
+        "away_sets": [
+          9,
+          10,
+          12,
+          11,
+          8
+        ],
+        "away_score": 2
+      },
+      {
+        "home_code": "B",
+        "home_player": "EMILIO GONZÁLEZ ZARCO",
+        "home_sets": [
+          3,
+          10,
+          9,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "MARTIN SVENSSON",
+        "away_sets": [
+          11,
+          12,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CTM PINTURAS MONTO MARBELLA DHA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CRISTALERIA DUARTE MARBELLA DHA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "582836",
