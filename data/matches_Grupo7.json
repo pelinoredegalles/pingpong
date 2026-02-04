@@ -1163,10 +1163,10 @@
     "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
     "home_team": "CP MIJAS SDA",
     "away_team": "CHEMA TM SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1178,10 +1178,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA SDA",
     "away_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1193,10 +1193,10 @@
     "venue": "POLIDEPORTIVO CIUDAD JARDIN (Málaga)",
     "home_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
     "away_team": "CTM SALDUBA SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1208,10 +1208,10 @@
     "venue": "POLIDEPORTIVO ELOLA Fuengirola",
     "home_team": "FUENGIROLA MATT SDA",
     "away_team": "INSTASOL-NAVASOL SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1223,10 +1223,10 @@
     "venue": "SOTOGRANDE SCHOOL INTERNACIONAL San Roque",
     "home_team": "TEAM SOTOGRANDE SDA",
     "away_team": "CTM PRODITEM SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1238,10 +1238,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA SDA",
     "away_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 3,
+    "result": "4 - 3",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1253,10 +1253,10 @@
     "venue": "SALA TENIS DE MESA CARTAMA",
     "home_team": "CD NOVACARTAMA TM SDA",
     "away_team": "CTM EL PALO SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 5,
+    "score_away": 1,
+    "result": "5 - 1",
+    "status": "Finalizado",
     "games": []
   },
   {

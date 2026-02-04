@@ -3,13 +3,13 @@
     {
       "position": 1,
       "team": "CTM ESTEPONA “B” DHA",
-      "matches": 8,
-      "wins": 8,
+      "matches": 9,
+      "wins": 9,
       "losses": 0,
-      "points_for": 43,
+      "points_for": 49,
       "points_against": 6,
-      "points_diff": 37,
-      "points": 22
+      "points_diff": 43,
+      "points": 25
     },
     {
       "position": 2,
@@ -25,45 +25,45 @@
     {
       "position": 3,
       "team": "CRISTALERIA DUARTE MARBELLA DHA",
-      "matches": 8,
+      "matches": 9,
       "wins": 6,
-      "losses": 2,
-      "points_for": 30,
-      "points_against": 21,
-      "points_diff": 9,
-      "points": 15
+      "losses": 3,
+      "points_for": 32,
+      "points_against": 25,
+      "points_diff": 7,
+      "points": 16
     },
     {
       "position": 4,
       "team": "CP MIJAS DHA",
-      "matches": 8,
-      "wins": 3,
+      "matches": 9,
+      "wins": 4,
       "losses": 5,
-      "points_for": 21,
-      "points_against": 27,
-      "points_diff": -6,
-      "points": 11
+      "points_for": 25,
+      "points_against": 29,
+      "points_diff": -4,
+      "points": 13
     },
     {
       "position": 5,
       "team": "CTM PINTURAS MONTO MARBELLA DHA",
-      "matches": 8,
-      "wins": 2,
+      "matches": 9,
+      "wins": 3,
       "losses": 6,
-      "points_for": 19,
-      "points_against": 30,
-      "points_diff": -11,
-      "points": 9
+      "points_for": 24,
+      "points_against": 31,
+      "points_diff": -7,
+      "points": 12
     },
     {
       "position": 6,
       "team": "CTM ESTEPONA “A” DHA",
-      "matches": 8,
+      "matches": 9,
       "wins": 1,
-      "losses": 7,
-      "points_for": 15,
-      "points_against": 33,
-      "points_diff": -18,
+      "losses": 8,
+      "points_for": 16,
+      "points_against": 38,
+      "points_diff": -22,
       "points": 7
     },
     {
@@ -80,12 +80,12 @@
     {
       "position": 8,
       "team": "CTM SALDUBA JOVENES DHA",
-      "matches": 7,
+      "matches": 8,
       "wins": 1,
-      "losses": 6,
+      "losses": 7,
       "points_for": 12,
-      "points_against": 31,
-      "points_diff": -19,
+      "points_against": 37,
+      "points_diff": -25,
       "points": 4
     },
     {

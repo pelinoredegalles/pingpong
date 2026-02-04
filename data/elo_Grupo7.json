@@ -1,26 +1,34 @@
 [
   {
     "player": "VICTOR MORENO BAZUELO",
-    "elo": 1674,
+    "elo": 1702,
     "club": "CP MIJAS SDA",
-    "matches": 26,
-    "wins": 26,
+    "matches": 28,
+    "wins": 28,
     "win_rate": 100.0
   },
   {
+    "player": "FIODOR VERESCIAKA",
+    "elo": 1631,
+    "club": "TEAM SOTOGRANDE SDA",
+    "matches": 26,
+    "wins": 21,
+    "win_rate": 80.8
+  },
+  {
     "player": "ALEXANDER JEVIC",
-    "elo": 1636,
+    "elo": 1619,
     "club": "CP MIJAS SDA",
-    "matches": 12,
-    "wins": 12,
+    "matches": 14,
+    "wins": 14,
     "win_rate": 100.0
   },
   {
     "player": "SAMUEL ABAIJON NURMISUO",
-    "elo": 1593,
+    "elo": 1600,
     "club": "INSTASOL-NAVASOL SDA",
-    "matches": 6,
-    "wins": 6,
+    "matches": 8,
+    "wins": 8,
     "win_rate": 100.0
   },
   {
@@ -32,12 +40,12 @@
     "win_rate": 100.0
   },
   {
-    "player": "FIODOR VERESCIAKA",
-    "elo": 1569,
-    "club": "TEAM SOTOGRANDE SDA",
-    "matches": 24,
-    "wins": 19,
-    "win_rate": 79.2
+    "player": "DANIEL ROMERO JIMENEZ",
+    "elo": 1566,
+    "club": "CP MIJAS SDA",
+    "matches": 26,
+    "wins": 22,
+    "win_rate": 84.6
   },
   {
     "player": "DIEGO EZEQUIEL BARO LOSILLA",
@@ -56,14 +64,6 @@
     "win_rate": 100.0
   },
   {
-    "player": "DANIEL ROMERO JIMENEZ",
-    "elo": 1539,
-    "club": "CP MIJAS SDA",
-    "matches": 24,
-    "wins": 20,
-    "win_rate": 83.3
-  },
-  {
     "player": "MANUEL MORENO CARRERA",
     "elo": 1539,
     "club": "CTM SALDUBA SDA",
@@ -73,11 +73,19 @@
   },
   {
     "player": "ROBERTO REYES GONZÁLEZ",
-    "elo": 1528,
+    "elo": 1538,
     "club": "CTM PRODITEM SDA",
-    "matches": 12,
-    "wins": 8,
-    "win_rate": 66.7
+    "matches": 14,
+    "wins": 10,
+    "win_rate": 71.4
+  },
+  {
+    "player": "ANTONIO RUIZ SÁNCHEZ",
+    "elo": 1536,
+    "club": "CTM ESTEPONA SDA",
+    "matches": 18,
+    "wins": 17,
+    "win_rate": 94.4
   },
   {
     "player": "VICTOR MARTIN MORALES",
@@ -85,14 +93,6 @@
     "club": "CHEMA TM SDA",
     "matches": 2,
     "wins": 2,
-    "win_rate": 100.0
-  },
-  {
-    "player": "CONG XISHENG",
-    "elo": 1527,
-    "club": "FUENGIROLA MATT SDA",
-    "matches": 6,
-    "wins": 6,
     "win_rate": 100.0
   },
   {
@@ -128,12 +128,12 @@
     "win_rate": 75.0
   },
   {
-    "player": "ANTONIO RUIZ SÁNCHEZ",
-    "elo": 1510,
-    "club": "CTM ESTEPONA SDA",
-    "matches": 14,
-    "wins": 13,
-    "win_rate": 92.9
+    "player": "MIGUEL PENDON PASTOR",
+    "elo": 1509,
+    "club": "INSTASOL-NAVASOL SDA",
+    "matches": 26,
+    "wins": 12,
+    "win_rate": 46.2
   },
   {
     "player": "VERONICA PABLOS ROMAN",
@@ -142,6 +142,22 @@
     "matches": 14,
     "wins": 9,
     "win_rate": 64.3
+  },
+  {
+    "player": "ANDRES QUINTANA GUTIERREZ",
+    "elo": 1507,
+    "club": "CD NOVACARTAMA TM SDA",
+    "matches": 18,
+    "wins": 12,
+    "win_rate": 66.7
+  },
+  {
+    "player": "JUAN JOSE ROSA URBANO",
+    "elo": 1505,
+    "club": "CTM SALDUBA SDA",
+    "matches": 28,
+    "wins": 22,
+    "win_rate": 78.6
   },
   {
     "player": "ALEX GIRAULT",
@@ -160,20 +176,20 @@
     "win_rate": 54.5
   },
   {
-    "player": "FRANCISCO JOSE GARCIA GARCIA",
-    "elo": 1499,
-    "club": "CHEMA TM SDA",
-    "matches": 26,
-    "wins": 15,
-    "win_rate": 57.7
+    "player": "CONG XISHENG",
+    "elo": 1495,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 8,
+    "wins": 7,
+    "win_rate": 87.5
   },
   {
-    "player": "FRANCISCO JAVIER AMADOR FERRETE",
-    "elo": 1494,
-    "club": "CTM PRODITEM SDA",
-    "matches": 22,
+    "player": "FRANCISCO JOSE GARCIA GARCIA",
+    "elo": 1492,
+    "club": "CHEMA TM SDA",
+    "matches": 28,
     "wins": 15,
-    "win_rate": 68.2
+    "win_rate": 53.6
   },
   {
     "player": "DANIEL PORTILLO MARTINEZ",
@@ -184,20 +200,20 @@
     "win_rate": 50.0
   },
   {
+    "player": "AGUSTIN PEREZ OCAÑA",
+    "elo": 1490,
+    "club": "CTM ESTEPONA SDA",
+    "matches": 24,
+    "wins": 17,
+    "win_rate": 70.8
+  },
+  {
     "player": "ANTONIO DIAZ DELFIN",
     "elo": 1484,
     "club": "CTM PRODITEM SDA",
     "matches": 2,
     "wins": 2,
     "win_rate": 100.0
-  },
-  {
-    "player": "ANDRES QUINTANA GUTIERREZ",
-    "elo": 1483,
-    "club": "CD NOVACARTAMA TM SDA",
-    "matches": 16,
-    "wins": 10,
-    "win_rate": 62.5
   },
   {
     "player": "MICHEL PABLO SARAFIAN",
@@ -216,12 +232,12 @@
     "win_rate": 100.0
   },
   {
-    "player": "AGUSTIN PEREZ OCAÑA",
-    "elo": 1475,
-    "club": "CTM ESTEPONA SDA",
-    "matches": 20,
-    "wins": 14,
-    "win_rate": 70.0
+    "player": "EMILIO PARDO POLO",
+    "elo": 1476,
+    "club": "CTM PRODITEM SDA",
+    "matches": 16,
+    "wins": 10,
+    "win_rate": 62.5
   },
   {
     "player": "FRANCISCO TORRES BUENO",
@@ -248,14 +264,6 @@
     "win_rate": 100.0
   },
   {
-    "player": "EMILIO PARDO POLO",
-    "elo": 1462,
-    "club": "CTM PRODITEM SDA",
-    "matches": 14,
-    "wins": 9,
-    "win_rate": 64.3
-  },
-  {
     "player": "EDUARDO GARCIA RAMIREZ",
     "elo": 1462,
     "club": "CD NOVACARTAMA TM SDA",
@@ -272,14 +280,6 @@
     "win_rate": 83.3
   },
   {
-    "player": "JUAN JOSE ROSA URBANO",
-    "elo": 1460,
-    "club": "CTM SALDUBA SDA",
-    "matches": 26,
-    "wins": 20,
-    "win_rate": 76.9
-  },
-  {
     "player": "GERMAN TERRÓN OSÉS",
     "elo": 1452,
     "club": "CP MIJAS SDA",
@@ -288,12 +288,12 @@
     "win_rate": 66.7
   },
   {
-    "player": "PAUL CAMILLERI",
-    "elo": 1448,
-    "club": "TEAM SOTOGRANDE SDA",
-    "matches": 18,
-    "wins": 11,
-    "win_rate": 61.1
+    "player": "FRANCISCO JAVIER AMADOR FERRETE",
+    "elo": 1440,
+    "club": "CTM PRODITEM SDA",
+    "matches": 24,
+    "wins": 16,
+    "win_rate": 66.7
   },
   {
     "player": "ANDRES QUINTANA",
@@ -312,20 +312,20 @@
     "win_rate": 50.0
   },
   {
+    "player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+    "elo": 1431,
+    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+    "matches": 26,
+    "wins": 12,
+    "win_rate": 46.2
+  },
+  {
     "player": "JOSE MIGUEL GALINDO DOBLAS",
     "elo": 1429,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
     "matches": 2,
     "wins": 1,
     "win_rate": 50.0
-  },
-  {
-    "player": "CARLOS RUEDA PEREZ",
-    "elo": 1425,
-    "club": "CD NOVACARTAMA TM SDA",
-    "matches": 22,
-    "wins": 10,
-    "win_rate": 45.5
   },
   {
     "player": "BRIAN GARRAWAY",
@@ -344,6 +344,14 @@
     "win_rate": 100.0
   },
   {
+    "player": "CARLOS RUEDA PEREZ",
+    "elo": 1414,
+    "club": "CD NOVACARTAMA TM SDA",
+    "matches": 24,
+    "wins": 12,
+    "win_rate": 50.0
+  },
+  {
     "player": "DAVID AHONEN",
     "elo": 1414,
     "club": "FUENGIROLA MATT SDA",
@@ -352,20 +360,20 @@
     "win_rate": 50.0
   },
   {
-    "player": "MIGUEL PENDON PASTOR",
-    "elo": 1409,
-    "club": "INSTASOL-NAVASOL SDA",
-    "matches": 24,
-    "wins": 10,
-    "win_rate": 41.7
+    "player": "PAUL CAMILLERI",
+    "elo": 1410,
+    "club": "TEAM SOTOGRANDE SDA",
+    "matches": 20,
+    "wins": 11,
+    "win_rate": 55.0
   },
   {
-    "player": "JOSE LUIS MORENO MARFIL",
-    "elo": 1400,
-    "club": "INSTASOL-NAVASOL SDA",
-    "matches": 24,
-    "wins": 10,
-    "win_rate": 41.7
+    "player": "JUKKA OLAVI ERKKO",
+    "elo": 1398,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 22,
+    "wins": 11,
+    "win_rate": 50.0
   },
   {
     "player": "ANTONIO FALDER ANGUITA",
@@ -400,6 +408,14 @@
     "win_rate": 44.4
   },
   {
+    "player": "TOMAS ORAVEC",
+    "elo": 1384,
+    "club": "CTM ESTEPONA SDA",
+    "matches": 18,
+    "wins": 8,
+    "win_rate": 44.4
+  },
+  {
     "player": "JORGE ALBARRACIN CAPARROS",
     "elo": 1381,
     "club": "CTM EL PALO SDA",
@@ -416,36 +432,12 @@
     "win_rate": 40.0
   },
   {
-    "player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
-    "elo": 1376,
-    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 22,
-    "wins": 9,
-    "win_rate": 40.9
-  },
-  {
-    "player": "JUKKA OLAVI ERKKO",
-    "elo": 1375,
-    "club": "FUENGIROLA MATT SDA",
-    "matches": 20,
-    "wins": 10,
-    "win_rate": 50.0
-  },
-  {
     "player": "FLORENTIN CATALIN CAZUCA",
     "elo": 1372,
     "club": "CTM ESTEPONA SDA",
     "matches": 4,
     "wins": 1,
     "win_rate": 25.0
-  },
-  {
-    "player": "BERNABE GOMEZ GONZALEZ",
-    "elo": 1367,
-    "club": "CTM ESTEPONA SDA",
-    "matches": 4,
-    "wins": 2,
-    "win_rate": 50.0
   },
   {
     "player": "ANGEL AMIGO GONZALEZ",
@@ -472,12 +464,28 @@
     "win_rate": 75.0
   },
   {
+    "player": "ADRIAN CABALLO",
+    "elo": 1358,
+    "club": "CHEMA TM SDA",
+    "matches": 2,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
     "player": "ALEJANDRO PEREZ GONZALEZ",
     "elo": 1356,
     "club": "INSTASOL-NAVASOL SDA",
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
+  },
+  {
+    "player": "VOLODYMIR POPYALKOUSKYY",
+    "elo": 1350,
+    "club": "CTM SALDUBA SDA",
+    "matches": 24,
+    "wins": 8,
+    "win_rate": 33.3
   },
   {
     "player": "IGNACIO HERRAN VILLODRES",
@@ -496,14 +504,6 @@
     "win_rate": 0.0
   },
   {
-    "player": "TOMAS ORAVEC",
-    "elo": 1343,
-    "club": "CTM ESTEPONA SDA",
-    "matches": 16,
-    "wins": 6,
-    "win_rate": 37.5
-  },
-  {
     "player": "MIGUEL RODRIGUEZ MORENO",
     "elo": 1336,
     "club": "CTM PRODITEM SDA",
@@ -518,14 +518,6 @@
     "matches": 6,
     "wins": 2,
     "win_rate": 33.3
-  },
-  {
-    "player": "DIEGO GUILLEN RODRIGUEZ",
-    "elo": 1333,
-    "club": "FUENGIROLA MATT SDA",
-    "matches": 16,
-    "wins": 7,
-    "win_rate": 43.8
   },
   {
     "player": "ALEXIS CABALLO GONZALEZ",
@@ -544,12 +536,28 @@
     "win_rate": 0.0
   },
   {
-    "player": "JULIO RODRIGUEZ CID",
-    "elo": 1318,
-    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "player": "DIEGO GUILLEN RODRIGUEZ",
+    "elo": 1326,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 18,
+    "wins": 7,
+    "win_rate": 38.9
+  },
+  {
+    "player": "MATEO GALIANO DURAN",
+    "elo": 1326,
+    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
     "matches": 16,
     "wins": 2,
     "win_rate": 12.5
+  },
+  {
+    "player": "JOSE LUIS MORENO MARFIL",
+    "elo": 1318,
+    "club": "INSTASOL-NAVASOL SDA",
+    "matches": 26,
+    "wins": 10,
+    "win_rate": 38.5
   },
   {
     "player": "AMANDA CHENOLL GONZALEZ",
@@ -568,20 +576,20 @@
     "win_rate": 35.7
   },
   {
-    "player": "MICHAEL LENKE",
-    "elo": 1313,
-    "club": "CD NOVACARTAMA TM SDA",
-    "matches": 12,
-    "wins": 5,
-    "win_rate": 41.7
-  },
-  {
     "player": "ALEXANDRE  BONS",
     "elo": 1311,
     "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
+  },
+  {
+    "player": "JULIO RODRIGUEZ CID",
+    "elo": 1310,
+    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "matches": 18,
+    "wins": 2,
+    "win_rate": 11.1
   },
   {
     "player": "ARTEM TEREBOV",
@@ -598,14 +606,6 @@
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
-  },
-  {
-    "player": "MATEO GALIANO DURAN",
-    "elo": 1304,
-    "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 12,
-    "wins": 1,
-    "win_rate": 8.3
   },
   {
     "player": "DIEGO CABELLO PEDROSA",
@@ -633,19 +633,11 @@
   },
   {
     "player": "ALBERTO GONZALEZ SANCHEZ",
-    "elo": 1289,
+    "elo": 1284,
     "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "matches": 13,
-    "wins": 2,
-    "win_rate": 15.4
-  },
-  {
-    "player": "MANUEL MARTIN DEVESA",
-    "elo": 1285,
-    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 16,
-    "wins": 2,
-    "win_rate": 12.5
+    "matches": 17,
+    "wins": 3,
+    "win_rate": 17.6
   },
   {
     "player": "JOSE LUIS DIAZ RECIO",
@@ -656,12 +648,20 @@
     "win_rate": 25.0
   },
   {
-    "player": "VOLODYMIR POPYALKOUSKYY",
-    "elo": 1279,
-    "club": "CTM SALDUBA SDA",
-    "matches": 22,
+    "player": "MICHAEL LENKE",
+    "elo": 1283,
+    "club": "CD NOVACARTAMA TM SDA",
+    "matches": 14,
     "wins": 6,
-    "win_rate": 27.3
+    "win_rate": 42.9
+  },
+  {
+    "player": "PABLO RÍOS VALCARCE",
+    "elo": 1280,
+    "club": "CTM EL PALO SDA",
+    "matches": 18,
+    "wins": 3,
+    "win_rate": 16.7
   },
   {
     "player": "OSCAR LUIS PEREZ OCAÑA",
@@ -680,20 +680,28 @@
     "win_rate": 21.4
   },
   {
-    "player": "TIAGO OTIÑANO",
-    "elo": 1272,
-    "club": "CTM EL PALO SDA",
-    "matches": 10,
-    "wins": 2,
-    "win_rate": 20.0
+    "player": "JASON FLOYD",
+    "elo": 1271,
+    "club": "TEAM SOTOGRANDE SDA",
+    "matches": 28,
+    "wins": 9,
+    "win_rate": 32.1
   },
   {
-    "player": "PABLO RÍOS VALCARCE",
-    "elo": 1270,
+    "player": "TIAGO OTIÑANO",
+    "elo": 1269,
     "club": "CTM EL PALO SDA",
-    "matches": 16,
+    "matches": 12,
     "wins": 2,
-    "win_rate": 12.5
+    "win_rate": 16.7
+  },
+  {
+    "player": "BERNABE GOMEZ GONZALEZ",
+    "elo": 1266,
+    "club": "CTM ESTEPONA SDA",
+    "matches": 6,
+    "wins": 2,
+    "win_rate": 33.3
   },
   {
     "player": "VERONICA PICATOSTE LIZARRAGA",
@@ -704,26 +712,26 @@
     "win_rate": 0.0
   },
   {
-    "player": "JASON FLOYD",
-    "elo": 1259,
-    "club": "TEAM SOTOGRANDE SDA",
-    "matches": 26,
-    "wins": 9,
-    "win_rate": 34.6
-  },
-  {
-    "player": "JUAN CARLOS BEDMAR VALLESCA",
-    "elo": 1250,
+    "player": "MANUEL MARTIN DEVESA",
+    "elo": 1258,
     "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 12,
-    "wins": 4,
-    "win_rate": 33.3
+    "matches": 18,
+    "wins": 2,
+    "win_rate": 11.1
   },
   {
     "player": "KYRYL SIEVONKAIEV",
     "elo": 1238,
     "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
     "matches": 4,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
+    "player": "FRANCISCO PUERTA VIDES",
+    "elo": 1234,
+    "club": "CTM SALDUBA SDA",
+    "matches": 2,
     "wins": 0,
     "win_rate": 0.0
   },
@@ -737,19 +745,27 @@
   },
   {
     "player": "JANE SUURSAAR MAASIKAS",
-    "elo": 1221,
+    "elo": 1222,
     "club": "CHEMA TM SDA",
-    "matches": 6,
+    "matches": 8,
     "wins": 0,
     "win_rate": 0.0
   },
   {
     "player": "JAVIER SANTACRUZ GUTIERREZ",
-    "elo": 1211,
+    "elo": 1215,
     "club": "CTM EL PALO SDA",
-    "matches": 20,
+    "matches": 22,
     "wins": 1,
-    "win_rate": 5.0
+    "win_rate": 4.5
+  },
+  {
+    "player": "JUAN CARLOS BEDMAR VALLESCA",
+    "elo": 1210,
+    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "matches": 14,
+    "wins": 4,
+    "win_rate": 28.6
   },
   {
     "player": "SAVELIY KHARIUK",
