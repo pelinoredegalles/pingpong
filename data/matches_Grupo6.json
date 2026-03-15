@@ -518,10 +518,10 @@
     "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS Marbella",
     "home_team": "CTM SALDUBA JOVENES DHA",
     "away_team": "IES ALBAYTAR DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 3,
+    "result": "4 - 3",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -534,9 +534,9 @@
     "home_team": "CTM PINTURAS MONTO MARBELLA DHA",
     "away_team": "CTM ESTEPONA “B” DHA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -548,10 +548,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “A” DHA",
     "away_team": "CP MIJAS DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 1,
+    "score_away": 5,
+    "result": "1 - 5",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -563,10 +563,10 @@
     "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
     "home_team": "CP MIJAS DHA",
     "away_team": "CTM PINTURAS MONTO MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 3,
+    "result": "4 - 3",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -578,10 +578,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “B” DHA",
     "away_team": "IES ALBAYTAR DHA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -593,10 +593,10 @@
     "venue": "POLIDEPORTIVO ELOLA Fuengirola",
     "home_team": "FUENGIROLA INTERNACIONAL DHA",
     "away_team": "CTM SALDUBA JOVENES DHA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {

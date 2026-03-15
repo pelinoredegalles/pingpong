@@ -1283,10 +1283,10 @@
     "venue": "POLIDEPORTIVO CIUDAD JARDIN (Málaga)",
     "home_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
     "away_team": "CTM EL PALO SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1313,25 +1313,10 @@
     "venue": "IES JOSE MARIA TORRIJOS Malaga",
     "home_team": "CTM PRODITEM SDA",
     "away_team": "CD NOVACARTAMA TM SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
-  },
-  {
-    "match_id": "576791",
-    "competition": 14109,
-    "group": "Grupo 7",
-    "date": "08 Feb 2026",
-    "time": "11:00",
-    "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS",
-    "home_team": "CTM SALDUBA SDA",
-    "away_team": "CTM ESTEPONA SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1358,10 +1343,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA SDA",
     "away_team": "CHEMA TM SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1388,10 +1373,10 @@
     "venue": "POLIDEPORTIVO CIUDAD JARDIN (Málaga)",
     "home_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
     "away_team": "FUENGIROLA MATT SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1404,9 +1389,9 @@
     "home_team": "CTM SALDUBA SDA",
     "away_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1419,9 +1404,9 @@
     "home_team": "CTM EL PALO SDA",
     "away_team": "CTM PRODITEM SDA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1433,10 +1418,25 @@
     "venue": "SALA TENIS DE MESA CARTAMA",
     "home_team": "CD NOVACARTAMA TM SDA",
     "away_team": "INSTASOL-NAVASOL SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
+    "games": []
+  },
+  {
+    "match_id": "576791",
+    "competition": 14109,
+    "group": "Grupo 7",
+    "date": "15 Mar 2026",
+    "time": "11:00",
+    "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS",
+    "home_team": "CTM SALDUBA SDA",
+    "away_team": "CTM ESTEPONA SDA",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
