@@ -6742,11 +6742,100 @@
     "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
     "home_team": "CP MIJAS DHA",
     "away_team": "CTM ESTEPONA “B” DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "ABC",
+        "home_player": "DOBLE ABC",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "DOBLE XYZ",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "A",
+        "home_player": "A",
+        "home_sets": [
+          9,
+          11,
+          11,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "Y",
+        "away_sets": [
+          11,
+          9,
+          5,
+          9,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "B",
+        "home_player": "B",
+        "home_sets": [
+          9,
+          2,
+          11,
+          8,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "X",
+        "away_player": "X",
+        "away_sets": [
+          11,
+          11,
+          5,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "C",
+        "home_sets": [
+          11,
+          13,
+          11,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "Z",
+        "away_sets": [
+          8,
+          15,
+          9,
+          7,
+          0
+        ],
+        "away_score": 1
+      }
+    ]
   },
   {
     "match_id": "582854",
@@ -6757,11 +6846,166 @@
     "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS Marbella",
     "home_team": "CTM SALDUBA JOVENES DHA",
     "away_team": "CRISTALERIA DUARTE MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 3,
+    "score_away": 4,
+    "result": "3 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "PURE-EL TOM MAOR",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "FRANCISCO JOSE MORENO",
+        "away_sets": [
+          3,
+          5,
+          2,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "B",
+        "home_player": "ROBERT MARIAN OPREA",
+        "home_sets": [
+          12,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "PENGYU QIAN",
+        "away_sets": [
+          10,
+          9,
+          9,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "C",
+        "home_player": "JARNO MARTEN KLOPSTRA",
+        "home_sets": [
+          9,
+          8,
+          11,
+          13,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "FRANCISCO PUERTA VIDES",
+        "away_sets": [
+          11,
+          11,
+          9,
+          15,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "PURE-EL TOM MAOR",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "PENGYU QIAN",
+        "away_sets": [
+          2,
+          7,
+          4,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "C",
+        "home_player": "JARNO MARTEN KLOPSTRA",
+        "home_sets": [
+          11,
+          6,
+          6,
+          8,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Y",
+        "away_player": "FRANCISCO JOSE MORENO",
+        "away_sets": [
+          9,
+          11,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ROBERT MARIAN OPREA",
+        "home_sets": [
+          9,
+          11,
+          11,
+          6,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "FRANCISCO PUERTA VIDES",
+        "away_sets": [
+          11,
+          8,
+          13,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CRISTALERIA DUARTE MARBELLA DHA",
+        "home_sets": [
+          11,
+          11,
+          5,
+          5,
+          11
+        ],
+        "home_score": 3,
+        "away_code": "XYZ",
+        "away_player": "Doble CTM SALDUBA JOVENES DHA",
+        "away_sets": [
+          5,
+          5,
+          11,
+          11,
+          6
+        ],
+        "away_score": 2
+      }
+    ]
   },
   {
     "match_id": "582853",
@@ -6773,10 +7017,165 @@
     "home_team": "IES ALBAYTAR DHA",
     "away_team": "FUENGIROLA INTERNACIONAL DHA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "STEPHANE JEAN ROGER PAUPARDIN",
+        "home_sets": [
+          6,
+          6,
+          11,
+          8,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Y",
+        "away_player": "BRICE LOUIS GEORG MARTINEAU",
+        "away_sets": [
+          11,
+          11,
+          8,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ADRIAN CABALLO",
+        "home_sets": [
+          8,
+          11,
+          3,
+          8,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "X",
+        "away_player": "DARIEL LOPEZ LOPEZ",
+        "away_sets": [
+          11,
+          8,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "ANAS CHAMMAH TOLEDANO",
+        "home_sets": [
+          6,
+          11,
+          2,
+          4,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "ADRIAN CARRASCO CHACÓN",
+        "away_sets": [
+          11,
+          8,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "STEPHANE JEAN ROGER PAUPARDIN",
+        "home_sets": [
+          7,
+          2,
+          4,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "DARIEL LOPEZ LOPEZ",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "ANAS CHAMMAH TOLEDANO",
+        "home_sets": [
+          7,
+          8,
+          9,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "BRICE LOUIS GEORG MARTINEAU",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ADRIAN CABALLO",
+        "home_sets": [
+          8,
+          7,
+          9,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "ADRIAN CARRASCO CHACÓN",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble IES ALBAYTAR DHA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble FUENGIROLA INTERNACIONAL DHA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "582857",

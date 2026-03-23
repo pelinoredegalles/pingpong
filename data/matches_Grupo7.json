@@ -1478,10 +1478,10 @@
     "venue": "PABELLON EL CARMEN Estepona - Mesa 01",
     "home_team": "FUENGIROLA MATT SDA",
     "away_team": "CTM ESTEPONA SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1494,9 +1494,9 @@
     "home_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
     "away_team": "CTM PRODITEM SDA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1523,10 +1523,10 @@
     "venue": "IES IBN AL-BAYTAR Benalmadena",
     "home_team": "CHEMA TM SDA",
     "away_team": "CTM SALDUBA SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {

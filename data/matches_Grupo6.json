@@ -608,10 +608,10 @@
     "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
     "home_team": "CP MIJAS DHA",
     "away_team": "CTM ESTEPONA “B” DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -623,10 +623,10 @@
     "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS Marbella",
     "home_team": "CTM SALDUBA JOVENES DHA",
     "away_team": "CRISTALERIA DUARTE MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 3,
+    "score_away": 4,
+    "result": "3 - 4",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -639,9 +639,9 @@
     "home_team": "IES ALBAYTAR DHA",
     "away_team": "FUENGIROLA INTERNACIONAL DHA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
