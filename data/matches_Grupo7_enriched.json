@@ -16085,11 +16085,166 @@
     "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
     "home_team": "CP MIJAS SDA",
     "away_team": "CD NOVACARTAMA TM SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "result": "6 - 0",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "LUCIA LAZARO FERNANDEZ",
+        "home_sets": [
+          13,
+          8,
+          10,
+          2,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Y",
+        "away_player": "DANIEL ROMERO JIMENEZ",
+        "away_sets": [
+          11,
+          11,
+          12,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "CARLOS RUEDA PEREZ",
+        "home_sets": [
+          2,
+          3,
+          4,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "VICTOR MORENO BAZUELO",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "ANDRES QUINTANA GUTIERREZ",
+        "home_sets": [
+          8,
+          19,
+          8,
+          11,
+          7
+        ],
+        "home_score": 2,
+        "away_code": "Z",
+        "away_player": "DANIEL JIMÉNEZ CORPAS",
+        "away_sets": [
+          11,
+          17,
+          11,
+          9,
+          11
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "LUCIA LAZARO FERNANDEZ",
+        "home_sets": [
+          3,
+          3,
+          9,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "VICTOR MORENO BAZUELO",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "ANDRES QUINTANA GUTIERREZ",
+        "home_sets": [
+          7,
+          8,
+          11,
+          11,
+          7
+        ],
+        "home_score": 2,
+        "away_code": "Y",
+        "away_player": "DANIEL ROMERO JIMENEZ",
+        "away_sets": [
+          11,
+          11,
+          7,
+          9,
+          11
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "CARLOS RUEDA PEREZ",
+        "home_sets": [
+          3,
+          3,
+          6,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "DANIEL JIMÉNEZ CORPAS",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CD NOVACARTAMA TM SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CP MIJAS SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576804",
@@ -16100,11 +16255,166 @@
     "venue": "IES JUAN DE LA CIERVA Velez Málaga",
     "home_team": "INSTASOL-NAVASOL SDA",
     "away_team": "CTM EL PALO SDA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "result": "6 - 0",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "PABLO RÍOS VALCARCE",
+        "home_sets": [
+          7,
+          4,
+          5,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "MIGUEL PENDON PASTOR",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "TIAGO OTIÑANO",
+        "home_sets": [
+          10,
+          2,
+          7,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "DANIEL ADELBERT M. DEVOS",
+        "away_sets": [
+          12,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "JAVIER SANTACRUZ GUTIERREZ",
+        "home_sets": [
+          6,
+          9,
+          4,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "JOSE LUIS MORENO MARFIL",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "PABLO RÍOS VALCARCE",
+        "home_sets": [
+          4,
+          8,
+          3,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "DANIEL ADELBERT M. DEVOS",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "JAVIER SANTACRUZ GUTIERREZ",
+        "home_sets": [
+          6,
+          7,
+          5,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "MIGUEL PENDON PASTOR",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "TIAGO OTIÑANO",
+        "home_sets": [
+          14,
+          9,
+          5,
+          2,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "JOSE LUIS MORENO MARFIL",
+        "away_sets": [
+          12,
+          11,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CTM EL PALO SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble INSTASOL-NAVASOL SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576805",
@@ -16455,11 +16765,166 @@
     "venue": "SOTOGRANDE SCHOOL INTERNACIONAL San Roque",
     "home_team": "TEAM SOTOGRANDE SDA",
     "away_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "FIODOR VERESCIAKA",
+        "home_sets": [
+          11,
+          9,
+          9,
+          9,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Y",
+        "away_player": "LEAMSYS ANTONIO ROOS PACHECO",
+        "away_sets": [
+          4,
+          11,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ANTHONY GEDGE",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "ALBERTO GONZALEZ SANCHEZ",
+        "away_sets": [
+          4,
+          3,
+          6,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "C",
+        "home_player": "JASON FLOYD",
+        "home_sets": [
+          4,
+          3,
+          5,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "FIODOR VERESCIAKA",
+        "home_sets": [
+          11,
+          11,
+          14,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "ALBERTO GONZALEZ SANCHEZ",
+        "away_sets": [
+          3,
+          4,
+          12,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "C",
+        "home_player": "JASON FLOYD",
+        "home_sets": [
+          6,
+          5,
+          4,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "LEAMSYS ANTONIO ROOS PACHECO",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ANTHONY GEDGE",
+        "home_sets": [
+          2,
+          6,
+          3,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble TEAM SOTOGRANDE SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576803",
@@ -16640,11 +17105,166 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA SDA",
     "away_team": "TEAM SOTOGRANDE SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "TOMAS ORAVEC",
+        "home_sets": [
+          11,
+          11,
+          8,
+          10,
+          11
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "JASON FLOYD",
+        "away_sets": [
+          6,
+          6,
+          11,
+          12,
+          8
+        ],
+        "away_score": 2
+      },
+      {
+        "home_code": "B",
+        "home_player": "AGUSTIN PEREZ OCAÑA",
+        "home_sets": [
+          11,
+          8,
+          9,
+          13,
+          9
+        ],
+        "home_score": 2,
+        "away_code": "X",
+        "away_player": "FIODOR VERESCIAKA",
+        "away_sets": [
+          6,
+          11,
+          11,
+          11,
+          11
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "VOLODYMYR KOROTENKO",
+        "home_sets": [
+          8,
+          6,
+          11,
+          6,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "PAUL CAMILLERI",
+        "away_sets": [
+          11,
+          11,
+          8,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "TOMAS ORAVEC",
+        "home_sets": [
+          7,
+          7,
+          11,
+          8,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "X",
+        "away_player": "FIODOR VERESCIAKA",
+        "away_sets": [
+          11,
+          11,
+          8,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "VOLODYMYR KOROTENKO",
+        "home_sets": [
+          12,
+          9,
+          11,
+          5,
+          10
+        ],
+        "home_score": 2,
+        "away_code": "Y",
+        "away_player": "JASON FLOYD",
+        "away_sets": [
+          10,
+          11,
+          9,
+          11,
+          12
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "AGUSTIN PEREZ OCAÑA",
+        "home_sets": [
+          7,
+          11,
+          11,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "PAUL CAMILLERI",
+        "away_sets": [
+          11,
+          9,
+          8,
+          6,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble TEAM SOTOGRANDE SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CTM ESTEPONA SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576809",
@@ -16655,11 +17275,166 @@
     "venue": "IES JOSE MARIA TORRIJOS Malaga",
     "home_team": "CTM PRODITEM SDA",
     "away_team": "INSTASOL-NAVASOL SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "DANIEL ADELBERT M. DEVOS",
+        "home_sets": [
+          13,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "FRANCISCO JAVIER AMADOR FERRETE",
+        "away_sets": [
+          11,
+          3,
+          7,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "B",
+        "home_player": "JOSE LUIS MORENO MARFIL",
+        "home_sets": [
+          10,
+          11,
+          11,
+          8,
+          7
+        ],
+        "home_score": 2,
+        "away_code": "X",
+        "away_player": "JOSE MARIA CALVO SANCHEZ",
+        "away_sets": [
+          12,
+          5,
+          8,
+          11,
+          11
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "MIGUEL PENDON PASTOR",
+        "home_sets": [
+          4,
+          10,
+          5,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "ROBERTO REYES GONZÁLEZ",
+        "away_sets": [
+          11,
+          12,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "DANIEL ADELBERT M. DEVOS",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "JOSE MARIA CALVO SANCHEZ",
+        "away_sets": [
+          7,
+          2,
+          5,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "C",
+        "home_player": "MIGUEL PENDON PASTOR",
+        "home_sets": [
+          4,
+          8,
+          11,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "FRANCISCO JAVIER AMADOR FERRETE",
+        "away_sets": [
+          11,
+          11,
+          13,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "JOSE LUIS MORENO MARFIL",
+        "home_sets": [
+          6,
+          5,
+          8,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "ROBERTO REYES GONZÁLEZ",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble INSTASOL-NAVASOL SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CTM PRODITEM SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576810",
@@ -16670,11 +17445,166 @@
     "venue": "GIMNASIO CEIP RAFAEL FERNANDEZ MAYORALAS",
     "home_team": "CTM SALDUBA SDA",
     "away_team": "FUENGIROLA MATT SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "VOLODYMIR POPYALKOUSKYY",
+        "home_sets": [
+          11,
+          15,
+          9,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "DIEGO GUILLEN RODRIGUEZ",
+        "away_sets": [
+          8,
+          13,
+          11,
+          7,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "B",
+        "home_player": "AMANDA CHENOLL GONZALEZ",
+        "home_sets": [
+          5,
+          9,
+          12,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "CONG XISHENG",
+        "away_sets": [
+          11,
+          11,
+          14,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "JUAN JOSE ROSA URBANO",
+        "home_sets": [
+          11,
+          4,
+          7,
+          11,
+          8
+        ],
+        "home_score": 2,
+        "away_code": "Z",
+        "away_player": "DAVID AHONEN",
+        "away_sets": [
+          9,
+          11,
+          11,
+          3,
+          11
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "A",
+        "home_player": "VOLODYMIR POPYALKOUSKYY",
+        "home_sets": [
+          7,
+          9,
+          2,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "CONG XISHENG",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "JUAN JOSE ROSA URBANO",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "DIEGO GUILLEN RODRIGUEZ",
+        "away_sets": [
+          7,
+          3,
+          6,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "B",
+        "home_player": "AMANDA CHENOLL GONZALEZ",
+        "home_sets": [
+          8,
+          2,
+          6,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Z",
+        "away_player": "DAVID AHONEN",
+        "away_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble FUENGIROLA MATT SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CTM SALDUBA SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576811",
@@ -16686,10 +17616,165 @@
     "home_team": "CTM EL PALO SDA",
     "away_team": "CP MIJAS SDA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "VICTOR MORENO BAZUELO",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "PABLO RÍOS VALCARCE",
+        "away_sets": [
+          5,
+          1,
+          7,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "B",
+        "home_player": "DANIEL JIMÉNEZ CORPAS",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "TIAGO OTIÑANO",
+        "away_sets": [
+          4,
+          8,
+          5,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "C",
+        "home_player": "DANIEL ROMERO JIMENEZ",
+        "home_sets": [
+          9,
+          11,
+          9,
+          11,
+          11
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "JAVIER SANTACRUZ GUTIERREZ",
+        "away_sets": [
+          11,
+          4,
+          11,
+          5,
+          7
+        ],
+        "away_score": 2
+      },
+      {
+        "home_code": "A",
+        "home_player": "VICTOR MORENO BAZUELO",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "TIAGO OTIÑANO",
+        "away_sets": [
+          2,
+          4,
+          7,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "C",
+        "home_player": "DANIEL ROMERO JIMENEZ",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "PABLO RÍOS VALCARCE",
+        "away_sets": [
+          7,
+          9,
+          8,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "B",
+        "home_player": "DANIEL JIMÉNEZ CORPAS",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "JAVIER SANTACRUZ GUTIERREZ",
+        "away_sets": [
+          5,
+          7,
+          7,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CTM EL PALO SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CP MIJAS SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576808",
@@ -16700,11 +17785,166 @@
     "venue": "IES IBN AL-BAYTAR Benalmadena",
     "home_team": "CHEMA TM SDA",
     "away_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "DANIEL PORTILLO MARTINEZ",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "MIGUEL ÁNGEL TORTOSA MURCIANO",
+        "away_sets": [
+          5,
+          5,
+          5,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "B",
+        "home_player": "ANGIE VIVIANA VILLAMIL MARTINEZ",
+        "home_sets": [
+          8,
+          11,
+          9,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "X",
+        "away_player": "FERNANDO VAZQUEZ HIDALGO",
+        "away_sets": [
+          11,
+          13,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "JULIO RODRIGUEZ CID",
+        "home_sets": [
+          11,
+          5,
+          10,
+          11,
+          11
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "MANUEL ESPINOSA MARTIN",
+        "away_sets": [
+          8,
+          11,
+          12,
+          3,
+          8
+        ],
+        "away_score": 2
+      },
+      {
+        "home_code": "A",
+        "home_player": "DANIEL PORTILLO MARTINEZ",
+        "home_sets": [
+          11,
+          11,
+          9,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "FERNANDO VAZQUEZ HIDALGO",
+        "away_sets": [
+          5,
+          7,
+          11,
+          5,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "C",
+        "home_player": "JULIO RODRIGUEZ CID",
+        "home_sets": [
+          4,
+          9,
+          10,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "MIGUEL ÁNGEL TORTOSA MURCIANO",
+        "away_sets": [
+          11,
+          11,
+          12,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "ANGIE VIVIANA VILLAMIL MARTINEZ",
+        "home_sets": [
+          6,
+          11,
+          11,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "MANUEL ESPINOSA MARTIN",
+        "away_sets": [
+          11,
+          6,
+          7,
+          8,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CLUB MALAGA - RAMALLO ABOGADOS SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CHEMA TM SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576813",
@@ -16715,11 +17955,166 @@
     "venue": "SALA TENIS DE MESA CARTAMA",
     "home_team": "CD NOVACARTAMA TM SDA",
     "away_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "RAMON RUIZ RUIZ",
+        "home_sets": [
+          5,
+          11,
+          8,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "Y",
+        "away_player": "CARLOS RUEDA PEREZ",
+        "away_sets": [
+          11,
+          13,
+          11,
+          0,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "B",
+        "home_player": "LEAMSYS ANTONIO ROOS PACHECO",
+        "home_sets": [
+          11,
+          6,
+          11,
+          13,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "ANDRES QUINTANA GUTIERREZ",
+        "away_sets": [
+          7,
+          11,
+          8,
+          11,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "C",
+        "home_player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+        "home_sets": [
+          11,
+          8,
+          12,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "VERONICA PABLOS ROMAN",
+        "away_sets": [
+          8,
+          11,
+          10,
+          3,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "A",
+        "home_player": "RAMON RUIZ RUIZ",
+        "home_sets": [
+          7,
+          9,
+          11,
+          7,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "X",
+        "away_player": "ANDRES QUINTANA GUTIERREZ",
+        "away_sets": [
+          11,
+          11,
+          6,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "JOSE MARÍA GÓMEZ ORDOÑEZ",
+        "home_sets": [
+          11,
+          9,
+          11,
+          8,
+          11
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "CARLOS RUEDA PEREZ",
+        "away_sets": [
+          4,
+          11,
+          9,
+          11,
+          4
+        ],
+        "away_score": 2
+      },
+      {
+        "home_code": "B",
+        "home_player": "LEAMSYS ANTONIO ROOS PACHECO",
+        "home_sets": [
+          11,
+          11,
+          5,
+          17,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "VERONICA PABLOS ROMAN",
+        "away_sets": [
+          8,
+          6,
+          11,
+          15,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble CD NOVACARTAMA TM SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576816",

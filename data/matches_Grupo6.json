@@ -656,7 +656,7 @@
     "score_home": 0,
     "score_away": 0,
     "result": "0 - 0",
-    "status": "Por Disputar",
+    "status": "Postpuesto",
     "games": []
   },
   {
@@ -669,9 +669,9 @@
     "home_team": "CTM ESTEPONA “B” DHA",
     "away_team": "FUENGIROLA INTERNACIONAL DHA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -683,10 +683,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “A” DHA",
     "away_team": "CTM SALDUBA JOVENES DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
