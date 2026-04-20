@@ -25,27 +25,38 @@
     {
       "position": 3,
       "team": "CTM ESTEPONA SDA",
-      "matches": 18,
-      "wins": 14,
+      "matches": 19,
+      "wins": 15,
       "losses": 4,
-      "points_for": 69,
-      "points_against": 41,
-      "points_diff": 28,
-      "points": 35
+      "points_for": 73,
+      "points_against": 43,
+      "points_diff": 30,
+      "points": 37
     },
     {
       "position": 4,
       "team": "CD NOVACARTAMA TM SDA",
-      "matches": 18,
+      "matches": 19,
       "wins": 9,
-      "losses": 9,
-      "points_for": 59,
-      "points_against": 52,
-      "points_diff": 7,
-      "points": 30
+      "losses": 10,
+      "points_for": 61,
+      "points_against": 56,
+      "points_diff": 5,
+      "points": 31
     },
     {
       "position": 5,
+      "team": "TEAM SOTOGRANDE SDA",
+      "matches": 18,
+      "wins": 10,
+      "losses": 8,
+      "points_for": 60,
+      "points_against": 50,
+      "points_diff": 10,
+      "points": 30
+    },
+    {
+      "position": 6,
       "team": "INSTASOL-NAVASOL SDA",
       "matches": 18,
       "wins": 11,
@@ -56,40 +67,40 @@
       "points": 30
     },
     {
-      "position": 6,
-      "team": "TEAM SOTOGRANDE SDA",
-      "matches": 17,
-      "wins": 9,
-      "losses": 8,
-      "points_for": 55,
-      "points_against": 49,
-      "points_diff": 6,
-      "points": 27
-    },
-    {
       "position": 7,
       "team": "FUENGIROLA MATT SDA",
-      "matches": 18,
-      "wins": 7,
+      "matches": 19,
+      "wins": 8,
       "losses": 11,
-      "points_for": 54,
-      "points_against": 56,
-      "points_diff": -2,
-      "points": 26
+      "points_for": 58,
+      "points_against": 58,
+      "points_diff": 0,
+      "points": 28
     },
     {
       "position": 8,
       "team": "CTM SALDUBA SDA",
-      "matches": 18,
+      "matches": 19,
       "wins": 7,
-      "losses": 11,
-      "points_for": 52,
-      "points_against": 57,
-      "points_diff": -5,
+      "losses": 12,
+      "points_for": 53,
+      "points_against": 62,
+      "points_diff": -9,
       "points": 26
     },
     {
       "position": 9,
+      "team": "CHEMA TM SDA",
+      "matches": 19,
+      "wins": 4,
+      "losses": 15,
+      "points_for": 41,
+      "points_against": 74,
+      "points_diff": -33,
+      "points": 19
+    },
+    {
+      "position": 10,
       "team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
       "matches": 18,
       "wins": 7,
@@ -97,17 +108,6 @@
       "points_for": 40,
       "points_against": 68,
       "points_diff": -28,
-      "points": 18
-    },
-    {
-      "position": 10,
-      "team": "CHEMA TM SDA",
-      "matches": 18,
-      "wins": 4,
-      "losses": 14,
-      "points_for": 39,
-      "points_against": 70,
-      "points_diff": -31,
       "points": 18
     },
     {

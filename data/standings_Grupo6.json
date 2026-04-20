@@ -14,13 +14,13 @@
     {
       "position": 2,
       "team": "FUENGIROLA INTERNACIONAL DHA",
-      "matches": 11,
-      "wins": 10,
+      "matches": 12,
+      "wins": 11,
       "losses": 1,
-      "points_for": 52,
+      "points_for": 58,
       "points_against": 14,
-      "points_diff": 38,
-      "points": 27
+      "points_diff": 44,
+      "points": 30
     },
     {
       "position": 3,
@@ -36,24 +36,24 @@
     {
       "position": 4,
       "team": "CRISTALERIA DUARTE MARBELLA DHA",
-      "matches": 10,
+      "matches": 11,
       "wins": 7,
-      "losses": 3,
+      "losses": 4,
       "points_for": 36,
-      "points_against": 28,
-      "points_diff": 8,
+      "points_against": 34,
+      "points_diff": 2,
       "points": 18
     },
     {
       "position": 5,
       "team": "CTM PINTURAS MONTO MARBELLA DHA",
-      "matches": 11,
-      "wins": 3,
+      "matches": 12,
+      "wins": 4,
       "losses": 8,
-      "points_for": 27,
-      "points_against": 41,
-      "points_diff": -14,
-      "points": 13
+      "points_for": 31,
+      "points_against": 44,
+      "points_diff": -13,
+      "points": 15
     },
     {
       "position": 6,
@@ -68,6 +68,17 @@
     },
     {
       "position": 7,
+      "team": "CTM SALDUBA JOVENES DHA",
+      "matches": 13,
+      "wins": 2,
+      "losses": 11,
+      "points_for": 24,
+      "points_against": 58,
+      "points_diff": -34,
+      "points": 9
+    },
+    {
+      "position": 8,
       "team": "IES ALBAYTAR DHA",
       "matches": 10,
       "wins": 3,
@@ -75,17 +86,6 @@
       "points_for": 19,
       "points_against": 44,
       "points_diff": -25,
-      "points": 8
-    },
-    {
-      "position": 8,
-      "team": "CTM SALDUBA JOVENES DHA",
-      "matches": 12,
-      "wins": 2,
-      "losses": 10,
-      "points_for": 21,
-      "points_against": 54,
-      "points_diff": -33,
       "points": 8
     },
     {
