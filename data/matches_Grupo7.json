@@ -698,9 +698,9 @@
     "venue": "IES EL PALO Málaga",
     "home_team": "CTM EL PALO SDA",
     "away_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
-    "score_home": 5,
-    "score_away": 1,
-    "result": "5 - 1",
+    "score_home": 0,
+    "score_away": 6,
+    "result": "0 - 6",
     "status": "Finalizado",
     "games": []
   },
@@ -1628,10 +1628,10 @@
     "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
     "home_team": "CP MIJAS SDA",
     "away_team": "CTM PRODITEM SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 5,
+    "score_away": 1,
+    "result": "5 - 1",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1643,10 +1643,10 @@
     "venue": "IES JUAN DE LA CIERVA Velez Málaga",
     "home_team": "INSTASOL-NAVASOL SDA",
     "away_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -1658,10 +1658,10 @@
     "venue": "POLIDEPORTIVO CIUDAD JARDIN (Málaga)",
     "home_team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
     "away_team": "CTM EL PALO SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {

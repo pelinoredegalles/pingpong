@@ -645,21 +645,6 @@
     "games": []
   },
   {
-    "match_id": "582857",
-    "competition": 14110,
-    "group": "Grupo 6",
-    "date": "11 Abr 2026",
-    "time": "17:00",
-    "venue": "IES PABLO DEL SAZ Marbella",
-    "home_team": "CRISTALERIA DUARTE MARBELLA DHA",
-    "away_team": "IES ALBAYTAR DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Postpuesto",
-    "games": []
-  },
-  {
     "match_id": "582856",
     "competition": 14110,
     "group": "Grupo 6",
@@ -728,10 +713,10 @@
     "venue": "IES IBN AL-BAYTAR Benalmadena",
     "home_team": "IES ALBAYTAR DHA",
     "away_team": "CTM ESTEPONA “A” DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -802,6 +787,21 @@
     "time": "10:00",
     "venue": "POLIDEPORTIVO LA CAÑADA Mijas",
     "home_team": "CP MIJAS DHA",
+    "away_team": "IES ALBAYTAR DHA",
+    "score_home": 0,
+    "score_away": 0,
+    "result": "0 - 0",
+    "status": "Por Disputar",
+    "games": []
+  },
+  {
+    "match_id": "582857",
+    "competition": 14110,
+    "group": "Grupo 6",
+    "date": "02 May 2026",
+    "time": "17:00",
+    "venue": "IES PABLO DEL SAZ Marbella",
+    "home_team": "CRISTALERIA DUARTE MARBELLA DHA",
     "away_team": "IES ALBAYTAR DHA",
     "score_home": 0,
     "score_away": 0,

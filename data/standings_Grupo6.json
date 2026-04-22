@@ -58,16 +58,27 @@
     {
       "position": 6,
       "team": "CTM ESTEPONA “A” DHA",
-      "matches": 11,
+      "matches": 12,
       "wins": 2,
-      "losses": 9,
-      "points_for": 21,
-      "points_against": 45,
-      "points_diff": -24,
-      "points": 9
+      "losses": 10,
+      "points_for": 23,
+      "points_against": 49,
+      "points_diff": -26,
+      "points": 10
     },
     {
       "position": 7,
+      "team": "IES ALBAYTAR DHA",
+      "matches": 11,
+      "wins": 4,
+      "losses": 7,
+      "points_for": 23,
+      "points_against": 46,
+      "points_diff": -23,
+      "points": 10
+    },
+    {
+      "position": 8,
       "team": "CTM SALDUBA JOVENES DHA",
       "matches": 13,
       "wins": 2,
@@ -76,17 +87,6 @@
       "points_against": 58,
       "points_diff": -34,
       "points": 9
-    },
-    {
-      "position": 8,
-      "team": "IES ALBAYTAR DHA",
-      "matches": 10,
-      "wins": 3,
-      "losses": 7,
-      "points_for": 19,
-      "points_against": 44,
-      "points_diff": -25,
-      "points": 8
     },
     {
       "position": 9,
