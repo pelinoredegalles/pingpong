@@ -216,6 +216,14 @@
     "win_rate": 75.0
   },
   {
+    "player": "ALAN EZEQUIEL OLMO",
+    "elo": 1479,
+    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "matches": 4,
+    "wins": 3,
+    "win_rate": 75.0
+  },
+  {
     "player": "HENRIKUS GERARDUS MARIA VAN VEEN",
     "elo": 1478,
     "club": "CTM ESTEPONA SDA",
@@ -296,14 +304,6 @@
     "win_rate": 75.0
   },
   {
-    "player": "ALAN EZEQUIEL OLMO",
-    "elo": 1461,
-    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 2,
-    "wins": 1,
-    "win_rate": 50.0
-  },
-  {
     "player": "IVAN PEREZ MARTIN",
     "elo": 1460,
     "club": "CTM PRODITEM SDA",
@@ -377,10 +377,10 @@
   },
   {
     "player": "ANTONIO FALDER ANGUITA",
-    "elo": 1420,
+    "elo": 1418,
     "club": "FUENGIROLA MATT SDA",
-    "matches": 22,
-    "wins": 11,
+    "matches": 24,
+    "wins": 12,
     "win_rate": 50.0
   },
   {
@@ -432,14 +432,6 @@
     "win_rate": 50.0
   },
   {
-    "player": "JORGE IPIÑA RASERO",
-    "elo": 1384,
-    "club": "FUENGIROLA MATT SDA",
-    "matches": 18,
-    "wins": 7,
-    "win_rate": 38.9
-  },
-  {
     "player": "FERNANDO VAZQUEZ HIDALGO",
     "elo": 1381,
     "club": "CHEMA TM SDA",
@@ -464,6 +456,14 @@
     "win_rate": 33.3
   },
   {
+    "player": "MANUEL MARTIN DEVESA",
+    "elo": 1376,
+    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "matches": 25,
+    "wins": 7,
+    "win_rate": 28.0
+  },
+  {
     "player": "JOSE LUIS MORENO MARFIL",
     "elo": 1373,
     "club": "INSTASOL-NAVASOL SDA",
@@ -480,12 +480,12 @@
     "win_rate": 25.0
   },
   {
-    "player": "EMILIO CANO PEREZ",
-    "elo": 1367,
-    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 2,
-    "wins": 0,
-    "win_rate": 0.0
+    "player": "JORGE IPIÑA RASERO",
+    "elo": 1366,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 20,
+    "wins": 7,
+    "win_rate": 35.0
   },
   {
     "player": "ANGEL AMIGO GONZALEZ",
@@ -534,6 +534,14 @@
     "matches": 2,
     "wins": 0,
     "win_rate": 0.0
+  },
+  {
+    "player": "BRICE LOUIS GEORG MARTINEAU",
+    "elo": 1347,
+    "club": "FUENGIROLA MATT SDA",
+    "matches": 2,
+    "wins": 1,
+    "win_rate": 50.0
   },
   {
     "player": "GABRIEL JOSE MARFIL MORALES",
@@ -640,6 +648,14 @@
     "win_rate": 17.9
   },
   {
+    "player": "EMILIO CANO PEREZ",
+    "elo": 1315,
+    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
+    "matches": 4,
+    "wins": 0,
+    "win_rate": 0.0
+  },
+  {
     "player": "MATEO GALIANO DURAN",
     "elo": 1312,
     "club": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
@@ -726,14 +742,6 @@
     "matches": 18,
     "wins": 2,
     "win_rate": 11.1
-  },
-  {
-    "player": "MANUEL MARTIN DEVESA",
-    "elo": 1278,
-    "club": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "matches": 23,
-    "wins": 5,
-    "win_rate": 21.7
   },
   {
     "player": "OSCAR LUIS PEREZ OCAÑA",

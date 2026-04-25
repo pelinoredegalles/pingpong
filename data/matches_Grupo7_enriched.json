@@ -19160,11 +19160,166 @@
     "venue": "POLIDEPORTIVO ELOLA Fuengirola",
     "home_team": "FUENGIROLA MATT SDA",
     "away_team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
-    "games": []
+    "score_home": 2,
+    "score_away": 4,
+    "result": "2 - 4",
+    "status": "Finalizado",
+    "games": [
+      {
+        "home_code": "A",
+        "home_player": "ALAN EZEQUIEL OLMO",
+        "home_sets": [
+          8,
+          8,
+          11,
+          11,
+          11
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "JORGE IPIÑA RASERO",
+        "away_sets": [
+          11,
+          11,
+          4,
+          2,
+          4
+        ],
+        "away_score": 2
+      },
+      {
+        "home_code": "B",
+        "home_player": "EMILIO CANO PEREZ",
+        "home_sets": [
+          7,
+          11,
+          8,
+          5,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "X",
+        "away_player": "ANTONIO FALDER ANGUITA",
+        "away_sets": [
+          11,
+          3,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "C",
+        "home_player": "MANUEL MARTIN DEVESA",
+        "home_sets": [
+          11,
+          11,
+          11,
+          0,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Z",
+        "away_player": "BRICE LOUIS GEORG MARTINEAU",
+        "away_sets": [
+          7,
+          4,
+          7,
+          0,
+          0
+        ],
+        "away_score": 0
+      },
+      {
+        "home_code": "A",
+        "home_player": "ALAN EZEQUIEL OLMO",
+        "home_sets": [
+          11,
+          3,
+          14,
+          11,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "X",
+        "away_player": "ANTONIO FALDER ANGUITA",
+        "away_sets": [
+          6,
+          11,
+          12,
+          8,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "C",
+        "home_player": "MANUEL MARTIN DEVESA",
+        "home_sets": [
+          11,
+          13,
+          1,
+          12,
+          0
+        ],
+        "home_score": 3,
+        "away_code": "Y",
+        "away_player": "JORGE IPIÑA RASERO",
+        "away_sets": [
+          4,
+          11,
+          11,
+          10,
+          0
+        ],
+        "away_score": 1
+      },
+      {
+        "home_code": "B",
+        "home_player": "EMILIO CANO PEREZ",
+        "home_sets": [
+          11,
+          5,
+          4,
+          9,
+          0
+        ],
+        "home_score": 1,
+        "away_code": "Z",
+        "away_player": "BRICE LOUIS GEORG MARTINEAU",
+        "away_sets": [
+          8,
+          11,
+          11,
+          11,
+          0
+        ],
+        "away_score": 3
+      },
+      {
+        "home_code": "ABC",
+        "home_player": "Doble CLUB MALAGA - RAMALLO ABOGADOS SDA",
+        "home_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "home_score": 0,
+        "away_code": "XYZ",
+        "away_player": "Doble FUENGIROLA MATT SDA",
+        "away_sets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "away_score": 0
+      }
+    ]
   },
   {
     "match_id": "576821",
