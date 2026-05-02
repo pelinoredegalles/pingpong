@@ -2,28 +2,39 @@
   "Grupo 6": [
     {
       "position": 1,
-      "team": "CTM ESTEPONA “B” DHA",
-      "matches": 13,
-      "wins": 12,
+      "team": "FUENGIROLA INTERNACIONAL DHA",
+      "matches": 14,
+      "wins": 13,
       "losses": 1,
-      "points_for": 65,
-      "points_against": 14,
-      "points_diff": 51,
-      "points": 33
+      "points_for": 69,
+      "points_against": 15,
+      "points_diff": 54,
+      "points": 36
     },
     {
       "position": 2,
-      "team": "FUENGIROLA INTERNACIONAL DHA",
-      "matches": 12,
-      "wins": 11,
+      "team": "CTM ESTEPONA “B” DHA",
+      "matches": 14,
+      "wins": 13,
       "losses": 1,
-      "points_for": 58,
-      "points_against": 14,
-      "points_diff": 44,
-      "points": 30
+      "points_for": 69,
+      "points_against": 17,
+      "points_diff": 52,
+      "points": 35
     },
     {
       "position": 3,
+      "team": "CRISTALERIA DUARTE MARBELLA DHA",
+      "matches": 14,
+      "wins": 9,
+      "losses": 5,
+      "points_for": 47,
+      "points_against": 42,
+      "points_diff": 5,
+      "points": 23
+    },
+    {
+      "position": 4,
       "team": "CP MIJAS DHA",
       "matches": 12,
       "wins": 6,
@@ -34,48 +45,37 @@
       "points": 19
     },
     {
-      "position": 4,
-      "team": "CRISTALERIA DUARTE MARBELLA DHA",
-      "matches": 11,
-      "wins": 7,
-      "losses": 4,
-      "points_for": 36,
-      "points_against": 34,
-      "points_diff": 2,
-      "points": 18
-    },
-    {
       "position": 5,
       "team": "CTM PINTURAS MONTO MARBELLA DHA",
-      "matches": 12,
-      "wins": 4,
-      "losses": 8,
-      "points_for": 31,
-      "points_against": 44,
-      "points_diff": -13,
-      "points": 15
+      "matches": 14,
+      "wins": 5,
+      "losses": 9,
+      "points_for": 35,
+      "points_against": 52,
+      "points_diff": -17,
+      "points": 17
     },
     {
       "position": 6,
-      "team": "CTM ESTEPONA “A” DHA",
-      "matches": 12,
-      "wins": 2,
-      "losses": 10,
-      "points_for": 23,
-      "points_against": 49,
-      "points_diff": -26,
-      "points": 10
+      "team": "IES ALBAYTAR DHA",
+      "matches": 13,
+      "wins": 4,
+      "losses": 9,
+      "points_for": 27,
+      "points_against": 54,
+      "points_diff": -27,
+      "points": 12
     },
     {
       "position": 7,
-      "team": "IES ALBAYTAR DHA",
-      "matches": 11,
-      "wins": 4,
-      "losses": 7,
-      "points_for": 23,
-      "points_against": 46,
-      "points_diff": -23,
-      "points": 10
+      "team": "CTM ESTEPONA “A” DHA",
+      "matches": 14,
+      "wins": 2,
+      "losses": 12,
+      "points_for": 26,
+      "points_against": 58,
+      "points_diff": -32,
+      "points": 11
     },
     {
       "position": 8,

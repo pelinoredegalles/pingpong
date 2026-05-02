@@ -743,10 +743,10 @@
     "venue": "IES PABLO DEL SAZ Marbella",
     "home_team": "CTM PINTURAS MONTO MARBELLA DHA",
     "away_team": "IES ALBAYTAR DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -758,10 +758,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “B” DHA",
     "away_team": "CRISTALERIA DUARTE MARBELLA DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 3,
+    "result": "4 - 3",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -773,10 +773,10 @@
     "venue": "PABELLON EL CARMEN Estepona",
     "home_team": "CTM ESTEPONA “A” DHA",
     "away_team": "FUENGIROLA INTERNACIONAL DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 1,
+    "score_away": 5,
+    "result": "1 - 5",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -803,10 +803,10 @@
     "venue": "IES PABLO DEL SAZ Marbella",
     "home_team": "CRISTALERIA DUARTE MARBELLA DHA",
     "away_team": "IES ALBAYTAR DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -818,10 +818,10 @@
     "venue": "IES PABLO DEL SAZ Marbella - Mesa 01",
     "home_team": "CRISTALERIA DUARTE MARBELLA DHA",
     "away_team": "CTM ESTEPONA “A” DHA",
-    "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_home": 4,
+    "score_away": 2,
+    "result": "4 - 2",
+    "status": "Finalizado",
     "games": []
   },
   {
@@ -833,10 +833,10 @@
     "venue": "POLIDEPORTIVO ELOLA Fuengirola - Mesa 01",
     "home_team": "FUENGIROLA INTERNACIONAL DHA",
     "away_team": "CTM PINTURAS MONTO MARBELLA DHA",
-    "score_home": 0,
+    "score_home": 6,
     "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "result": "6 - 0",
+    "status": "Finalizado",
     "games": []
   }
 ]
