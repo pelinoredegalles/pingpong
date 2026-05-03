@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 import os
+import io
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
@@ -1055,6 +1056,76 @@ def display_match_duels_acta(games: list, home_team: str, away_team: str):
             st.divider()
 
 
+def elo_win_probability(elo_a: float, elo_b: float) -> float:
+    return round(1 / (1 + 10 ** ((elo_b - elo_a) / 400)) * 100, 1)
+
+def df_to_excel(df: pd.DataFrame) -> bytes:
+    output = io.BytesIO()
+    with pd.ExcelWriter(output, engine="openpyxl") as writer:
+        df.to_excel(writer, index=False)
+    return output.getvalue()
+
+def get_player_form_divergence() -> pd.DataFrame:
+    rows = []
+    for _, row in elo_df.iterrows():
+        player = row["player"]
+        elo = row["elo"]
+        momentum = get_player_momentum(player, 5)
+        wins, losses = get_stats(player)
+        total = wins + losses
+        global_wr = round(wins / total * 100, 1) if total > 0 else 0.0
+        divergence = round(momentum["momentum"] - global_wr, 1)
+        rows.append({
+            "Jugador": player,
+            "Equipo": row["club"],
+            "Elo": elo,
+            "% Global": global_wr,
+            "% Últimos 5": momentum["momentum"],
+            "Δ Forma": divergence,
+            "Racha": momentum["streak"]
+        })
+    df = pd.DataFrame(rows)
+    return df.sort_values("Δ Forma", ascending=False).reset_index(drop=True)
+
+def get_doubles_pairs_stats(equipo: Optional[str] = None) -> pd.DataFrame:
+    pairs: Dict[tuple, Dict] = {}
+    for match in matches:
+        home_team = match["home_team"]
+        away_team = match["away_team"]
+        for g in match.get("games", []):
+            home_code = g.get("home_code", "")
+            away_code = g.get("away_code", "")
+            if home_code == "ABC":
+                team = home_team
+                player = g.get("home_player", "")
+                score = g.get("home_score", 0)
+                opp_score = g.get("away_score", 0)
+            elif away_code == "XYZ":
+                team = away_team
+                player = g.get("away_player", "")
+                score = g.get("away_score", 0)
+                opp_score = g.get("home_score", 0)
+            else:
+                continue
+            if equipo and team != equipo:
+                continue
+            won = score > opp_score
+            key = (team, player)
+            if key not in pairs:
+                pairs[key] = {"Equipo": team, "Pareja": player, "V": 0, "D": 0}
+            if won:
+                pairs[key]["V"] += 1
+            else:
+                pairs[key]["D"] += 1
+    if not pairs:
+        return pd.DataFrame()
+    df = pd.DataFrame(list(pairs.values()))
+    df["Total"] = df["V"] + df["D"]
+    df["% Victoria"] = df.apply(
+        lambda r: f"{round(r['V'] / r['Total'] * 100, 1)}%" if r["Total"] > 0 else "0%", axis=1
+    )
+    return df.sort_values("V", ascending=False).reset_index(drop=True)
+
 elo_df = load_elo_data(ELO_FILE)
 matches = load_matches(MATCHES_FILE)
 df_grupo = load_matches_by_group(grupo)
@@ -1089,6 +1160,16 @@ if vista == "Comparar jugadores":
     with col2:
         jugador2 = st.selectbox("Jugador 2", jugadores2, key="jugador2")
 
+    anadir_tercero = st.checkbox("Añadir tercer jugador", key="cb_tercero")
+    jugador3 = None
+    if anadir_tercero:
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            equipo3 = st.selectbox("Equipo para Jugador 3", ["Todos"] + equipos, key="jugador3_equipo")
+        jugadores3 = elo_df["player"].tolist() if equipo3 == "Todos" else elo_df[elo_df["club"] == equipo3]["player"].tolist()
+        with col2:
+            jugador3 = st.selectbox("Jugador 3", jugadores3, key="jugador3")
+
     def mostrar_ficha(jugador, col_key):
         info = elo_df[elo_df["player"] == jugador].iloc[0]
         wins, losses = get_stats(jugador)
@@ -1111,16 +1192,50 @@ if vista == "Comparar jugadores":
             if st.button(f"⚽ Equipo", key=f"team_{col_key}"):
                 navigate_to_team(info['club'])
 
+    if jugador3:
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            mostrar_ficha(jugador1, "j1")
+        with col2:
+            mostrar_ficha(jugador2, "j2")
+        with col3:
+            mostrar_ficha(jugador3, "j3")
+    else:
+        col1, col2 = st.columns(2)
+        with col1:
+            mostrar_ficha(jugador1, "j1")
+        with col2:
+            mostrar_ficha(jugador2, "j2")
+
+    st.subheader("🎯 Probabilidad ELO de victoria")
+    elo1 = elo_df[elo_df["player"] == jugador1]["elo"].iloc[0] if not elo_df[elo_df["player"] == jugador1].empty else INITIAL_ELO
+    elo2 = elo_df[elo_df["player"] == jugador2]["elo"].iloc[0] if not elo_df[elo_df["player"] == jugador2].empty else INITIAL_ELO
+    prob1 = elo_win_probability(elo1, elo2)
+    prob2 = 100 - prob1
     col1, col2 = st.columns(2)
     with col1:
-        mostrar_ficha(jugador1, "j1")
+        st.metric(f"{jugador1} gana", f"{prob1}%")
+        st.progress(int(prob1))
     with col2:
-        mostrar_ficha(jugador2, "j2")
+        st.metric(f"{jugador2} gana", f"{prob2}%")
+        st.progress(int(prob2))
+    if jugador3:
+        elo3 = elo_df[elo_df["player"] == jugador3]["elo"].iloc[0] if not elo_df[elo_df["player"] == jugador3].empty else INITIAL_ELO
+        st.markdown("**Probabilidades adicionales:**")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            p = elo_win_probability(elo1, elo3)
+            st.write(f"**{jugador1}** vs **{jugador3}**: {p}% / {100-p}%")
+        with col2:
+            p = elo_win_probability(elo2, elo3)
+            st.write(f"**{jugador2}** vs **{jugador3}**: {p}% / {100-p}%")
 
     st.subheader("📈 Evolución Elo")
     fig, ax = plt.subplots()
     ax.plot(plot_elo(jugador1), label=jugador1)
     ax.plot(plot_elo(jugador2), label=jugador2)
+    if jugador3:
+        ax.plot(plot_elo(jugador3), label=jugador3)
     ax.set_ylabel("Elo")
     ax.set_xlabel("Partidos")
     ax.legend()
@@ -1280,6 +1395,15 @@ elif vista == "Resumen por jugador":
     st.write("📊 verde = ganado, rojo = perdido")
     st.write(df_historial.to_html(escape=False, index=True), unsafe_allow_html=True)
     
+    if historial:
+        st.subheader("📥 Exportar historial")
+        df_export = pd.DataFrame(historial).drop(columns=["Sets"], errors="ignore")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.download_button("⬇️ Descargar CSV", data=df_export.to_csv(index=False), file_name=f"historial_{jugador}.csv", mime="text/csv")
+        with col2:
+            st.download_button("⬇️ Descargar Excel", data=df_to_excel(df_export), file_name=f"historial_{jugador}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
     st.subheader("📅 Histórico de años anteriores")
     df_historical = get_historical_matches_by_player(jugador, historical_matches)
     if not df_historical.empty:
@@ -1389,6 +1513,32 @@ elif vista == "Ranking y H2H":
     
     h2h_df = build_h2h_matrix(df_all)
     
+    st.subheader("📥 Exportar Ranking")
+    col1, col2 = st.columns(2)
+    with col1:
+        csv_ranking = leaderboard.to_csv(index=False)
+        st.download_button("⬇️ Descargar CSV", data=csv_ranking, file_name=f"ranking_{grupo_id}.csv", mime="text/csv")
+    with col2:
+        excel_ranking = df_to_excel(leaderboard)
+        st.download_button("⬇️ Descargar Excel", data=excel_ranking, file_name=f"ranking_{grupo_id}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+    st.divider()
+    st.header("🔥 Tendencias de Forma")
+    st.caption("Jugadores cuya forma reciente (últimos 5) diverge más de su rendimiento global. Δ positivo = en racha ganadora, Δ negativo = en racha perdedora.")
+    form_df = get_player_form_divergence()
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.subheader("📈 Jugadores en racha (mejores Δ)")
+        top_hot = form_df[form_df["Δ Forma"] > 0].head(10)
+        st.dataframe(top_hot, use_container_width=True, hide_index=True)
+    with col2:
+        st.subheader("📉 Jugadores en baja (peores Δ)")
+        top_cold = form_df[form_df["Δ Forma"] < 0].tail(10).sort_values("Δ Forma")
+        st.dataframe(top_cold, use_container_width=True, hide_index=True)
+
+    st.divider()
+
     st.subheader("Matriz Completa")
     st.dataframe(h2h_df, use_container_width=True)
     
@@ -1719,12 +1869,45 @@ elif vista == "Calendario de partidos":
         if elo_home == 0 or elo_away == 0:
             st.info("No hay datos suficientes de Elo para calcular una predicción.")
         else:
-            if elo_home > elo_away:
-                st.success(f"📌 **Predicción**: {home} es favorito ({elo_home} > {elo_away})")
-            elif elo_home < elo_away:
-                st.success(f"📌 **Predicción**: {away} es favorito ({elo_away} > {elo_home})")
+            prob_home = elo_win_probability(elo_home, elo_away)
+            prob_away = 100 - prob_home
+            col1, col2 = st.columns(2)
+            with col1:
+                color = "normal" if prob_home >= prob_away else "inverse"
+                st.metric(f"🏠 {home}", f"{prob_home}%", delta=f"Elo {elo_home:.0f}")
+                st.progress(int(prob_home))
+            with col2:
+                st.metric(f"✈️ {away}", f"{prob_away}%", delta=f"Elo {elo_away:.0f}")
+                st.progress(int(prob_away))
+            if prob_home > prob_away:
+                st.success(f"📌 **Favorito**: {home} ({prob_home}% de probabilidad de victoria)")
+            elif prob_away > prob_home:
+                st.success(f"📌 **Favorito**: {away} ({prob_away}% de probabilidad de victoria)")
             else:
-                st.warning("📌 Predicción: Iguales, partido muy equilibrado.")
+                st.warning("📌 Predicción: Partido perfectamente equilibrado (50/50)")
+
+        st.subheader("⚔️ Probabilidades por enfrentamiento individual")
+        reg_home_prob = get_team_regular_players(home).head(3).index.tolist()
+        reg_away_prob = get_team_regular_players(away).head(3).index.tolist()
+        if reg_home_prob and reg_away_prob:
+            prob_rows = []
+            for jh in reg_home_prob:
+                elo_jh_info = elo_df[elo_df["player"] == jh]
+                elo_jh = elo_jh_info["elo"].iloc[0] if not elo_jh_info.empty else INITIAL_ELO
+                for ja in reg_away_prob:
+                    elo_ja_info = elo_df[elo_df["player"] == ja]
+                    elo_ja = elo_ja_info["elo"].iloc[0] if not elo_ja_info.empty else INITIAL_ELO
+                    p = elo_win_probability(elo_jh, elo_ja)
+                    prob_rows.append({
+                        f"{home}": jh,
+                        f"Elo {home}": int(elo_jh),
+                        f"{away}": ja,
+                        f"Elo {away}": int(elo_ja),
+                        f"% Victoria {home}": f"{p}%",
+                        f"% Victoria {away}": f"{100-p}%"
+                    })
+            if prob_rows:
+                st.dataframe(pd.DataFrame(prob_rows), use_container_width=True, hide_index=True)
 
         st.subheader("🌟 Jugadores destacados")
 
@@ -1845,7 +2028,7 @@ elif vista == "Dashboard Equipo":
     
     st.subheader("📉 Evolución Elo (Top 3)")
     top_3 = team_table.head(3)["Jugador"].tolist()
-    
+
     fig, ax = plt.subplots(figsize=(10, 5))
     for player in top_3:
         ax.plot(plot_elo(player), label=player, marker='o')
@@ -1854,6 +2037,23 @@ elif vista == "Dashboard Equipo":
     ax.legend()
     ax.grid(True, alpha=0.3)
     st.pyplot(fig)
+
+    st.subheader("🤝 Análisis de Dobles")
+    doubles_df = get_doubles_pairs_stats(equipo)
+    if doubles_df.empty:
+        st.info("No hay datos de dobles para este equipo.")
+    else:
+        st.dataframe(doubles_df[["Pareja", "V", "D", "Total", "% Victoria"]], use_container_width=True, hide_index=True)
+        total_doubles = doubles_df["Total"].sum()
+        total_wins = doubles_df["V"].sum()
+        if total_doubles > 0:
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("Partidos dobles jugados", int(total_doubles))
+            with col2:
+                st.metric("Victorias en dobles", int(total_wins))
+            with col3:
+                st.metric("% Victoria dobles", f"{round(total_wins / total_doubles * 100, 1)}%")
 
 elif vista == "Análisis Jugador Avanzado":
     st.header("🔬 Análisis Avanzado del Jugador")
@@ -1937,6 +2137,20 @@ elif vista == "Análisis Jugador Avanzado":
         with col3:
             low_wr = round(sum(low_tier) / len(low_tier) * 100, 1) if low_tier else 0
             st.metric("vs Low (<1400)", f"{low_wr}% ({len(low_tier)} duelos)")
+
+        st.subheader("📊 Divergencia Forma vs Rendimiento Global")
+        global_wr_adv = round(wins / total * 100, 1) if total > 0 else 0.0
+        recent_wr_adv = momentum["momentum"]
+        divergence_adv = round(recent_wr_adv - global_wr_adv, 1)
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("% Victoria Global", f"{global_wr_adv}%")
+        with col2:
+            st.metric("% Victoria Últimos 5", f"{recent_wr_adv}%")
+        with col3:
+            label = "🔥 En racha" if divergence_adv > 10 else ("❄️ En baja" if divergence_adv < -10 else "➡️ Estable")
+            st.metric("Δ Forma", f"{divergence_adv:+.1f}%", delta=label)
+        st.caption("Δ positivo = rinde mejor recientemente que en global · Δ negativo = rinde peor recientemente")
 
 elif vista == "Clasificación":
     st.header("🏆 Clasificación de Equipos")
