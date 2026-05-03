@@ -1,0 +1,37 @@
+name: Update data
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # chaque lundi à 6h UTC
+  workflow_dispatch:      # déclenchement manuel depuis l'onglet Actions
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install --with-deps chromium
+
+      - name: Run scraper
+        run: python script-BDD.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "données à jour"
+          git push
