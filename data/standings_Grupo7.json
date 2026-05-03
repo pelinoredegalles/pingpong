@@ -47,12 +47,12 @@
     {
       "position": 5,
       "team": "CD NOVACARTAMA TM SDA",
-      "matches": 20,
+      "matches": 21,
       "wins": 9,
-      "losses": 11,
+      "losses": 12,
       "points_for": 64,
-      "points_against": 60,
-      "points_diff": 4,
+      "points_against": 66,
+      "points_diff": -2,
       "points": 32
     },
     {
@@ -68,6 +68,17 @@
     },
     {
       "position": 7,
+      "team": "CTM SALDUBA SDA",
+      "matches": 21,
+      "wins": 9,
+      "losses": 12,
+      "points_for": 62,
+      "points_against": 66,
+      "points_diff": -4,
+      "points": 31
+    },
+    {
+      "position": 8,
       "team": "FUENGIROLA MATT SDA",
       "matches": 21,
       "wins": 8,
@@ -78,18 +89,18 @@
       "points": 29
     },
     {
-      "position": 8,
-      "team": "CTM SALDUBA SDA",
-      "matches": 20,
-      "wins": 8,
-      "losses": 12,
-      "points_for": 57,
-      "points_against": 65,
-      "points_diff": -8,
-      "points": 28
+      "position": 9,
+      "team": "CHEMA TM SDA",
+      "matches": 21,
+      "wins": 6,
+      "losses": 15,
+      "points_for": 51,
+      "points_against": 76,
+      "points_diff": -25,
+      "points": 24
     },
     {
-      "position": 9,
+      "position": 10,
       "team": "CLUB MALAGA - CLINICA DENTAL MENADENT SDA",
       "matches": 21,
       "wins": 9,
@@ -100,7 +111,7 @@
       "points": 24
     },
     {
-      "position": 10,
+      "position": 11,
       "team": "CLUB MALAGA - RAMALLO ABOGADOS SDA",
       "matches": 20,
       "wins": 8,
@@ -108,17 +119,6 @@
       "points_for": 46,
       "points_against": 74,
       "points_diff": -28,
-      "points": 21
-    },
-    {
-      "position": 11,
-      "team": "CHEMA TM SDA",
-      "matches": 20,
-      "wins": 5,
-      "losses": 15,
-      "points_for": 45,
-      "points_against": 76,
-      "points_diff": -31,
       "points": 21
     }
   ]
