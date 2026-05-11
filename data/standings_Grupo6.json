@@ -36,12 +36,12 @@
     {
       "position": 4,
       "team": "CP MIJAS DHA",
-      "matches": 12,
+      "matches": 13,
       "wins": 6,
-      "losses": 6,
+      "losses": 7,
       "points_for": 36,
-      "points_against": 37,
-      "points_diff": -1,
+      "points_against": 43,
+      "points_diff": -7,
       "points": 19
     },
     {
@@ -58,13 +58,13 @@
     {
       "position": 6,
       "team": "IES ALBAYTAR DHA",
-      "matches": 13,
-      "wins": 4,
+      "matches": 14,
+      "wins": 5,
       "losses": 9,
-      "points_for": 27,
+      "points_for": 33,
       "points_against": 54,
-      "points_diff": -27,
-      "points": 12
+      "points_diff": -21,
+      "points": 15
     },
     {
       "position": 7,

@@ -789,9 +789,9 @@
     "home_team": "CP MIJAS DHA",
     "away_team": "IES ALBAYTAR DHA",
     "score_home": 0,
-    "score_away": 0,
-    "result": "0 - 0",
-    "status": "Por Disputar",
+    "score_away": 6,
+    "result": "0 - 6",
+    "status": "Finalizado",
     "games": []
   },
   {
